@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "groupsTotal": 8,
+    "subsTotal": 9,
+    "coverageTotal": 10
+  },
+  "groups": [
+    {
+      "image": "../src/img/stilniyobraz.png",
+      "name": "Стильный образ",
+      "category": "Мода, красота и здоровье",
+      "subs": 883187,
+      "dateCreated": "16 секунд назад",
+      "posts": [
+        {
+          "postImg": "../src/img/posts/stilniyobraz1.jpg"
+        },
+        {
+          "postImg": "../src/img/posts/stilniyobraz2.jpg"
+        }
+      ]
+    },
+    {
+      "image": "../src/img/domashniehitrosti.jpg",
+      "name": "Домашние хитрости",
+      "category": "Советы, лайфхаки",
+      "subs": 873897,
+      "dateCreated": "16 секунд назад",
+      "posts": [
+        {
+          "postImg": "../src/img/posts/domashniehitrosti1.jpg"
+        },
+        {
+          "postImg": "../src/img/posts/domashniehitrosti2.jpg"
+        }
+      ]
+    },
+    {
+      "image": "../src/img/bonvoyage.jpg",
+      "name": "Bon voyage! Путешествуй с нами!",
+      "category": "Путешествия",
+      "subs": 780626,
+      "dateCreated": "16 секунд назад",
+      "posts": [
+        {
+          "postImg": "../src/img/posts/bonvoyage1.jpg"
+        },
+        {
+          "postImg": "../src/img/posts/bonvoyage2.jpg"
+        }
+      ]
+    },
+    {
+      "image": "../src/img/tvoemenu.jpg",
+      "name": "Твое меню",
+      "category": "Кулинария",
+      "subs": 877419,
+      "dateCreated": "16 секунд назад",
+      "posts": [
+        {
+          "postImg": "../src/img/posts/tvoemenu1.jpg"
+        },
+        {
+          "postImg": "../src/img/posts/tvoemenu2.jpg"
+        }
+      ]
+    },
+    {
+      "image": "../src/img/luchshayamama.jpg",
+      "name": "Лучшая мама",
+      "category": "Материнство",
+      "subs": 859762,
+      "dateCreated": "16 секунд назад",
+      "posts": [
+        {
+          "postImg": "../src/img/posts/luchshayamama1.jpg"
+        },
+        {
+          "postImg": "../src/img/posts/luchshayamama2.jpg"
+        }
+      ]
+    },
+    {
+      "image": "../src/img/fitnessportbeauty.jpg",
+      "name": "Фитнес Спорт Красота",
+      "category": "Фитнес, спорт",
+      "subs": 804139,
+      "dateCreated": "16 секунд назад",
+      "posts": [
+        {
+          "postImg": "../src/img/posts/fitnessportkrasota1.jpg"
+        },
+        {
+          "postImg": "../src/img/posts/fitnessportkrasota2.jpg"
+        }
+      ]
+    },
+    {
+      "image": "../src/img/oknews.jpg",
+      "name": "OK News",
+      "category": "Факты",
+      "subs": 1174726,
+      "dateCreated": "16 секунд назад",
+      "posts": [
+        {
+          "postImg": "../src/img/posts/oknews1.jpg"
+        },
+        {
+          "postImg": "../src/img/posts/oknews2.jpg"
+        }
+      ]
+    },
+    {
+      "image": "../src/img/jivieistorii.jpg",
+      "name": "Живые истории",
+      "category": "Факты",
+      "subs": 1163568,
+      "dateCreated": "16 секунд назад",
+      "posts": [
+        {
+          "postImg": "../src/img/posts/jivieistorii1.jpg"
+        },
+        {
+          "postImg": "../src/img/posts/jivieistorii2.jpg"
+        }
+      ]
+    }
+  ]
+}
