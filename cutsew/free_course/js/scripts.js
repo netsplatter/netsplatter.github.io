@@ -37,7 +37,7 @@ $(function(){
     
     // Video autoplay
     var $iframe = $('.block2').find('iframe'),
-        $srcIframe = $iframe.attr('src'),
+        $srcIframe = $iframe.attr('data-src'),
         $autoplay = '?autoplay=1';
     
     $('.btn-play').on('click', function(){

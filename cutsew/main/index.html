@@ -20,7 +20,7 @@
     <div class="container-fluid block1">
         <header class="clearfix">
             <div class="wrapper">
-                <a href="javascript:;" class="logo">
+                <a href="javascript:;" class="logo" data-toggle="modal" data-target="#modal-order-ontime">
                     <img src="img/logo.png" alt="">
                     <span>ШКОЛА ДИЗАЙНА</span>
                 </a>
@@ -155,7 +155,7 @@
         <h2 class="inverted">Как происходят уроки Cut&Sew?</h2>
         <div class="video-container">
             <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/GmTbMsseTTw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe data-src="https://www.youtube.com/embed/GmTbMsseTTw" src="about:blank" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
             <a class="video">
                 <div class="btn-play"></div>
@@ -222,7 +222,7 @@
         <div class="wrapper">
             <h2>Мастер-классы</h2>
             <div class="master-classes clearfix">
-                <div class="item swimsuit-separate">
+                <div class="item large pantsuit">
                     <div class="previews">
                         <a class="swimsuit-separate" href="img/masterclass/swimsuit-separate/model/1.jpg">
                             <img data-src="img/masterclass/swimsuit-separate/model/1.jpg" alt="">
@@ -244,7 +244,9 @@
                             <img data-src="img/masterclass/swimsuit-separate/3.jpg" alt="">
                         </a>
                     </div>
-                    <img src="img/swimsuit-separate-sign.png" alt="" class="item-name">
+                    <div class="item-name">
+                        <img src="img/pantsuit-sign.png" alt="">
+                    </div>
                     <div class="bottom clearfix">
                         <ul>
                             <li>
@@ -283,10 +285,83 @@
                                 </p>
                             </li>
                         </ul>
-                        <div class="price">
-                            <p>1 600 <span class="rub-sign">P</span></p>
+                        <div class="btn-panel">
+                            <div class="price">
+                                <p>1 600 ₽</p>
+                            </div>
+                            <button class="btn btn-pink" data-toggle="modal" data-target="#modal-order">Купить</button>
                         </div>
-                        <button class="btn btn-pink" data-toggle="modal" data-target="#modal-order">Купить</button>
+                    </div>
+                </div>
+                <div class="item swimsuit-separate">
+                    <div class="previews">
+                        <a class="swimsuit-separate" href="img/masterclass/swimsuit-separate/model/1.jpg">
+                            <img data-src="img/masterclass/swimsuit-separate/model/1.jpg" alt="">
+                        </a>
+                        <a class="swimsuit-separate" href="img/masterclass/swimsuit-separate/model/2.jpg">
+                            <img data-src="img/masterclass/swimsuit-separate/model/2.jpg" alt="">
+                        </a>
+                        <a class="swimsuit-separate" href="img/masterclass/swimsuit-separate/model/3.jpg">
+                            <img data-src="img/masterclass/swimsuit-separate/model/3.jpg" alt="">
+                        </a>
+
+                        <a class="swimsuit-separate" href="img/masterclass/swimsuit-separate/1.jpg">
+                            <img data-src="img/masterclass/swimsuit-separate/1.jpg" alt="">
+                        </a>
+                        <a class="swimsuit-separate" href="img/masterclass/swimsuit-separate/2.jpg">
+                            <img data-src="img/masterclass/swimsuit-separate/2.jpg" alt="">
+                        </a>
+                        <a class="swimsuit-separate" href="img/masterclass/swimsuit-separate/3.jpg">
+                            <img data-src="img/masterclass/swimsuit-separate/3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="item-name">
+                        <img src="img/swimsuit-separate-sign.png" alt="">
+                    </div>
+                    <div class="bottom clearfix">
+                        <ul>
+                            <li>
+                                <p>
+                                    Шьем по готовой выкройке
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Корректировка выкройки по росту, вас консультируют преподаватели
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Возможно изменить форму трусиков на любую желаемую!
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Пошив купальника на бытовой швейной машинке.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Подходит новичкам!
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Размеры XS - XL
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Доступ к Мастер-классу - 2 месяца
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="btn-panel">
+                            <div class="price">
+                                <p>1 600 ₽</p>
+                            </div>
+                            <button class="btn btn-pink" data-toggle="modal" data-target="#modal-order">Купить</button>
+                        </div>
                     </div>
                 </div>
                 <div class="item swimsuit-one-piece">
@@ -298,7 +373,9 @@
                             <img data-src="img/masterclass/swimsuit-one-piece/model/2.jpg" alt="">
                         </a>
                     </div>
-                    <img src="img/swimsuit-one-piece-sign.png" alt="" class="item-name">
+                    <div class="item-name">
+                        <img src="img/swimsuit-one-piece-sign.png" alt="">
+                    </div>
                     <div class="bottom clearfix">
                         <ul>
                             <li>
@@ -332,10 +409,12 @@
                                 </p>
                             </li>
                         </ul>
-                        <div class="price">
-                            <p>1 600 <span class="rub-sign">P</span></p>
+                        <div class="btn-panel">
+                            <div class="price">
+                                <p>1 600 ₽</p>
+                            </div>
+                            <button class="btn btn-pink" data-toggle="modal" data-target="#modal-order">Купить</button>
                         </div>
-                        <button class="btn btn-pink" data-toggle="modal" data-target="#modal-order">Купить</button>
                     </div>
                 </div>
                 <div class="item crook">
@@ -360,7 +439,9 @@
                             <img data-src="img/masterclass/crook/3.jpg" alt="">
                         </a>
                     </div>
-                    <img src="img/crook-sign.png" alt="" class="item-name">
+                    <div class="item-name">
+                        <img src="img/crook-sign.png" alt="">
+                    </div>
                     <div class="bottom clearfix">
                         <ul>
                             <li>
@@ -394,10 +475,12 @@
                                 </p>
                             </li>
                         </ul>
-                        <div class="price">
-                            <p>1 500 <span class="rub-sign">P</span></p>
+                        <div class="btn-panel">
+                            <div class="price">
+                                <p>1 600 ₽</p>
+                            </div>
+                            <button class="btn btn-pink" data-toggle="modal" data-target="#modal-order">Купить</button>
                         </div>
-                        <button class="btn btn-pink" data-toggle="modal" data-target="#modal-order">Купить</button>
                     </div>
                 </div>
                 <div class="item coat">
@@ -419,7 +502,9 @@
                             <img data-src="img/masterclass/coat/2.jpg" alt="">
                         </a>
                     </div>
-                    <img src="img/coat-sign.png" alt="" class="item-name">
+                    <div class="item-name">
+                        <img src="img/coat-sign.png" alt="">
+                    </div>
                     <div class="bottom clearfix">
                         <ul>
                             <li>
@@ -453,10 +538,12 @@
                                 </p>
                             </li>
                         </ul>
-                        <div class="price">
-                            <p>1 500 <span class="rub-sign">P</span></p>
+                        <div class="btn-panel">
+                            <div class="price">
+                                <p>1 600 ₽</p>
+                            </div>
+                            <button class="btn btn-pink" data-toggle="modal" data-target="#modal-order">Купить</button>
                         </div>
-                        <button class="btn btn-pink" data-toggle="modal" data-target="#modal-order">Купить</button>
                     </div>
                 </div>
                 <div class="item dress">
@@ -529,7 +616,9 @@
                             <img data-src="img/masterclass/dress/19.jpg" alt="">
                         </a>
                     </div>
-                    <img src="img/dress-sign.png" alt="" class="item-name">
+                    <div class="item-name">
+                        <img src="img/dress-sign.png" alt="">
+                    </div>
                     <div class="bottom clearfix">
                         <ul>
                             <li>
@@ -558,10 +647,12 @@
                                 </p>
                             </li>
                         </ul>
-                        <div class="price">
-                            <p>1 500 <span class="rub-sign">P</span></p>
+                        <div class="btn-panel">
+                            <div class="price">
+                                <p>1 600 ₽</p>
+                            </div>
+                            <button class="btn btn-pink" data-toggle="modal" data-target="#modal-order">Купить</button>
                         </div>
-                        <button class="btn btn-pink" data-toggle="modal" data-target="#modal-order">Купить</button>
                     </div>
                 </div>
                 <div class="item jacket">
@@ -589,7 +680,9 @@
                             <img data-src="img/masterclass/jacket/4.jpg" alt="">
                         </a>
                     </div>
-                    <img src="img/jacket-sign.png" alt="" class="item-name">
+                    <div class="item-name">
+                        <img src="img/jacket-sign.png" alt="">
+                    </div>
                     <div class="bottom clearfix">
                         <ul>
                             <li>
@@ -618,10 +711,12 @@
                                 </p>
                             </li>
                         </ul>
-                        <div class="price">
-                            <p>1 500 <span class="rub-sign">P</span></p>
+                        <div class="btn-panel">
+                            <div class="price">
+                                <p>1 600 ₽</p>
+                            </div>
+                            <button class="btn btn-pink" data-toggle="modal" data-target="#modal-order">Купить</button>
                         </div>
-                        <button class="btn btn-pink" data-toggle="modal" data-target="#modal-order">Купить</button>
                     </div>
                 </div>
                 <div class="item sindi">
@@ -640,7 +735,9 @@
                             <img data-src="img/masterclass/sindi/1.jpg" alt="">
                         </a>
                     </div>
-                    <img src="img/sindi-sign.png" alt="" class="item-name">
+                    <div class="item-name">
+                        <img src="img/sindi-sign.png" alt="">
+                    </div>
                     <div class="bottom clearfix">
                         <ul>
                             <li>
@@ -679,10 +776,12 @@
                                 </p>
                             </li>
                         </ul>
-                        <div class="price">
-                            <p>1 500 <span class="rub-sign">P</span></p>
+                        <div class="btn-panel">
+                            <div class="price">
+                                <p>1 600 ₽</p>
+                            </div>
+                            <button class="btn btn-pink" data-toggle="modal" data-target="#modal-order">Купить</button>
                         </div>
-                        <button class="btn btn-pink" data-toggle="modal" data-target="#modal-order">Купить</button>
                     </div>
                 </div>
                 <div class="item linda">
@@ -749,7 +848,9 @@
                             <img data-src="img/masterclass/linda/17.jpg" alt="">
                         </a>
                     </div>
-                    <img src="img/linda-sign.png" alt="" class="item-name">
+                    <div class="item-name">
+                        <img src="img/linda-sign.png" alt="">
+                    </div>
                     <div class="bottom clearfix">
                         <ul>
                             <li>
@@ -788,13 +889,15 @@
                                 </p>
                             </li>
                         </ul>
-                        <div class="price">
-                            <p>1 500 <span class="rub-sign">P</span></p>
+                        <div class="btn-panel">
+                            <div class="price">
+                                <p>1 600 ₽</p>
+                            </div>
+                            <button class="btn btn-pink" data-toggle="modal" data-target="#modal-order">Купить</button>
                         </div>
-                        <button class="btn btn-pink" data-toggle="modal" data-target="#modal-order">Купить</button>
                     </div>
                 </div>
-                <div class="item brigitte">
+                <div class="item large brigitte">
                     <div class="previews">
                         <a class="brigitte" href="img/masterclass/brigitte/model/1.jpg">
                             <img data-src="img/masterclass/brigitte/model/1.jpg" alt="">
@@ -834,7 +937,9 @@
                             <img data-src="img/masterclass/brigitte/9.jpg" alt="">
                         </a>
                     </div>
-                    <img src="img/brigitte-sign.png" alt="" class="item-name">
+                    <div class="item-name">
+                        <img src="img/brigitte-sign.png" alt="">
+                    </div>
                     <div class="bottom clearfix">
                         <ul>
                             <li>
@@ -878,10 +983,12 @@
                                 </p>
                             </li>
                         </ul>
-                        <div class="price">
-                            <p>1 500 <span class="rub-sign">P</span></p>
+                        <div class="btn-panel">
+                            <div class="price">
+                                <p>1 600 ₽</p>
+                            </div>
+                            <button class="btn btn-pink" data-toggle="modal" data-target="#modal-order">Купить</button>
                         </div>
-                        <button class="btn btn-pink" data-toggle="modal" data-target="#modal-order">Купить</button>
                     </div>
                 </div>
             </div>
@@ -909,7 +1016,7 @@
                         <img src="img/course-capsule.jpg" alt="">
                         <img src="img/old-price-8500.png" alt="" class="old-price">
                         <div class="price">
-                            <p class="txt1">8 000 <span class="rub-sign">P</span></p>
+                            <p class="txt1">8 000 ₽</p>
                             <p class="txt2">45 уроков (3 мес.)</p>
                         </div>
                     </div>
@@ -979,7 +1086,7 @@
                         <img src="img/course-base.jpg" alt="">
                         <img src="img/old-price.png" alt="" class="old-price">
                         <div class="price">
-                            <p class="txt1">16 500 <span class="rub-sign">P</span></p>
+                            <p class="txt1">16 500 ₽</p>
                             <p class="txt2">120 уроков (6 мес.)</p>
                         </div>
                         <div class="plus-icon"></div>
@@ -1085,7 +1192,7 @@
                         <img src="img/course-lingerie.jpg" alt="">
                         <img src="img/old-price-15000.png" alt="" class="old-price">
                         <div class="price">
-                            <p class="txt1">12 900 <span class="rub-sign">P</span></p>
+                            <p class="txt1">12 900 ₽</p>
                             <p class="txt2">35 уроков (4 мес.)</p>
                             <div class="plus-icon"></div>
                             <div class="gift-icon"></div>
@@ -1975,14 +2082,14 @@
                 </div>
                 <div class="price-container clearfix error">
                     <div class="promocode-activated">
-                        <p>1 500 <span class="rub-sign">P</span></p>
+                        <p>1 500 ₽</p>
                         <div class="code">
                             Промокод: 123ef123
                             <span class="btn-remove"></span>
                         </div>
                     </div>
                     <div class="price">
-                        <p>1 500 <span class="rub-sign">P</span></p>
+                        <p>1 500 ₽</p>
                     </div>
                     <div class="promocode form-group">
                         <input type="text" class="form-control" placeholder="Промо-код">
@@ -2019,7 +2126,7 @@
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body">
-                    <iframe width="800" height="450" src="https://www.youtube.com/embed/0ZoeVxJRDKE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe width="800" height="450" data-src="https://www.youtube.com/embed/0ZoeVxJRDKE" src="about:blank" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -2031,7 +2138,7 @@
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body">
-                    <iframe width="800" height="450" src="https://www.youtube.com/embed/GmTbMsseTTw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe width="800" height="450" data-src="https://www.youtube.com/embed/GmTbMsseTTw" src="about:blank" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -2043,7 +2150,7 @@
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body">
-                    <iframe width="800" height="450" src="https://www.youtube.com/embed/8zVAdqiiDag" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe width="800" height="450" data-src="https://www.youtube.com/embed/8zVAdqiiDag" src="about:blank" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -2054,7 +2161,7 @@
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body">
-                    <iframe width="800" height="450" src="https://www.youtube.com/embed/Haa_mMM2g5I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe width="800" height="450" data-src="https://www.youtube.com/embed/Haa_mMM2g5I" src="about:blank" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -2065,7 +2172,7 @@
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body">
-                    <iframe width="800" height="450" src="https://www.youtube.com/embed/FlW4S3MLzCo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe width="800" height="450" data-src="https://www.youtube.com/embed/FlW4S3MLzCo" src="about:blank" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -2076,7 +2183,7 @@
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body">
-                    <iframe width="800" height="450" src="https://www.youtube.com/embed/GS6HnYX4low" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe width="800" height="450" data-src="https://www.youtube.com/embed/GS6HnYX4low" src="about:blank" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -2459,6 +2566,64 @@
                     </div>
                     <button class="btn" data-dismiss="modal" aria-label="Close">Ознакомлен</button>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal Order On time-->
+    <div class="modal order" id="modal-order-ontime" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body pb0">
+                    <h3>КУПИТЬ МАСТЕР-КЛАСС</h3>
+                    <p class="order-name">
+                        <!--<img class="pic" src="img/crook-sign.png" alt="">-->
+                        <!--Могут быть два варианта названия - либо картинкой, если это Мастер-класс, либо текстом-->
+                        <span>Нижнее бельё</span>
+                    </p>
+                </div>
+                <div class="price-container clearfix ontime">
+                    <div class="ontime-block">
+                        <div class="months">
+                            <span>6</span>
+                            <span>месяцев</span>
+                        </div>
+                        <div class="price">
+                            <div class="circle-mult"></div>
+                            <p>1 400 ₽</p>
+                            <div class="circle-eq"></div>
+                        </div>
+                        <div class="total">
+                            <span>8 400 ₽</span>
+                            <span>итоговая сумма</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <input class="form-control text-center" placeholder="Ваше имя" type="text">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control text-center" placeholder="Ваш телефон" type="tel" maxlength="10">
+                        </div>
+
+                        <div class="form-group">
+                            <input class="form-check-input policy-check" type="checkbox" value="" id="policyCheck4">
+                            <label for="policyCheck4">Я соглашаюсь на обработку моих данных</label>
+                        </div>
+
+                        <button class="btn btn-pink disabled" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#modal-contact-success">Купить за 1400 руб/мес.</button>
+                    </form>
+                </div>
+                <div class="modal-body-footer credit-info">
+                    Рассрочка предоставляется банком-партнером АО «Тинькофф Банк»,
+                    погашение процентной ставки берет на себя Онлайн-Школа Шитья и Кроя Cut&Sew,
+                    клиент оплачивает только стоимость выбранного товара на протяжении 3-х или 6-ти месяцев,
+                    в зависимости от выбранного тарифа рассрочки.
+                </div>
+
             </div>
         </div>
     </div>

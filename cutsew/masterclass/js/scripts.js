@@ -190,7 +190,7 @@ $(function(){
     
     // Video autoplay
     var $iframeB5 = $('.block5').find('iframe'),
-        $srcIframeB5 = $iframeB5.attr('src'),
+        $srcIframeB5 = $iframeB5.attr('data-src'),
         $autoplay = '?autoplay=1';
     
     $('.block5 .btn-play').on('click', function(){
@@ -198,83 +198,7 @@ $(function(){
         $iframeB5.show();
         $(this).parent().hide();
     });
-    
-    // Modal Video autoplay & autostop
-    var $modalVideo = $('.modal-video'),
-        
-        $modalVideoFreeCourse = $('#modal-video-free-course'),
-        $srcModalVideoFreeCourse = $modalVideoFreeCourse.find('iframe').attr('src'),
-        
-        $modalVideoAbout = $('#modal-video-about'),
-        $srcModalVideoAbout = $modalVideoAbout.find('iframe').attr('src'),
-        
-        $modalVideoTatyanaArshinova = $('#modal-video-tatyana_arshinova'),
-        $srcModalVideoTatyanaArshinova = $modalVideoTatyanaArshinova.find('iframe').attr('src'),
-        
-        $modalVideoTatyanaBikovskaya = $('#modal-video-tatyana_bikovskaya'),
-        $srcModalVideoTatyanaBikovskaya = $modalVideoTatyanaBikovskaya.find('iframe').attr('src'),
-        
-        $modalVideoJuliaGuseva = $('#modal-video-julia_guseva'),
-        $srcModalVideoJuliaGuseva = $modalVideoJuliaGuseva.find('iframe').attr('src'),
-        
-        $modalVideoJanaBikovskaya = $('#modal-video-jana_bikovskaya'),
-        $srcModalVideoJanaBikovskaya = $modalVideoJanaBikovskaya.find('iframe').attr('src');
-    
-    
-    $modalVideo.on('show.bs.modal', function () {
-        
-        if ($(this).is($modalVideoFreeCourse)){
-            $modalVideoFreeCourse.find('iframe').attr('src', $srcModalVideoFreeCourse + $autoplay);
-        }
-        
-        if ($(this).is($modalVideoAbout)){
-            $modalVideoAbout.find('iframe').attr('src', $srcModalVideoAbout + $autoplay);
-        }
-        
-        if ($(this).is($modalVideoTatyanaArshinova)){
-            $modalVideoTatyanaArshinova.find('iframe').attr('src', $srcModalVideoTatyanaArshinova + $autoplay);
-        }
-        
-        if ($(this).is($modalVideoTatyanaBikovskaya)){
-            $modalVideoTatyanaBikovskaya.find('iframe').attr('src', $srcModalVideoTatyanaBikovskaya + $autoplay);
-        }
-        
-        if ($(this).is($modalVideoJuliaGuseva)){
-            $modalVideoJuliaGuseva.find('iframe').attr('src', $srcModalVideoJuliaGuseva + $autoplay);
-        }
-        
-        if ($(this).is($modalVideoJanaBikovskaya)){
-            $modalVideoJanaBikovskaya.find('iframe').attr('src', $srcModalVideoJanaBikovskaya + $autoplay);
-        }
-    });
-    
-    $modalVideo.on('hidden.bs.modal', function () {
-        console.log(23);
-        if ($(this).is($modalVideoFreeCourse)){
-            $modalVideoFreeCourse.find('iframe').attr("src", '');
-        }
-        
-        if ($(this).is($modalVideoAbout)){
-            $modalVideoAbout.find('iframe').attr("src", '');
-        }
-        
-        if ($(this).is($modalVideoTatyanaArshinova)){
-            $modalVideoTatyanaArshinova.find('iframe').attr("src", '');
-        }
-        
-        if ($(this).is($modalVideoTatyanaBikovskaya)){
-            $modalVideoTatyanaBikovskaya.find('iframe').attr("src", '');
-        }
-        
-        if ($(this).is($modalVideoJuliaGuseva)){
-            $modalVideoJuliaGuseva.find('iframe').attr("src", '');
-        }
-        
-        if ($(this).is($modalVideoJanaBikovskaya)){
-            $modalVideoJanaBikovskaya.find('iframe').attr("src", '');
-        }
-    });
-    
+
     // Colorbox
     // Masterclass Gallery
     function galleryMasterclassInit(name) {

@@ -16,6 +16,8 @@
     <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 <body>
+
+
     <div class="btn btn-up"></div>
     <div class="container-fluid block1 clearfix">
         <header class="clearfix">
@@ -59,11 +61,20 @@
                 </a>
             </div>
             <img src="img/block1-crook.png" alt="" class="item-picture">
-            <div class="item-order crook">
+            <div class="item-order">
                 <span>Мастер-класс</span>
                 <img src="img/crook-sign.png" alt="" class="item-name">
-                <div class="price">
-                    <p>1 500 <span class="rub-sign">P</span></p>
+                <div class="price-container promocode-activated">
+                    <div class="promocode-block" style="display: block;">
+                        <p><span class="product-price product-price-old">900</span> ₽</p>
+                        <div class="code">
+                            <span>Промокод:</span><span class="promo-code-value">1w23123</span>
+                            <span class="btn-remove" style="display: none;"></span>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <p>1 500 ₽</p>
+                    </div>
                 </div>
                 <button class="btn btn-pink" data-toggle="modal" data-target="#modal-order">Купить сейчас</button>
             </div>
@@ -89,10 +100,10 @@
                         </div>
                     </div>
                     <div class="price-element">
-                        <span>39000 <span class="rub-sign">P</span></span>
+                        <span>39000 ₽</span>
                     </div>
                     <div class="price-element">
-                        <span>1 800 <span class="rub-sign">P</span></span>
+                        <span>1 800 ₽</span>
                         <span>ткань + фурнитура</span>
                     </div>
                 </div>
@@ -112,10 +123,10 @@
                         </div>
                     </div>
                     <div class="price-element">
-                        <span>47000 <span class="rub-sign">P</span></span>
+                        <span>47000 ₽</span>
                     </div>
                     <div class="price-element">
-                        <span>1 800 <span class="rub-sign">P</span></span>
+                        <span>1 800 ₽</span>
                         <span>ткань + фурнитура</span>
                     </div>
                 </div>
@@ -135,10 +146,10 @@
                         </div>
                     </div>
                     <div class="price-element">
-                        <span>24000 <span class="rub-sign">P</span></span>
+                        <span>24000 ₽</span>
                     </div>
                     <div class="price-element">
-                        <span>1 800 <span class="rub-sign">P</span></span>
+                        <span>1 800 ₽</span>
                         <span>ткань + фурнитура</span>
                     </div>
                 </div>
@@ -242,7 +253,7 @@
         <h2 class="inverted">Узнай о процессе обучения за 1 минуту.</h2>
         <div class="video-container">
             <div class="video-wrapper">
-                <iframe src="https://youtu.be/GmTbMsseTTw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe data-src="https://youtu.be/GmTbMsseTTw" src="about:blank" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
             <a class="video">
                 <div class="btn-play"></div>
@@ -580,7 +591,7 @@
                 <span>Мастер-класс</span>
                 <img src="img/crook-sign.png" alt="" class="item-name">
                 <div class="price">
-                    <p>1 500 <span class="rub-sign">P</span></p>
+                    <p>1 500 ₽</p>
                 </div>
                 <button class="btn btn-pink" data-toggle="modal" data-target="#modal-order">Купить сейчас</button>
             </div>

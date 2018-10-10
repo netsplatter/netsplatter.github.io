@@ -148,6 +148,63 @@
     }
   }
 }
+.block1,
+.block9 {
+  .item-order {
+    .price-container {
+      .promocode-block {
+        display: none;
+      }
+      &.promocode-activated {
+        .promocode-block {
+          display: block;
+          background-color: #fff;
+          width: 90%;
+          height: 52px;
+          padding: 4px 125px 0 0;
+          margin: 17px 0 12px 0;
+          float: left;
+          p {
+            font-style: italic;
+            font-size: 24px;
+            color: #000;
+            font-weight: 700;
+            line-height: 28px;
+            &:before {
+              content: '';
+              background-color: #f77093;
+              width: 100px;
+              position: absolute;
+              top: 15px;
+              height: 2px;
+              left: 50%;
+              margin-left: -50px;
+              transform: rotate(4deg);
+            }
+          }
+          .code {
+            font-size: 10px;
+            color: #8e9d9b;
+            .btn-remove {
+              background: url(../img/sprites-extra.png) 0 0 no-repeat;
+              width: 22px;
+              height: 22px;
+              position: absolute;
+              cursor: pointer;
+              right: 10px;
+              top: -16px;
+            }
+          }
+        }
+        .price {
+          position: absolute;
+          top: -4px;
+          right: -12px;
+        }
+      }
+    }
+  }
+}
 
 //#b-compare
 .block-compare {
@@ -242,11 +299,6 @@
         }
         span {
           font-size: 28px;
-          .rub-sign {
-            &:after {
-              top: 8px;
-            }
-          }
           &:nth-of-type(2){
             display: block;
             font-size: 14px;
@@ -321,6 +373,7 @@
   .slider.item-slider {
     float: left;
     width: 350px;
+    min-height: 350px;
     .slick-dots {
       list-style-type: none;
       padding: 0;
@@ -1556,10 +1609,6 @@
             p {
               font-size: 40px;
               line-height: 76px;
-              .rub-sign:after {
-                top: -3px;
-                right: 8px;
-              }
             }
           }
           .btn {
@@ -1646,12 +1695,6 @@
       }
       span {
         font-size: 2vw;
-        .rub-sign {
-          &:after {
-            font-size: 1vw;
-            top: 9px;
-          }
-        }
         &:nth-of-type(2) {
           font-size: 1vw;
         }
@@ -2107,13 +2150,6 @@
           bottom: 90px;
           span {
             font-size: 6.5vw;
-            .rub-sign {
-              &:after {
-                font-size: 3.5vw;
-                top: 21px;
-                right: 5px;
-              }
-            }
             &:nth-of-type(2){
               font-size: 2.2vw;
               line-height: 1px;
@@ -2359,11 +2395,6 @@
       }
     }
   }
-  .block-compare {
-    .slider .item .price-element span .rub-sign:after {
-      top: 16px;
-    }
-  }
   .block3 {
     h2 {
       font-size: 32px;
@@ -2453,11 +2484,6 @@
       li:before {
         top: 4px;
       }
-    }
-  }
-  .block-compare {
-    .slider .item .price-element span .rub-sign:after {
-      top: 14px;
     }
   }
   .block4 {
@@ -2595,12 +2621,6 @@
         font-size: 28px;
       }
       .item-picture {
-        //left: auto;
-        //right: auto;
-        //top: auto;
-        //margin: 130px 0 0 0;
-        //position: relative;
-        //width: 85%;
         width: 300px;
         margin-left: -150px;
         margin-top: 4px;
@@ -2627,6 +2647,30 @@
           font-size: 18px;
           right: 25px;
           top: 15px;
+        }
+        .price-container {
+          &.promocode-activated {
+            .promocode-block {
+              height: 43px;
+              padding: 4px 125px 0 10px;
+            }
+            .price {
+              background-position: -5px -250px;
+              background-size: 800px;
+              width: 162px;
+              top: -12px;
+              p {
+                font-size: 23px;
+                line-height: 30px;
+              }
+            }
+            > p {
+              font-size: 24px;
+            }
+            .code {
+              top: -6px;
+            }
+          }
         }
         .btn {
           width: 100%;
@@ -2684,10 +2728,6 @@
         }
         .price-element:nth-of-type(4) {
           padding: 4px 0 8px 0;
-        }
-        .price-element span .rub-sign:after {
-          top: 11px;
-          right: 3px;
         }
       }
     }
@@ -2959,8 +2999,10 @@
   }
 }
 @media screen and (max-width: 340px){
-  .block-compare .slider .item .price-element span .rub-sign:after {
-    top: 9px;
+  .block1 .item-order .price-container.promocode-activated .promocode-block .code,
+  .block9 .item-order .price-container.promocode-activated .promocode-block .code {
+    font-size: 8px;
+    top: -4px;
   }
   .block8 {
     height: 500px;

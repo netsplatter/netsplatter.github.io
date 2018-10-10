@@ -87,16 +87,6 @@ a {
   display: inline-block;
   text-decoration: none!important;
 }
-.rub-sign {
-  position: relative;
-  &:after {
-    content: '—';
-    position: absolute;
-    font-size: 16px;
-    right: 2px;
-    top: 15px;
-  }
-}
 
 button,
 .btn,
@@ -346,11 +336,6 @@ button.btn {
     font-weight: 700;
     line-height: 24px;
     text-shadow: 0 2px 0 #30c4bf;
-    .rub-sign {
-      &:after {
-        top: 10px;
-      }
-    }
   }
 }
 .form-group {
@@ -1065,7 +1050,7 @@ button.btn {
       }
       .footer {
         text-align: center;
-        padding-bottom: 5px;
+        padding-bottom: 15px;
         .btn {
           padding: 0;
           -webkit-border-radius: 45px;
@@ -1075,26 +1060,8 @@ button.btn {
           height: 63px;
           font-size: 20px;
           font-weight: 500;
-        }
-        .download {
-          color: #446363;
-          text-decoration: underline!important;
-          font-size: 14px;
-          font-weight: 500;
-          line-height: 48px;
-          padding-left: 25px;
-          position: relative;
-          &:before {
-            content: '';
-            background: url(../img/sprites.png) -3px -283px no-repeat;
-            width: 17px;
-            height: 18px;
-            position: absolute;
-            left: 0;
-            top: 15px;
-          }
-          &:hover {
-            opacity: 0.7;
+          &.btn-on-time {
+            margin-top: 15px;
           }
         }
       }
@@ -1119,19 +1086,17 @@ button.btn {
           }
         }
         .footer {
-          padding-top: 40px;
-          padding-bottom: 15px;
-          .btn {
-            &:before {
-              content: '';
-              background: url(../img/courses-btn-bg.png) 0 0 no-repeat;
-              width: 400px;
-              height: 163px;
-              position: absolute;
-              left: -78px;
-              top: -53px;
-            }
-          }
+          //.btn {
+          //  &:before {
+          //    content: '';
+          //    background: url(../img/courses-btn-bg.png) 0 0 no-repeat;
+          //    width: 400px;
+          //    height: 163px;
+          //    position: absolute;
+          //    left: -78px;
+          //    top: -53px;
+          //  }
+          //}
         }
       }
       &.lingerie {
@@ -1237,7 +1202,9 @@ button.btn {
       background-position: -15px 0!important;
       float: left;
       width: 535px;
-      height: 1090px;
+      //height: 1090px;
+      //height: 1130px;
+      margin-bottom: 40px;
       .previews {
         margin: 450px 0 0 0;
         -webkit-border-radius: 10px;
@@ -1271,9 +1238,19 @@ button.btn {
       }
       .item-name {
         margin-top: 20px;
-        display: block;
+        position: relative;
+        height: 160px;
+        width: 55%;
+        img {
+          width: 100%;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+        }
       }
       .bottom {
+        height: 420px;
         ul {
           padding: 10px 0 0 0;
           margin-bottom: 20px;
@@ -1300,6 +1277,10 @@ button.btn {
             }
           }
         }
+        .btn-panel {
+          position: absolute;
+          bottom: 0;
+        }
         .price {
           float: left;
         }
@@ -1320,38 +1301,16 @@ button.btn {
       &:nth-child(even) {
         margin-left: 20px;
       }
-      &.crook,
-      &.coat,
-      &.dress,
-      &.sindi,
-      &.brigitte {
-        .previews {
-          a {
-            img {
-              height: auto;
-              width: 100%;
-            }
-          }
-        }
+      &.pantsuit {
+        background: url(../img/pantsuit.png) 0 -145px no-repeat!important;
       }
       &.swimsuit-separate {
         background: url(../img/masterclass/swimsuit-separate/main.png) 5px 0 no-repeat!important;
         background-size: 500px!important;
-        height: 1125px;
-        .item-name {
-          height: 155px;
-        }
       }
       &.swimsuit-one-piece {
         background: url(../img/masterclass/swimsuit-one-piece/main.png) 0 0 no-repeat!important;
         background-size: 500px!important;
-        height: 1125px;
-        .item-name {
-          height: 155px;
-        }
-        .bottom ul {
-          min-height: 280px;
-        }
       }
       &.crook {
         background: url(../img/slide1.jpg) no-repeat;
@@ -1365,62 +1324,29 @@ button.btn {
       }
       &.jacket {
         background: url(../img/slide4.jpg) no-repeat;
-        ul {
-          margin-top: 42px;
-          min-height: 190px;
-        }
-        .item-name {
-          margin-bottom: 35px;
-        }
-        .previews {
-          a {
-            &:nth-of-type(1),
-            &:nth-of-type(2) {
-              img {
-                height: auto;
-                width: 100%;
-              }
-            }
-            &:nth-of-type(3) {
-              img {
-                height: 100%;
-                width: auto;
-                left: -32px;
-              }
-            }
-          }
-        }
       }
       &.sindi {
         background: url(../img/slide5.jpg) no-repeat;
       }
       &.linda {
         background: url(../img/slide6.jpg) no-repeat;
-        ul {
-          margin-top: 19px;
-        }
       }
       &.brigitte {
         background: url(../img/slide7.jpg) no-repeat;
-        width: 100%;
         background-size: 535px!important;
+      }
+      &.large {
+        width: 100%;
         margin-top: 50px;
         height: 590px;
         .item-name {
+          width: 400px;
           position: absolute;
           top: 0;
           left: 580px;
         }
-        .previews {
-          a {
-            &:nth-of-type(3) {
-              img {
-                height: 100%;
-                width: auto;
-                //left: -32px;
-              }
-            }
-          }
+        .bottom {
+          height: auto;
         }
         ul {
           position: absolute;
@@ -1951,10 +1877,6 @@ button.btn {
               opacity: 1;
             }
           }
-          &.anzhelika_bagdasarova {
-            height: 193px;
-            overflow: hidden;
-          }
         }
       }
     }
@@ -1966,11 +1888,26 @@ button.btn {
   background: url(../img/block12-bg.jpg);
   height: 638px;
   padding: 50px 0;
+  z-index: 2;
+  &.overall {
+    .video-container {
+      background: url(../img/block12-video-bg.png) no-repeat;
+    }
+  }
+  &.skirt {
+    .video-container {
+      background: url(../img/block12-video-bg-v2.png) no-repeat;
+    }
+  }
+  &.additional {
+    height: 730px;
+    padding-top: 140px;
+    z-index: 1;
+  }
   .wrapper {
     height: 100%;
   }
   .video-container {
-    background: url(../img/block12-video-bg.png) no-repeat;
     position: absolute;
     width: 588px;
     height: 509px;
@@ -2766,7 +2703,7 @@ button.btn {
     }
   }
   .block8 {
-    height: 4030px;
+    height: 4590px;
     h2 {
       font-size: 50px;
     }
@@ -2776,7 +2713,7 @@ button.btn {
       -o-transform: scale(0.6);
       -ms-transform: scale(0.6);
       transform: scale(0.6);
-      margin-top: -1180px;
+      margin-top: -1500px;
       position: absolute;
       left: 50%;
       width: 1110px;
@@ -2785,9 +2722,10 @@ button.btn {
       .item.swimsuit-separate,
       .item.swimsuit-one-piece {
         height: 1280px;
-        margin-bottom: 90px;
+        margin-bottom: 160px;
         .bottom {
           text-align: center;
+          height: 620px;
           ul {
             text-align: left;
             margin-bottom: 20px;
@@ -2806,10 +2744,6 @@ button.btn {
             p {
               font-size: 40px;
               line-height: 76px;
-              .rub-sign:after {
-                top: -3px;
-                right: 8px;
-              }
             }
           }
           .btn {
@@ -2836,7 +2770,7 @@ button.btn {
             }
           }
         }
-        &.brigitte {
+        &.large {
           min-height: 730px;
           height: 730px;
           margin-bottom: 50px;
@@ -2986,6 +2920,11 @@ button.btn {
       }
     }
   }
+  .block12 {
+    &.additional {
+
+    }
+  }
 }
 @media screen and (max-width: 1050px){
   .maintenance-page {
@@ -3082,6 +3021,9 @@ button.btn {
   }
   .block12 {
     height: 1260px;
+    &.additional {
+      height: 1220px;
+    }
     .content-block {
       width: 650px;
       position: absolute;
@@ -3412,14 +3354,14 @@ button.btn {
     font-size: 45px;
   }
   .block8 {
-    height: 2730px;
+    height: 3160px;
     .master-classes {
       -moz-transform: scale(0.4);
       -webkit-transform: scale(0.4);
       -o-transform: scale(0.4);
       -ms-transform: scale(0.4);
       transform: scale(0.4);
-      margin-top: -1850px;
+      margin-top: -2200px;
     }
   }
   .block9 {
@@ -3452,6 +3394,13 @@ button.btn {
       margin-top: -135px;
       .btn-container {
         bottom: -638px;
+      }
+    }
+    &.additional {
+      padding-top: 100px;
+      height: 730px;
+      .wrapper .btn-container {
+        bottom: -600px;
       }
     }
   }
@@ -3521,7 +3470,6 @@ button.btn {
     }
   }
   .block9 {
-    //height: 820px;
     .image-container {
       -moz-transform: scale(0.6);
       -webkit-transform: scale(0.6);
@@ -3760,7 +3708,7 @@ button.btn {
     }
   }
   .block8 {
-    height: 2060px;
+    height: 2380px;
     padding-top: 70px;
     h2 {
       font-size: 40px;
@@ -3771,11 +3719,10 @@ button.btn {
       -o-transform: scale(0.3);
       -ms-transform: scale(0.3);
       transform: scale(0.3);
-      margin-top: -2170px;
+      margin-top: -2570px;
     }
   }
   .block9 {
-    //height: 690px;
     h2 {
       font-size: 28px;
     }
@@ -3799,6 +3746,13 @@ button.btn {
       margin-top: -155px;
       .btn-container {
         bottom: -863px;
+      }
+    }
+    &.additional {
+      padding-top: 100px;
+      height: 520px;
+      .wrapper .btn-container {
+        bottom: -800px;
       }
     }
   }
@@ -4095,14 +4049,14 @@ button.btn {
     }
   }
   .block8 {
-    height: 1930px;
+    height: 2240px;
     .master-classes {
       -moz-transform: scale(0.28);
       -webkit-transform: scale(0.28);
       -o-transform: scale(0.28);
       -ms-transform: scale(0.28);
       transform: scale(0.28);
-      margin-top: -2235px;
+      margin-top: -2640px;
     }
   }
 }

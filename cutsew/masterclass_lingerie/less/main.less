@@ -133,6 +133,16 @@ button.btn {
         margin: 0 0 10px 0;
       }
     }
+    .error-summary {
+      p {
+        margin-bottom: 12px;
+      }
+      ul {
+        li {
+          color: #344a4a;
+        }
+      }
+    }
     .form-wrapper {
       padding: 0 50px;
       .form-group {
@@ -420,7 +430,34 @@ button.btn {
     .h-mobile {
       display: none;
     }
-    span {
+    .old-price-container {
+      position: absolute;
+      right: 520px;
+      top: 176px;
+      .old-price {
+        font-size: 34px;
+        font-weight: 600;
+        font-style: italic;
+        display: block;
+        &:before {
+          content: '';
+          background-color: #f77093;
+          width: 90%;
+          position: absolute;
+          top: 25px;
+          height: 3px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          transform: rotate(4deg);
+        }
+      }
+      .promo-code {
+        font-size: 17px;
+        color: #242a2a80;
+      }
+    }
+    > span {
       position: absolute;
       font-style: italic;
       color: #fff;
@@ -924,6 +961,32 @@ button.btn {
         p {
           font-size: 24px;
         }
+        &.promo {
+          padding-top: 5px;
+          .old-price {
+            color: #305f58;
+            font-size: 14px;
+            font-weight: 600;
+            font-style: italic;
+            position: relative;
+            &:before {
+              content: '';
+              background-color: #f77093;
+              width: 110%;
+              position: absolute;
+              top: 9px;
+              height: 2px;
+              left: 0;
+              right: 0;
+              margin: auto;
+              transform: rotate(4deg);
+            }
+          }
+          p {
+            font-size: 20px;
+            line-height: 10px;
+          }
+        }
       }
       .btn {
         float: right;
@@ -1332,7 +1395,23 @@ button.btn {
           display: inline-block;
         }
       }
-      span {
+      .old-price-container {
+        top: 296px;
+        right: 50%;
+        margin-right: 42px;
+        .old-price {
+          font-size: 26px;
+          line-height: 32px;
+          &:before {
+            width: 80%;
+            top: 15px;
+          }
+        }
+        .promo-code {
+          font-size: 14px;
+        }
+      }
+      > span {
         font-size: 30px;
         right: 50%;
         margin-right: 62px;
@@ -1487,7 +1566,7 @@ button.btn {
 }
 @media screen and (max-width: 1000px){
   .block9 {
-    height: 930px;
+    height: 1130px;
     overflow: hidden;
     .footer-badges {
       display: none;
@@ -1600,7 +1679,7 @@ button.btn {
 }
 @media screen and (max-width: 780px){
   .block9 {
-    height: 630px;
+    height: 830px;
     .contact-form {
       -moz-transform: scale(0.7);
       -webkit-transform: scale(0.7);
@@ -1708,7 +1787,23 @@ button.btn {
       .h-sign {
         width: 420px;
       }
-      span {
+      .old-price-container {
+        top: 194px;
+        margin-right: 20px;
+        .old-price {
+          font-size: 18px;
+          line-height: 14px;
+          &:before {
+            height: 2px;
+            width: 75%;
+            top: 8px;
+          }
+        }
+        .promo-code {
+          font-size: 10px;
+        }
+      }
+      > span {
         font-size: 22px;
         margin-right: 33px;
         top: 150px;
@@ -2012,6 +2107,9 @@ button.btn {
         }
       }
     }
+    .lingerie1 {
+      left: -20px;
+    }
     .lingerie2 {
       margin-top: calc(~"52vw * 2");
     }
@@ -2068,7 +2166,21 @@ button.btn {
       .h-sign {
         width: 320px;
       }
-      span {
+      .old-price-container {
+        top: 152px;
+        margin-right: 12px;
+        .old-price {
+          font-size: 14px;
+          line-height: 6px;
+          &:before {
+            top: 3px;
+          }
+        }
+        .promo-code {
+          font-size: 8px;
+        }
+      }
+      > span {
         font-size: 16px;
         margin-right: 26px;
         top: 116px;
@@ -2138,7 +2250,7 @@ button.btn {
     h2 {
       font-size: 28px;
     }
-    height: 445px;
+    height: 600px;
     .contact-form {
       -moz-transform: scale(0.47);
       -webkit-transform: scale(0.47);
@@ -2223,7 +2335,20 @@ button.btn {
       .h-sign {
         width: 280px;
       }
-      span {
+      .old-price-container {
+        top: 136px;
+        .old-price {
+          font-size: 12px;
+          line-height: 2px;
+          &:before {
+            top: 1px;
+          }
+        }
+        .promo-code {
+          font-size: 7px;
+        }
+      }
+      > span {
         font-size: 14px;
         margin-right: 24px;
         top: 101px;

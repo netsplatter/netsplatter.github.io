@@ -309,7 +309,7 @@ $(function(){
     
     // Video autoplay
     var $iframeB5 = $('.block5').find('iframe'),
-        $srcIframeB5 = $iframeB5.attr('src'),
+        $srcIframeB5 = $iframeB5.attr('data-src'),
         $autoplay = '?autoplay=1';
     
     $('.block5 .btn-play').on('click', function(){
@@ -322,22 +322,22 @@ $(function(){
     var $modalVideo = $('.modal-video'),
         
         $modalVideoFreeCourse = $('#modal-video-free-course'),
-        $srcModalVideoFreeCourse = $modalVideoFreeCourse.find('iframe').attr('src'),
+        $srcModalVideoFreeCourse = $modalVideoFreeCourse.find('iframe').attr('data-src'),
         
         $modalVideoAbout = $('#modal-video-about'),
-        $srcModalVideoAbout = $modalVideoAbout.find('iframe').attr('src'),
+        $srcModalVideoAbout = $modalVideoAbout.find('iframe').attr('data-src'),
         
         $modalVideoTatyanaArshinova = $('#modal-video-tatyana_arshinova'),
-        $srcModalVideoTatyanaArshinova = $modalVideoTatyanaArshinova.find('iframe').attr('src'),
+        $srcModalVideoTatyanaArshinova = $modalVideoTatyanaArshinova.find('iframe').attr('data-src'),
         
         $modalVideoTatyanaBikovskaya = $('#modal-video-tatyana_bikovskaya'),
-        $srcModalVideoTatyanaBikovskaya = $modalVideoTatyanaBikovskaya.find('iframe').attr('src'),
+        $srcModalVideoTatyanaBikovskaya = $modalVideoTatyanaBikovskaya.find('iframe').attr('data-src'),
         
         $modalVideoJuliaGuseva = $('#modal-video-julia_guseva'),
-        $srcModalVideoJuliaGuseva = $modalVideoJuliaGuseva.find('iframe').attr('src'),
+        $srcModalVideoJuliaGuseva = $modalVideoJuliaGuseva.find('iframe').attr('data-src'),
         
         $modalVideoJanaBikovskaya = $('#modal-video-jana_bikovskaya'),
-        $srcModalVideoJanaBikovskaya = $modalVideoJanaBikovskaya.find('iframe').attr('src');
+        $srcModalVideoJanaBikovskaya = $modalVideoJanaBikovskaya.find('iframe').attr('data-src');
     
     
     $modalVideo.on('show.bs.modal', function () {
@@ -345,7 +345,7 @@ $(function(){
         if ($(this).is($modalVideoFreeCourse)){
             $modalVideoFreeCourse.find('iframe').attr('src', $srcModalVideoFreeCourse + $autoplay);
         }
-        
+
         if ($(this).is($modalVideoAbout)){
             $modalVideoAbout.find('iframe').attr('src', $srcModalVideoAbout + $autoplay);
         }
@@ -368,29 +368,29 @@ $(function(){
     });
     
     $modalVideo.on('hidden.bs.modal', function () {
-        console.log(23);
+
         if ($(this).is($modalVideoFreeCourse)){
-            $modalVideoFreeCourse.find('iframe').attr("src", '');
+            $modalVideoFreeCourse.find('iframe').attr('src', 'about:blank');
         }
-        
+
         if ($(this).is($modalVideoAbout)){
-            $modalVideoAbout.find('iframe').attr("src", '');
+            $modalVideoAbout.find('iframe').attr('src', 'about:blank');
         }
         
         if ($(this).is($modalVideoTatyanaArshinova)){
-            $modalVideoTatyanaArshinova.find('iframe').attr("src", '');
+            $modalVideoTatyanaArshinova.find('iframe').attr('src', 'about:blank');
         }
         
         if ($(this).is($modalVideoTatyanaBikovskaya)){
-            $modalVideoTatyanaBikovskaya.find('iframe').attr("src", '');
+            $modalVideoTatyanaBikovskaya.find('iframe').attr('src', 'about:blank');
         }
         
         if ($(this).is($modalVideoJuliaGuseva)){
-            $modalVideoJuliaGuseva.find('iframe').attr("src", '');
+            $modalVideoJuliaGuseva.find('iframe').attr('src', 'about:blank');
         }
         
         if ($(this).is($modalVideoJanaBikovskaya)){
-            $modalVideoJanaBikovskaya.find('iframe').attr("src", '');
+            $modalVideoJanaBikovskaya.find('iframe').attr('src', 'about:blank');
         }
     });
     
