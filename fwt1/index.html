@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=1" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />	
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<!--[if lt IE 9]>
+    	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+     	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<!-- MAP SETTINGS -->
+<script>
+  function initialize() {
+    var mapCanvas = document.getElementById('map');
+    var mapOptions = {
+      center: new google.maps.LatLng(25.201139, 55.284485),
+      zoom: 14,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      disableDefaultUI: true
+    }
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<body>
+
+	<!-- HEADER SECTION -->
+	<header class="contacts clearfix" id="home">
+		<div class="wrapper">
+			<a href="#" class="phone">050 555 5555</a>
+			<a href="#" class="email">email@futureworktech.net</a>
+			<a href="#" class="fa fa-linkedin"></a>
+			<a href="#" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-facebook"></a>
+		</div>
+	</header>
+	<nav id="mainmenu">
+		<div class="wrapper">
+			<a href="#" class="logo">
+				<img src="images/main-logo.png" alt="">
+			</a>
+			<ul class="navbar-nav nav pull-right">
+				<li class="active"><a href="#home">Home</a></li>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- CONTENT SECTION -->
+	<!-- BLOCK 1 -->
+	<div class="container-fluid block1">	
+		<div class="slider background-slider">
+			<div class="slide slide1">
+				<img src="images/bg-slide1.jpg" alt="">
+				<div class="text-box">
+					<h1>Hello World!</h1>
+					<h2>Welcome to <span>Future Work Tech</span></h2>
+					<p>
+						A full-service IT Networking solutions company known 
+						for our efficiency and commitment in finding and 
+						delivering the ideal IT solutions for a range 
+						of customers across the industries.
+					</p>
+				</div>
+			</div>
+			<div class="slide slide2">
+				<img src="images/bg-slide2.jpg" alt="">
+				<div class="text-box">
+					<h2>State of the art technologies</h2>
+					<p>
+						Always ahead of competition with High quality Hardware infrastructure, 
+						Software technologies & Maintenance assistance
+					</p>
+				</div>
+			</div>
+			<div class="slide slide3">
+				<img src="images/bg-slide3.jpg" alt="">			
+				<div class="text-box">
+					<h2>Network Solutions</h2>
+					<p>
+						Everything from Design to Implementation that too ensuring high
+						security with reliable IT infrastructure at an affordable price.
+						YOU name it, WE provide it!
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="divider">
+			<h3>We Are Perfect for Your Needs</h3>
+			<img src="images/divider.png" alt="">
+		</div>
+	</div>
+
+	<!-- BLOCK 2 -->
+	<div class="container-fluid block2" id="about">
+		<div class="wrapper">
+			<h2>Who We Are?</h2>
+			<p>
+				Simply put, we are an expert team with vast experience in IT sales, service and architecture experience.
+			</p>
+			<div class="line"></div>
+		</div>	
+	</div>
+
+	<!-- BLOCK 3 -->
+	<div class="container-fluid block3">
+		<div class="wrapper">
+			<p>
+				FWT, work with its clients through a conjunction of well-structured business and technical expertise, an extensive knowledge of today’s technologies. We also take pride in our mature, highly capable delivery and services infrastructure facilities. 
+			</p>
+			<p>
+				At FWT, we ensure to develop a long-term relationship with you and will do everything we can, to earn and keep your trust. We understand your time/effort/mental pressures in switching from one service provider to another just to find the best solution for your business. Hence, we forge close working relationships with all our customers. As their trusted partner we ensure that we’re always ready to exceed their networking expectations, simultaneously providing a sustainable IT solutions with reduce the total cost of ownership (TCO). 
+			</p>
+			<p>
+				We encourage success through mutual benefit.
+			</p>
+			<p>
+				Over the years, our innovative connectivity solutions have helped to drive our customers’ networks forward, helped to drive their businesses to new levels of success. Services provided by ‘the-best-in-class’ team have been deployed by several hundred service providers and thousands of enterprises.  We’re creating new opportunities for tomorrow’s networks, a new vision for a connected world. 
+			</p>
+		</div>
+	</div>
+
+	<!-- BLOCK 4 -->
+	<div class="container-fluid block4" id="services">
+		<div class="slider content-slider">
+			<div class="slide">
+				<img src="images/Services-slide1.png" alt="">
+			</div>
+			<div class="slide">
+				<img src="images/Services-slide2.png" alt="">
+			</div>
+		</div>
+	</div>
+
+	<!-- BLOCK 5 -->
+	<div class="container-fluid block5" id="contact">
+		<div class="wrapper">
+			<h2>Contact Us</h2>
+			<p>
+				Have a question about IT services that's been bothering you for a while? Need a new network solution? Reach out to us.
+			</p>
+			<div class="line"></div>
+		</div>
+		<div class="map-container">
+			<div class="info-block">
+				<p class="location">
+					<a href="#">121, Location, Dubai, UAE 00001</a>
+				</p>
+				<p class="mail">
+					<a href="#">info@futureworktech.net</a>
+				</p>
+				<p class="phone">
+					<a href="#">050 555 1234</a>
+					<br>
+					<a href="#">050 555 1235</a>
+				</p>
+			</div>
+			<div id="map"></div>			
+		</div>
+	</div>
+
+	<!-- FOOTER SECTION -->
+	<footer>
+		<div class="wrapper">
+			<span class="pull-left">Ⓒ Future Work Tech 2015, All Rights Reserved</span>
+			<span class="pull-right">Website designed by Smartfolks Interactive</span>
+		</div>
+	</footer>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
