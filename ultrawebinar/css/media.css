@@ -1,0 +1,8 @@
+@media(max-width: 1678px) {
+  // .wrapper {
+  //  padding: 0;
+  // }
+  .navbar-brand {
+    display: none;
+  }
+}
