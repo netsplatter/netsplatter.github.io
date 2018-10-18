@@ -299,6 +299,7 @@ nav.fixed_nav {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
+  padding: 0;
 }
 .block4 .slider.content-slider .slick-dots li.slick-active button {
   background: #F39C12;
