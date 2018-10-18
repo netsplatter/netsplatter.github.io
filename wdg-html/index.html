@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</head>
+<body>
+<div class="main-wrapper main-page">
+    <header>
+        <div class="wrapper">
+            <a href="#" class="logo"></a>
+            <!--<div class="language-switch">
+                <a href="#" class="active">Русский</a>
+                <a href="#">English</a>
+            </div>-->
+            <button class="btn burger" id="menu_switch"></button>
+            <div class="navbar">
+                <div class="btn order to-form" data-toggle="modal" data-target="#modal-callback"><a href="#">ЗАКАЗАТЬ РАЗРАБОТКУ</a></div>
+                <!--<ul>
+                    <li class="active nav_link">
+                        <a href="#portfolio">Наши работы</a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="#about">Кто мы?</a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="#about">Клиенты</a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="#about">Отзывы</a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="#contacts">Контакты</a>
+                    </li>
+                </ul>-->
+            </div>
+            <div class="info-block">
+                <a href="#" class="email">info@webdevgroup.ru</a>
+                <a href="#" class="phone">+7 (495) 108-73-56</a>
+            </div>
+        </div>
+    </header>
+    <header class="mobile">
+        <div class="wrapper">
+            <div class="dropdown">
+                <button class="btn burger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
+                <div class="dropdown-menu sidenav">
+                    <!--<ul>
+                        <li class="active nav_link">
+                            <a href="#portfolio_mobile">Наши работы</a>
+                        </li>
+                        <li class="nav_link">
+                            <a href="#about">Кто мы?</a>
+                        </li>
+                        <li class="nav_link">
+                            <a href="#about">Клиенты</a>
+                        </li>
+                        <li class="nav_link">
+                            <a href="#about">Отзывы</a>
+                        </li>
+                        <li class="nav_link">
+                            <a href="#contacts_mobile">Контакты</a>
+                        </li>
+                    </ul>-->
+                    <div class="info-block">
+                        <a href="#" class="email">info@webdevgroup.ru</a>
+                        <a href="#" class="phone">+7 (495) 108-73-56</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="logo"></a>
+            <!--<div class="language-switch">
+                <a href="#">Русский</a>
+                <a href="#" class="active">English</a>
+            </div>-->
+        </div>
+    </header>
+    <div class="container-fluid block1">
+        <div class="color-overlay">
+            <div class="main-logo-container">
+                <h1>WEB DEVELOPMENT GROUP...</h1>
+                <div class="icon icon-search"></div>
+                <div class="btn" data-toggle="modal" data-target="#modal-contact"><a href="#">Заказать разработку</a></div>
+            </div>
+        </div>
+    </div>
+    <!--<div class="container-fluid block2" id="portfolio">
+        <div id="portfolio_mobile" class="row clearfix"></div>
+        <div class="wrapper clearfix">
+            <div class="btn btn-nav nav_link">
+                <a href="#portfolio"></a>
+            </div>
+            <div class="portfolio-container row">
+                <div class="item clearfix">
+                    <h3>
+                        НАШИ<br>
+                        <span>РАБОТЫ</span>
+                    </h3>
+                    <div class="cloud-item">bitrix24</div>
+                    <div class="cloud-item">Интернет-магазин</div>
+                    <div class="cloud-item">Банкинг</div>
+                    <div class="cloud-item clear"></div>
+                    <div class="cloud-item">Метрика</div>
+                    <div class="cloud-item">Интернет-магазин</div>
+                    <div class="cloud-item">bitrix24</div>
+                    <div class="cloud-item active">Метрика</div>
+                    <div class="cloud-item">Банкинг</div>
+                    <div class="cloud-item">Реклама</div>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="img/kb.jpg" alt="">
+                    </a>
+                    <div class="info-block">
+                        <div class="count"><span>01</span></div>
+                        <h4>
+                            <a href="#">BIDFOX.RU</a>
+                            <span class="date">01.02.2017</span>
+                        </h4>
+                        <p>
+                            Сервис автоматического размещения рекламы в группах
+                            социальных сетей.
+                        </p>
+                    </div>
+                </div>
+                <div class="item size-lg pull-right">
+                    <a href="#">
+                        <img src="img/bidfox.jpg" alt="">
+                    </a>
+                    <div class="info-block">
+                        <div class="count"><span>04</span></div>
+                        <h4>
+                            <a href="#">BIDFOX.RU</a>
+                            <span class="date">01.02.2017</span>
+                        </h4>
+                        <p>
+                            Сервис автоматического размещения рекламы в группах
+                            социальных сетей.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="img/man.jpg" alt="">
+                    </a>
+                    <div class="info-block">
+                        <div class="count"><span>02</span></div>
+                        <h4>
+                            <a href="#">BIDFOX.RU</a>
+                            <span class="date">01.02.2017</span>
+                        </h4>
+                        <p>
+                            Сервис автоматического размещения рекламы в группах
+                            социальных сетей.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="img/moto.jpg" alt="">
+                    </a>
+                    <div class="info-block">
+                        <div class="count"><span>03</span></div>
+                        <h4>
+                            <a href="#">BIDFOX.RU</a>
+                            <span class="date">01.02.2017</span>
+                        </h4>
+                        <p>
+                            Сервис автоматического размещения рекламы в группах
+                            социальных сетей.
+                        </p>
+                    </div>
+                </div>
+                <div class="item size-lg">
+                    <a href="#">
+                        <img src="img/fish.jpg" alt="">
+                    </a>
+                    <div class="info-block">
+                        <div class="count"><span>01</span></div>
+                        <h4>
+                            <a href="#">BIDFOX.RU</a>
+                            <span class="date">01.02.2017</span>
+                        </h4>
+                        <p>
+                            Сервис автоматического размещения рекламы в группах
+                            социальных сетей.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="img/arm.jpg" alt="">
+                    </a>
+                    <div class="info-block">
+                        <div class="count"><span>01</span></div>
+                        <h4>
+                            <a href="#">BIDFOX.RU</a>
+                            <span class="date">01.02.2017</span>
+                        </h4>
+                        <p>
+                            Сервис автоматического размещения рекламы в группах
+                            социальных сетей.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="img/buildings.jpg" alt="">
+                    </a>
+                    <div class="info-block">
+                        <div class="count"><span>01</span></div>
+                        <h4>
+                            <a href="#">BIDFOX.RU</a>
+                            <span class="date">01.02.2017</span>
+                        </h4>
+                        <p>
+                            Сервис автоматического размещения рекламы в группах
+                            социальных сетей.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="img/coffee.jpg" alt="">
+                    </a>
+                    <div class="info-block">
+                        <div class="count"><span>01</span></div>
+                        <h4>
+                            <a href="#">BIDFOX.RU</a>
+                            <span class="date">01.02.2017</span>
+                        </h4>
+                        <p>
+                            Сервис автоматического размещения рекламы в группах
+                            социальных сетей.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="img/whiteroom.jpg" alt="">
+                    </a>
+                    <div class="info-block">
+                        <div class="count"><span>01</span></div>
+                        <h4>
+                            <a href="#">BIDFOX.RU</a>
+                            <span class="date">01.02.2017</span>
+                        </h4>
+                        <p>
+                            Сервис автоматического размещения рекламы в группах
+                            социальных сетей.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="btn btn-nav bottom nav_link">
+                <a href="#about"></a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid block3" id="about">
+        <div class="wrapper">
+            <div class="content-container">
+                <div class="employees-block">
+                    <div class="item">
+                        <img src="img/employee1.jpg" alt="">
+                        <div class="info">i</div>
+                        <div class="popup-block">
+                            <h4>Альберт Эйнштейн</h4>
+                            <p>
+                                Ведущий физик, участник "манхеттенского проекта". Один из изобретателей ядерной бомбы.
+                                Помимо разрушительных изобретений сделал немало очень важных открытий в области физики.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/employee2.jpg" alt="">
+                        <div class="info">i</div>
+                        <div class="popup-block">
+                            <h4>Альберт Эйнштейн</h4>
+                            <p>
+                                Ведущий физик, участник "манхеттенского проекта". Один из изобретателей ядерной бомбы.
+                                Помимо разрушительных изобретений сделал немало очень важных открытий в области физики.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/employee3.jpg" alt="">
+                        <div class="info">i</div>
+                        <div class="popup-block">
+                            <h4>Альберт Эйнштейн</h4>
+                            <p>
+                                Ведущий физик, участник "манхеттенского проекта". Один из изобретателей ядерной бомбы.
+                                Помимо разрушительных изобретений сделал немало очень важных открытий в области физики.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/employee4.jpg" alt="">
+                        <div class="info">i</div>
+                        <div class="popup-block">
+                            <h4>Альберт Эйнштейн</h4>
+                            <p>
+                                Ведущий физик, участник "манхеттенского проекта". Один из изобретателей ядерной бомбы.
+                                Помимо разрушительных изобретений сделал немало очень важных открытий в области физики.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/employee5.jpg" alt="">
+                        <div class="info">i</div>
+                        <div class="popup-block">
+                            <h4>Альберт Эйнштейн</h4>
+                            <p>
+                                Ведущий физик, участник "манхеттенского проекта". Один из изобретателей ядерной бомбы.
+                                Помимо разрушительных изобретений сделал немало очень важных открытий в области физики.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/employee6.jpg" alt="">
+                        <div class="info">i</div>
+                        <div class="popup-block">
+                            <h4>Альберт Эйнштейн</h4>
+                            <p>
+                                Ведущий физик, участник "манхеттенского проекта". Один из изобретателей ядерной бомбы.
+                                Помимо разрушительных изобретений сделал немало очень важных открытий в области физики.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/employee1.jpg" alt="">
+                        <div class="info">i</div>
+                        <div class="popup-block">
+                            <h4>Альберт Эйнштейн</h4>
+                            <p>
+                                Ведущий физик, участник "манхеттенского проекта". Один из изобретателей ядерной бомбы.
+                                Помимо разрушительных изобретений сделал немало очень важных открытий в области физики.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/employee2.jpg" alt="">
+                        <div class="info">i</div>
+                        <div class="popup-block">
+                            <h4>Альберт Эйнштейн</h4>
+                            <p>
+                                Ведущий физик, участник "манхеттенского проекта". Один из изобретателей ядерной бомбы.
+                                Помимо разрушительных изобретений сделал немало очень важных открытий в области физики.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/employee3.jpg" alt="">
+                        <div class="info">i</div>
+                        <div class="popup-block">
+                            <h4>Альберт Эйнштейн</h4>
+                            <p>
+                                Ведущий физик, участник "манхеттенского проекта". Один из изобретателей ядерной бомбы.
+                                Помимо разрушительных изобретений сделал немало очень важных открытий в области физики.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/employee4.jpg" alt="">
+                        <div class="info">i</div>
+                        <div class="popup-block">
+                            <h4>Альберт Эйнштейн</h4>
+                            <p>
+                                Ведущий физик, участник "манхеттенского проекта". Один из изобретателей ядерной бомбы.
+                                Помимо разрушительных изобретений сделал немало очень важных открытий в области физики.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item no-photo">
+                        <div class="info">i</div>
+                        <div class="popup-block">
+                            <h4>Альберт Эйнштейн</h4>
+                            <p>
+                                Ведущий физик, участник "манхеттенского проекта". Один из изобретателей ядерной бомбы.
+                                Помимо разрушительных изобретений сделал немало очень важных открытий в области физики.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item vacancy">
+                        <p>
+                            если ты<br>
+                            <span>php разработчик,</span><br>
+                            то можешь оказаться<br>
+                            на этом месте,<br>
+                            <a href="#">напиши нам</a>
+                        </p>
+                        <div class="popup-block">
+                            <h4>-</h4>
+                            <p>
+                                -
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <h2>
+                    кто мы и
+                    <span>чем занимаемся</span>
+                </h2>
+                <p>Наша миссия — эффективно решать бизнес-задачи в Web с помощью свободных технологий.</p>
+                <p>
+                    Будучи увлечёнными специалистами, воспринимающими информационные технологии как родную стихию,
+                    мы берём на себя задачи проектирования, создания, поддержки и модернизации качественной ИТ-инфраструктуры
+                    для веб-приложений в соответствии с современными подходами и принципами (Канбан, Agile, DevOps). Предлагая
+                    заказчикам надёжный технологический фундамент, выделенные человеческие ресурсы и удобные инструменты, мы
+                    помогаем сосредоточиться на решении непосредственных задач, стоящих перед бизнесом.
+                </p>
+                <h3>принципы</h3>
+                <div class="list-block">
+                    <div class="item clearfix">
+                        <div class="count">
+                            <span>01</span>
+                        </div>
+                        <p>
+                            пониманием <a href="#">свободного ПО</a>, устоявшимся за многие годы
+                            деятельности в области ИТ;
+                        </p>
+                    </div>
+                    <div class="item clearfix">
+                        <div class="count">
+                            <span>02</span>
+                        </div>
+                        <p>
+                            преимуществами <a href="#">аутсорсинга</a>, подтверждёнными опытом
+                            различных заказчиков;
+                        </p>
+                    </div>
+                    <div class="item clearfix">
+                        <div class="count">
+                            <span>03</span>
+                        </div>
+                        <p class="single-line">
+                            следованию лучшим мировым практикам в области <a href="#">DevOps</a>;
+                        </p>
+                    </div>
+                    <div class="item clearfix">
+                        <div class="count">
+                            <span>04</span>
+                        </div>
+                        <p class="single-line">
+                            идеями честного и взаимовыгодного сотрудничества <i>(см. ниже).</i>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="content-item clearfix">
+                            <h3>Ради чего это всё?</h3>
+                            <p>
+                                Как и многие, мы хотим изменить мир к лучшему. При этом отчётливо осознаём свой путь: устремив усилия на удовлетворение потребностей реального бизнеса, мы раскрываем и развиваем потенциал свободного программного обеспечения для сопровождения процессов разработки и обслуживания веб-приложений.
+                            </p>
+                            <p>
+                                Многие из этих принципов и идей опираются на классическую модель Open Source, с успехом применяемую на протяжении последних десятилетий во всём мире, другие — связаны с нашим отношением к ведению бизнеса и корпоративной культуре в целом.
+                            </p>
+                        </div>
+                        <div class="content-item clearfix">
+                            <h3>Ради чего это всё?</h3>
+                            <p>
+                                Чтобы решать сложные задачи эффективно, к ним нужно подходить осмысленно, с пониманием реальных потребностей заказчика и его конечных целей. Если для этого важно вникнуть в бизнес-процессы и конкретную область, то лучше сделать это на старте, чем разбираться с глобальными последствиями ошибок проектирования.
+                            </p>
+                        </div>
+                        <div class="content-item clearfix">
+                            <h3>Ради чего это всё?</h3>
+                            <p>
+                                Зачем нам делать качественно? Только тщательно продуманные и проверенные решения позволяют минимизировать трудозатраты на их дальнейшее сопровождение (поддержку, развитие, масштабирование). Вдобавок, это залог хороших взаимоотношений с существующими заказчиками, а значит — потенциальный выход на новых.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-6">
+                        <div class="content-item clearfix">
+                            <h3>Ради чего это всё?</h3>
+                            <p>
+                                Как и многие, мы хотим изменить мир к лучшему. При этом отчётливо осознаём свой путь: устремив усилия на удовлетворение потребностей реального бизнеса, мы раскрываем и развиваем потенциал свободного программного обеспечения для сопровождения процессов разработки и обслуживания веб-приложений.
+                            </p>
+                        </div>
+                        <div class="content-item clearfix">
+                            <h3>Ради чего это всё?</h3>
+                            <p>
+                                Наибольших успехов добиваются люди, по-настоящему увлечённые своей работой. Поддержание дружелюбной атмосферы, взаимопонимания и в меру «хакерского духа», включающего в себя склонность к красивым техническим решениям, — наша прямая и очень приятная обязанность. Во многом всё это удаётся благодаря тому, что основной коллектив сформировался ещё до официального появления компании — на базе одного государственного технического вуза. Проверенные люди с давно налаженными внутренними коммуникациями, высокая квалификация и нескончаемый энтузиазм — социальная база, которая помогает нам стремительно развиваться.
+                            </p>
+                        </div>
+                        <div class="content-item clearfix">
+                            <h3>Ради чего это всё?</h3>
+                            <p>
+                                С самого основания компании мы инвестируем значительные средства в развитие: в проектирование, разработку и развитие собственных инструментов, улучшение внутренних бизнес-процессов, образование сотрудников. Действуя здесь и сейчас, т.е. выполняя свою непосредственную работу, мы никогда не забываем про завтра.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tools-block">
+                    <h2>что мы используем</h2>
+                    <div class="row">
+                        <div class="col-md-12 col-lg-3">
+                            <div class="logo-redmine">Redmine</div>
+                            <p>cтавим задачи</p>
+                        </div>
+                        <div class="col-md-12 col-lg-3">
+                            <div class="logo-graylog"></div>
+                            <p>собираем логи</p>
+                        </div>
+                        <div class="col-md-12 col-lg-3">
+                            <div class="logo-gitlab"></div>
+                            <p>коммитим код</p>
+                        </div>
+                        <div class="col-md-12 col-lg-3">
+                            <div class="logo-yii"></div>
+                            <p>любимый фреймворк</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="scheme-block clearfix">
+                    <h2>что мы делаем</h2>
+                    <div class="scheme active-l">
+                        <div class="tab-content tab-first active">
+                            <h3>Разработка веб-приложений</h3>
+                            <p>Наша миссия — эффективно решать бизнес-задачи в Web с помощью свободных технологий.</p>
+                            <p>
+                                Будучи увлечёнными специалистами, воспринимающими информационные технологии как родную стихию,
+                                мы берём на себя задачи проектирования, создания, поддержки и модернизации качественной ИТ-инфраструктуры
+                                для веб-приложений в соответствии с современными подходами и принципами (Канбан, Agile, DevOps). Предлагая
+                                заказчикам надёжный технологический фундамент, выделенные человеческие ресурсы и удобные инструменты,
+                                мы помогаем сосредоточиться на решении непосредственных задач, стоящих перед бизнесом.
+                            </p>
+                            <p>
+                                С самого основания компании мы инвестируем значительные средства в развитие:
+                                в проектирование, разработку и развитие собственных инструментов, улучшение
+                                внутренних бизнес-процессов, образование сотрудников.
+                            </p>
+                        </div>
+                        <div class="tab-content tab-second">
+                            <h3>Коммитим код</h3>
+                            <p>Наша миссия — эффективно решать бизнес-задачи в Web с помощью свободных технологий.</p>
+                            <p>
+                                Будучи увлечёнными специалистами, воспринимающими информационные технологии как родную стихию,
+                                мы берём на себя задачи проектирования, создания, поддержки и модернизации качественной ИТ-инфраструктуры
+                                для веб-приложений в соответствии с современными подходами и принципами (Канбан, Agile, DevOps). Предлагая
+                                заказчикам надёжный технологический фундамент, выделенные человеческие ресурсы и удобные инструменты,
+                                мы помогаем сосредоточиться на решении непосредственных задач, стоящих перед бизнесом.
+                            </p>
+                            <p>
+                                С самого основания компании мы инвестируем значительные средства в развитие:
+                                в проектирование, разработку и развитие собственных инструментов, улучшение
+                                внутренних бизнес-процессов, образование сотрудников.
+                            </p>
+                        </div>
+                        <div class="tab-content tab-third">
+                            <h3>Собираем логи</h3>
+                            <p>Наша миссия — эффективно решать бизнес-задачи в Web с помощью свободных технологий.</p>
+                            <p>
+                                Будучи увлечёнными специалистами, воспринимающими информационные технологии как родную стихию,
+                                мы берём на себя задачи проектирования, создания, поддержки и модернизации качественной ИТ-инфраструктуры
+                                для веб-приложений в соответствии с современными подходами и принципами (Канбан, Agile, DevOps). Предлагая
+                                заказчикам надёжный технологический фундамент, выделенные человеческие ресурсы и удобные инструменты,
+                                мы помогаем сосредоточиться на решении непосредственных задач, стоящих перед бизнесом.
+                            </p>
+                            <p>
+                                С самого основания компании мы инвестируем значительные средства в развитие:
+                                в проектирование, разработку и развитие собственных инструментов, улучшение
+                                внутренних бизнес-процессов, образование сотрудников.
+                            </p>
+                        </div>
+                        <div class="tab-content tab-fourth">
+                            <h3>Любимый фреймворк</h3>
+                            <p>Наша миссия — эффективно решать бизнес-задачи в Web с помощью свободных технологий.</p>
+                            <p>
+                                Будучи увлечёнными специалистами, воспринимающими информационные технологии как родную стихию,
+                                мы берём на себя задачи проектирования, создания, поддержки и модернизации качественной ИТ-инфраструктуры
+                                для веб-приложений в соответствии с современными подходами и принципами (Канбан, Agile, DevOps). Предлагая
+                                заказчикам надёжный технологический фундамент, выделенные человеческие ресурсы и удобные инструменты,
+                                мы помогаем сосредоточиться на решении непосредственных задач, стоящих перед бизнесом.
+                            </p>
+                            <p>
+                                С самого основания компании мы инвестируем значительные средства в развитие:
+                                в проектирование, разработку и развитие собственных инструментов, улучшение
+                                внутренних бизнес-процессов, образование сотрудников.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-item first active">
+                        <div class="arrow"></div>
+                        <p>Разработка<br>веб-приложений</p>
+                    </div>
+                    <div class="tab-item second">
+                        <div class="arrow"></div>
+                        <p>коммитим код</p>
+                    </div>
+                    <div class="tab-item third">
+                        <div class="arrow"></div>
+                        <p>собираем логи</p>
+                    </div>
+                    <div class="tab-item fourth">
+                        <div class="arrow"></div>
+                        <p>любимый фреймворк</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <footer>
+        <div id="contacts_mobile" class="row clearfix"></div>
+        <div class="wrapper" id="contacts">
+            <div class="btn btn-nav nav_link">
+                <a href="#contacts"></a>
+            </div>
+            <div class="contact-block clearfix">
+                <h2>
+                    наши<br>
+                    <span>контакты</span>
+                </h2>
+                <form action="">
+                    <div class="form-group name pull-left">
+                        <input type="text" class="form-control" placeholder="Имя">
+                    </div>
+                    <div class="form-group phone-email pull-right">
+                        <input type="text" class="form-control" placeholder="Телефон/email">
+                    </div>
+                    <div class="form-group message-box">
+                        <textarea class="form-control" placeholder="Ваше сообщение"></textarea>
+                    </div>
+                    <button class="btn">отправить</button>
+                </form>
+                <div class="info-block">
+                    <a href="#" class="email">info@webdevgroup.ru</a>
+                    <a href="#" class="phone">+7 (495) 108-73-56</a>
+                </div>
+            </div>
+            <div class="footer-logo">
+                <span>
+                    РАЗРАБОТКА<br>
+                    И СОПРОВОЖДЕНИЕ
+                </span>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- Modal Contact -->
+<div class="modal" id="modal-contact" tabindex="1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+                <h3>Заполните форму</h3>
+                <p>
+                    И наш консультант перезвонит Вам
+                </p>
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Ваше имя">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Ваш e-mail">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Ваш телефон">
+                    </div>
+                    <button class="btn" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#modal-contact-success">оставить заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Contact Success -->
+<div class="modal success" id="modal-contact-success" tabindex="1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+                <h3>Ваша заявка принята!</h3>
+                <p>
+                    Спасибо! Ваша заявка была успешно принята в обработку.<br>
+                    С Вами свяжутся в ближайшее время.
+                </p>
+                <button class="btn" data-dismiss="modal" aria-label="Close">ok</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Callback -->
+<div class="modal" id="modal-callback" tabindex="1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+                <h3>Обратный звонок</h3>
+                <p>
+                    Оставьте заявку, и наш консультант<br>
+                    перезвонит Вам.
+                </p>
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Ваше имя">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Ваш телефон">
+                    </div>
+                    <button class="btn" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#modal-callback-success">заказать звонок</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Callback Success -->
+<div class="modal success" id="modal-callback-success" tabindex="1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+                <h3>Вы успешно заказали звонок!</h3>
+                <p>
+                    Спасибо! Ваша заявка была успешно принята в обработку.<br>
+                    С Вами свяжутся в ближайшее время.
+                </p>
+                <button class="btn red-bordered" data-dismiss="modal" aria-label="Close">ok</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-7268651-17', 'auto');
+    ga('send', 'pageview');
+
+</script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter45765054 = new Ya.Metrika({ id:45765054, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/45765054" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+</body>
+</html>
