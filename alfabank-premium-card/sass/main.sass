@@ -1,0 +1,913 @@
+// #Fonts
+@font-face
+  font-family: CeraCy
+  src: url(../fonts/CeraCY-Thin.ttf)
+  font-weight: 100
+
+@font-face
+  font-family: CeraCy
+  src: url(../fonts/CeraCY-Regular.ttf)
+  font-weight: 400
+
+@font-face
+  font-family: CeraCy
+  src: url(../fonts/CeraCY-Medium.ttf)
+  font-weight: 500
+
+// #Colors
+$color-red: #ef3125
+$color-black: #1c1618
+
+body
+  font-family: CeraCY
+  color: $color-black
+  font-weight: 400
+
+a, button.btn
+  &:hover,
+  &:focus
+    text-decoration: none
+    outline: none
+    box-shadow: none
+
+h1
+  font-size: 67px
+  font-weight: 100
+  line-height: 80px
+
+h2
+  font-size: 45px
+  font-weight: 100
+  line-height: 60px
+
+.form-control
+  outline: none
+  border: none
+  &:hover,
+  &:focus
+    outline: none
+    box-shadow: none
+
+.wrapper
+  width: 100%
+  max-width: 1720px
+  padding: 0 14px
+  margin: 0 auto
+  position: relative
+
+form
+  .form-group
+    input
+      font-size: 20px
+      color: #8d8d8d
+      font-weight: 100
+      height: 60px
+      line-height: 60px
+  .btn
+    background-color: $color-red
+    -webkit-border-radius: 4px
+    -moz-border-radius: 4px
+    border-radius: 4px
+    color: #fff
+    font-size: 20px
+    width: 220px
+    height: 60px
+    -webkit-transition: all .2s ease
+    transition: all .2s ease
+    font-weight: 500
+    &:hover
+      background-color: #de2014
+  &.form-more
+    width: 540px
+    .form-group
+      float: left
+      input
+        background-color: rgba(165, 163, 164, 0.2)
+        width: 290px
+        padding-left: 20px
+        -webkit-border-radius: 4px
+        -moz-border-radius: 4px
+        border-radius: 4px
+    .btn
+      float: right
+  &.form-order
+    width: 540px
+    h2
+      margin-bottom: 30px
+    .form-group
+      margin-bottom: 20px
+      .form-control
+        border-bottom: 1px solid #a5a3a4
+        padding: 0
+        -webkit-border-radius: 0
+        -moz-border-radius: 0
+        border-radius: 0
+        margin-bottom: 10px
+      .hint
+        color: #a5a3a4
+        font-size: 13px
+        line-height: 18px
+        display: inline-block
+    .btn
+      width: 350px
+      margin: 35px 0 20px 0
+    .submit-hint
+      color: #a5a3a4
+      font-size: 14px
+      line-height: 18px
+      display: inline-block
+      a
+        color: $color-black
+        border-bottom: 1px solid #a5a3a4
+        padding-bottom: 3px
+
+.side-nav
+  height: 130px
+  width: 10px
+  position: fixed
+  right: 50px
+  top: 0
+  bottom: 0
+  margin: auto
+  z-index: 1
+  li
+    width: 100%
+    text-align: center
+    a
+      background-color: rgba(28, 22, 24, 0.3)
+      width: 4px
+      height: 4px
+      -webkit-border-radius: 50%
+      -moz-border-radius: 50%
+      border-radius: 50%
+      display: inline-block
+    &.active
+      a
+        background-color: $color-black
+        width: 6px
+        height: 6px
+
+.arrow
+  height: 13px
+  width: 7px
+  display: block
+  margin: auto
+  position: absolute
+  left: 10px
+  top: 0
+  bottom: 0
+  &:before, &:after
+    content: ''
+    height: 8px
+    width: 2px
+    background-color: $color-red
+    position: absolute
+    right: 3px
+  &.next:before
+    top: 0
+    -ms-transform: rotate(-45deg)
+    -webkit-transform: rotate(-45deg)
+    -o-transform: rotate(-45deg)
+    -moz-transform: rotate(-45deg)
+    transform: rotate(-45deg)
+  &.next:after
+    top: 5px
+    -ms-transform: rotate(45deg)
+    -webkit-transform: rotate(45deg)
+    -o-transform: rotate(45deg)
+    -moz-transform: rotate(45deg)
+    transform: rotate(45deg)
+
+.mobile-only-1000,
+.mobile-only-900,
+.mobile-only-768
+  display: none
+.slick-slide
+  outline: none
+.slick-dots
+  list-style: none
+  text-align: center
+  padding: 0
+  li
+    display: inline-block
+    padding: 0
+    margin: 0 7px
+    button
+      background-color:  rgba(28, 22, 24, 0.2)
+      width: 6px
+      height: 6px
+      border: 1px solid #fff
+      -webkit-border-radius: 50%
+      -moz-border-radius: 50%
+      border-radius: 50%
+      padding: 0
+      font-size: 0
+      &:focus
+        box-shadow: none
+        outline: none
+    &.slick-active
+      button
+        background-color: $color-red
+        border-color: $color-red
+
+header,
+footer
+  height: 110px
+  color: #ffa29c
+  font-weight: 400
+  .wrapper
+    height: 100%
+    padding: 0 30px
+  .btn-mobile-toggle
+    display: none
+  .btn-close
+    display: none
+  .logo
+    line-height: 110px
+    float: left
+    margin-right: 40px
+    img
+      width: 103px
+  .nav
+    display: block
+    float: left
+    list-style: none
+    padding: 0
+    margin: 0
+    line-height: 110px
+    li
+      float: left
+      margin: 0 20px
+      position: relative
+      a
+        color: #ffa29c
+        font-size: 16px
+        line-height: 57px
+        display: inline-block
+      &.active
+        a
+          color: #fff
+          cursor: initial
+        &:before
+          content: ''
+          position: absolute
+          width: 5000px
+          height: 1px
+          background-color: #fff
+          right: 0
+          top: 0
+      &:first-child
+        margin-left: 0
+      &:hover
+        a
+          color: #fff
+  .ab-link
+    font-size: 16px
+    color: #ffa29c
+    transition: all 0.5s ease-in-out
+    -moz-transition: all 0.5s ease-in-out
+    -webkit-transition: all 0.5s ease-in-out
+    line-height: 110px
+    float: right
+    .btn
+      background-color: rgba(255, 255, 255, 0.55)
+      -webkit-border-radius: 50%
+      -moz-border-radius: 50%
+      border-radius: 50%
+      width: 27px
+      height: 27px
+      padding: 0
+      position: relative
+      transition: all 0.5s ease-in-out
+      -moz-transition: all 0.5s ease-in-out
+      -webkit-transition: all 0.5s ease-in-out
+      border: 1px solid transparent
+      margin: -2px 0 0 5px
+    &:hover
+      .btn
+        background-color: rgba(255, 255, 255, 1)
+  &.inverted
+    background-color: transparent
+    border-top: 1px solid $color-black
+    .nav
+      li
+        a
+          color: #a5a3a4
+        &.active
+          a
+            color: $color-black
+          &:before
+            background-color: $color-red
+            top: -1px
+        &:hover
+          a
+            color: $color-black
+    .ab-link
+      color: #a5a3a4
+      .btn
+        border-color: #a5a3a4
+        .arrow
+          &:before,
+          &:after
+            background-color: #a5a3a4
+      &:hover
+        color: $color-black
+        .btn
+          background-color: $color-red
+          border-color: $color-red
+          .arrow
+            &:before,
+            &:after
+              background-color: #fff
+
+header.header-main
+  background-color: $color-red
+footer
+  &.inverted
+    form
+      float: right
+      height: 100%
+      padding: 25px 0
+
+
+.block1
+  text-align: center
+  padding-top: 60px
+  padding-bottom: 80px
+  h1
+    margin-bottom: 40px
+    sup
+      font-size: 37px
+  img
+    width: 840px
+
+  h3
+    font-size: 22px
+    line-height: 32px
+    font-weight: 400
+    width: 500px
+    margin: 0 auto 70px auto
+  form
+    margin: 65px auto 0 auto
+
+.block2
+  padding-top: 40px
+  overflow: hidden
+  .wrapper
+    max-width: 1170px
+    padding-bottom: 185px
+  h2
+    text-align: left
+    span
+      display: block
+  .advantages-pic
+    width: 710px
+    position: absolute
+    right: -228px
+    bottom: 0
+    z-index: -1
+  .advantages
+    width: 700px
+    margin-top: 70px
+    .item
+      float: left
+      width: 50%
+      height: 70px
+      margin-bottom: 60px
+      img
+        width: 52px
+        float: left
+      div
+        font-size: 20px
+        line-height: 26px
+        padding-left: 72px
+        span
+          color: #a5a3a4
+          font-size: 14px
+          display: block
+          margin-top: -3px
+  form
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 65px
+    margin: auto
+
+.block3
+  padding: 70px 15px 140px 15px
+  overflow: hidden
+  .wrapper
+    max-width: 1170px
+  h2
+    text-align: center
+    margin-bottom: 15px
+  p
+    color: #a5a3a4
+    font-size: 14px
+    text-align: center
+  .service-pic
+    width: 500px
+    position: absolute
+    left: -120px
+    bottom: 0
+  .premium
+    float: right
+    width: 745px
+    margin-top: 90px
+    .item
+      float: left
+      width: 50%
+      height: 70px
+      margin-bottom: 60px
+      img
+        float: left
+      div
+        font-size: 20px
+        line-height: 26px
+        padding-left: 60px
+        span
+          color: #a5a3a4
+          font-size: 14px
+          line-height: 20px
+          display: block
+          margin-top: 5px
+      &:nth-child(1)
+        img
+          width: 44px
+      &:nth-child(2)
+        img
+          width: 39px
+      &:nth-child(3)
+        img
+          width: 40px
+      &:nth-child(4)
+        img
+          width: 36px
+      &:nth-child(5)
+        img
+          width: 46px
+      &:nth-child(6)
+        img
+          width: 30px
+
+.block4
+  padding-top: 50px
+  .wrapper
+    max-width: 1170px
+    padding-bottom: 60px
+  img
+    width: 560px
+    position: absolute
+    right: 0
+    bottom: 0
+    z-index: -1
+
+
+.footer
+  background-color: #0d0e12
+  height: 150px
+  overflow: hidden
+  .wrapper
+    padding: 0 20px
+  p
+    color: #676666
+    font-size: 16px
+    font-weight: 500
+    line-height: 22px
+    height: 45px
+    float: left
+    margin: 53px 0
+  .logo
+    line-height: 150px
+    float: right
+    img
+      width: 164px
+
+
+@media screen and (max-width: 1400px)
+  .block2
+    .advantages-pic
+      right: -175px
+
+@media screen and (max-width: 1300px)
+  .block2
+    .advantages-pic
+      width: 620px
+      right: -100px
+  footer.inverted form
+    width: auto
+    .form-group
+      margin-right: 30px
+      input
+        width: 230px
+    .btn
+      width: 190px
+
+@media screen and (max-width: 1200px)
+  .side-nav
+    display: none
+  h1
+    font-size: 47px
+    line-height: 60px
+  h2
+    font-size: 35px
+    line-height: 50px
+  .block1
+    padding-bottom: 40px
+    h1
+      sup
+        font-size: 27px
+    h3
+      font-size: 20px
+      margin: 0 auto 50px auto
+    form
+      margin: 25px auto 0 auto
+  footer.inverted form
+    .form-group
+      margin-right: 15px
+      input
+        width: 180px
+    .btn
+      width: 180px
+  .block2
+    .advantages-pic
+      right: -120px
+    .advantages .item div
+      font-size: 18px
+  .block3
+    padding: 70px 15px 10px 15px
+    h2
+      margin-bottom: 10px
+    p
+      margin-bottom: 50px
+    .service-pic
+      position: relative
+      display: block
+      margin: 0 auto
+      left: auto
+    .premium
+      margin: 40px auto 0 auto
+      float: none
+      .item
+        div
+          font-size: 18px
+@media screen and (max-width: 1150px)
+  .block2
+    padding-top: 0
+    .wrapper
+      padding-bottom: 120px
+    .advantages
+      width: 680px
+      margin-top: 45px
+      .item
+        margin-bottom: 30px
+    .advantages-pic
+      content: url("../img/advant-pic_tablet.jpg")
+      width: 480px
+      right: -20px
+    form
+      bottom: 25px
+@media screen and (max-width: 1100px)
+  .block2
+    .advantages
+      width: 640px
+    .advantages-pic
+      width: 40vw
+  .block4
+    padding-top: 0
+    .wrapper
+      padding-top: 10px
+      padding-bottom: 25px
+    img
+      width: 460px
+      bottom: -130px
+  form.form-order
+    h2
+      margin-bottom: 10px
+    .form-group
+      margin-bottom: 12px
+      .form-control
+        font-size: 18px
+        line-height: 50px
+        height: 50px
+    .btn
+      margin: 15px 0
+
+@media screen and (max-width: 1050px)
+  header, footer
+    height: 90px
+    .wrapper
+      padding: 0 15px
+    .nav
+      line-height: 90px
+      li
+        margin: 0 15px
+    .logo
+      line-height: 90px
+      margin-right: 30px
+      img
+        width: 96px
+    .ab-link
+      line-height: 90px
+  footer.inverted form
+    padding: 15px 0
+
+@media screen and (max-width: 1000px)
+  .mobile-only-1000
+    display: block
+  footer.inverted form
+    display: none
+  .block3
+    form
+      margin: 0 auto
+  .block4
+    img
+      display: none
+  form.form-order
+    margin: 0 auto
+
+@media screen and (max-width: 950px)
+  header, footer
+    .ab-link
+      .text-toggle
+        display: none
+  header
+    .logo
+      img
+        width: 82px
+
+@media screen and (max-width: 900px)
+  .mobile-only-900
+    display: block
+  header, footer
+    height: 78px
+    .btn-mobile-toggle
+      display: block
+      float: left
+      line-height: 78px
+      margin-right: 20px
+      margin-top: -2px
+      img
+        width: 20px
+    .btn-close
+      display: block
+      line-height: 78px
+      float: left
+      margin-right: 20px
+
+      img
+        width: 17px
+    .menu
+      display: none
+      background-color: $color-red
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      position: fixed
+      z-index: 9
+      padding: 20px
+      &:before
+        content: ''
+        background-color: #fff
+        height: 20px
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+      .nav
+        clear: both
+        margin-left: 36px
+        margin-top: 38px
+        li
+          float: none
+          margin-left: 0
+          line-height: 1
+          &.active:before
+            display: none
+          a
+            line-height: 55px
+      .ab-link
+        line-height: 38px
+        width: 200px
+        position: absolute
+        bottom: 25px
+        left: 0
+        right: 0
+        margin: auto
+    .logo
+      line-height: 78px
+      margin-top: -1px
+      img
+        width: 82px
+    .ab-link
+      line-height: 78px
+    &.inverted
+      .nav
+        line-height: 78px
+  .side-nav
+    display: none
+  .block1
+    img
+      width: 90%
+  .block2
+    h2
+      text-align: center
+      span
+        display: inline
+    .advantages
+      margin: 5vw auto 0 auto
+    .advantages-pic
+      content: url("../img/advant-pic_mobile.jpg")
+      width: 90%
+      margin: 6vw auto 0 auto
+      position: relative
+      display: block
+  .block3
+    padding: 0 15px 10px 15px
+
+@media screen and (max-width: 768px)
+  .mobile-only-768
+    display: block
+  h2
+    font-size: 6.3vw
+    line-height: 9vw
+  header
+    &.inverted
+      border-top-color: $color-red
+      .nav
+        display: none
+      .ab-link
+        display: none
+  footer
+    display: none
+  .block1
+    h1
+      font-size: 5.8vw
+      line-height: 7.5vw
+      margin-bottom: 4.5vw
+      sup
+        font-size: 4vw
+    h3
+      font-size: 2.3vw
+      line-height: 3.5vw
+      margin-bottom: 5.5vw
+  .block2, .block3
+    .advantages, .premium
+      width: 315px
+      .item
+        width: auto
+        margin: 0 auto 30px auto
+  .block2
+    .advantages-pic
+      width: 120%
+      left: -18px
+    .advantages
+      .item
+        float: none
+        div
+          padding-left: 74px
+        img
+          margin-left: 2px
+      .slick-dots
+        margin-top: -20px
+  .block3
+    padding-top: 0
+    .premium
+      margin: 10px auto 35px auto
+      .item
+        text-align: center
+        height: auto
+        margin: 0 0 15px 0
+        img
+          float: none
+          display: inline-block
+          margin-bottom: 20px
+        div
+          padding-left: 0
+        &:nth-child(1) img
+          width: 58px
+        &:nth-child(2) img
+          width: 53px
+        &:nth-child(3) img
+          width: 48px
+        &:nth-child(4) img
+          width: 48px
+        &:nth-child(5) img
+          width: 61px
+        &:nth-child(6) img
+          width: 40px
+  .block4
+    .wrapper
+      padding-top: 0
+  .footer
+    height: 88px
+    p
+      font-size: 12px
+      margin: 22px 0
+    .logo
+      line-height: 88px
+      img
+        width: 106px
+
+@media screen and (max-width: 640px)
+  form.form-more
+    width: 100%
+    .form-group
+      width: 52%
+      .form-control
+        width: 100%
+    .btn
+      width: 44%
+  .block1
+    padding-top: 10vw
+    h3
+      width: 340px
+  .block3
+    .service-pic
+      width: 90%
+  form.form-order
+    width: 100%
+
+@media screen and (max-width: 480px)
+  form.form-more
+    .form-group
+      width: 100%
+      margin-bottom: 10px
+      .form-control
+        font-size: 16px
+        height: 46px
+    .btn
+      font-size: 17px
+      width: 100%
+      height: 46px
+  .wrapper
+    padding: 0 5px
+  .block1
+    padding-bottom: 7vw
+    h1
+      margin-bottom: 7vw
+    h3
+      width: auto
+      font-size: 14px
+      line-height: 20px
+      margin-bottom: 9vw
+  .block2
+    .wrapper
+      padding-bottom: 147px
+    .advantages
+      .item
+        height: auto
+        margin: 0 auto 35px auto
+        div
+          font-size: 15px
+          line-height: 21px
+  .block3
+    padding-bottom: 25px
+    .service-pic
+      width: 100%
+  .block4
+    .wrapper
+      padding-bottom: 10px
+  form.form-order
+    h2
+      margin-bottom: 5px
+    .form-group
+      .form-control
+        font-size: 16px
+        line-height: 40
+        height: 40px
+        margin-bottom: 5px
+      .hint
+        font-size: 12px
+    .btn
+      font-size: 17px
+      height: 46px
+      width: 100%
+      margin: 15px 0 20px 0
+    .submit-hint
+      font-size: 13px
+  .footer 
+    .logo
+      display: none
+
+@media screen and (max-width: 360px)
+  .block1
+    h1
+      font-size: 21px
+      line-height: 26px
+  .block2 .advantages
+    width: auto
+    .item div span
+      font-size: 12px
+  .block3
+    p
+      margin-bottom: 10vw
+    .premium
+      width: auto
+
+
+
+
+
+
