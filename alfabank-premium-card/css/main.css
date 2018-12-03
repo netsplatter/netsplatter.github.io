@@ -82,8 +82,9 @@ form.form-more {
 }
 form.form-more .form-group {
   float: left;
+  margin-bottom: 0;
 }
-form.form-more .form-group input {
+form.form-more .form-group .form-control {
   background-color: rgba(165, 163, 164, 0.2);
   width: 290px;
   padding-left: 20px;
@@ -197,7 +198,6 @@ form.form-order .submit-hint a {
   transform: rotate(45deg);
 }
 
-.mobile-only-1000,
 .mobile-only-900,
 .mobile-only-768 {
   display: none;
@@ -237,37 +237,30 @@ form.form-order .submit-hint a {
   border-color: #ef3125;
 }
 
-header,
-footer {
+header {
   height: 110px;
   color: #ffa29c;
   font-weight: 400;
 }
-header .wrapper,
-footer .wrapper {
+header .wrapper {
   height: 100%;
   padding: 0 30px;
 }
-header .btn-mobile-toggle,
-footer .btn-mobile-toggle {
+header .btn-mobile-toggle {
   display: none;
 }
-header .btn-close,
-footer .btn-close {
+header .btn-close {
   display: none;
 }
-header .logo,
-footer .logo {
+header .logo {
   line-height: 110px;
   float: left;
   margin-right: 40px;
 }
-header .logo img,
-footer .logo img {
+header .logo img {
   width: 103px;
 }
-header .nav,
-footer .nav {
+header .nav {
   display: block;
   float: left;
   list-style: none;
@@ -275,26 +268,22 @@ footer .nav {
   margin: 0;
   line-height: 110px;
 }
-header .nav li,
-footer .nav li {
+header .nav li {
   float: left;
   margin: 0 20px;
   position: relative;
 }
-header .nav li a,
-footer .nav li a {
+header .nav li a {
   color: #ffa29c;
   font-size: 16px;
   line-height: 57px;
   display: inline-block;
 }
-header .nav li.active a,
-footer .nav li.active a {
+header .nav li.active a {
   color: #fff;
   cursor: initial;
 }
-header .nav li.active:before,
-footer .nav li.active:before {
+header .nav li.active:before {
   content: "";
   position: absolute;
   width: 5000px;
@@ -303,16 +292,13 @@ footer .nav li.active:before {
   right: 0;
   top: 0;
 }
-header .nav li:first-child,
-footer .nav li:first-child {
+header .nav li:first-child {
   margin-left: 0;
 }
-header .nav li:hover a,
-footer .nav li:hover a {
+header .nav li:hover a {
   color: #fff;
 }
-header .ab-link,
-footer .ab-link {
+header .ab-link {
   font-size: 16px;
   color: #ffa29c;
   transition: all 0.5s ease-in-out;
@@ -321,8 +307,7 @@ footer .ab-link {
   line-height: 110px;
   float: right;
 }
-header .ab-link .btn,
-footer .ab-link .btn {
+header .ab-link .btn {
   background-color: rgba(255, 255, 255, 0.55);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -337,68 +322,53 @@ footer .ab-link .btn {
   border: 1px solid transparent;
   margin: -2px 0 0 5px;
 }
-header .ab-link:hover .btn,
-footer .ab-link:hover .btn {
+header .ab-link:hover .btn {
   background-color: white;
 }
-header.inverted,
-footer.inverted {
+header.inverted {
   background-color: transparent;
   border-top: 1px solid #1c1618;
 }
-header.inverted .nav li a,
-footer.inverted .nav li a {
+header.inverted .nav li a {
   color: #a5a3a4;
 }
-header.inverted .nav li.active a,
-footer.inverted .nav li.active a {
+header.inverted .nav li.active a {
   color: #1c1618;
 }
-header.inverted .nav li.active:before,
-footer.inverted .nav li.active:before {
+header.inverted .nav li.active:before {
   background-color: #ef3125;
   top: -1px;
 }
-header.inverted .nav li:hover a,
-footer.inverted .nav li:hover a {
+header.inverted .nav li:hover a {
   color: #1c1618;
 }
-header.inverted .ab-link,
-footer.inverted .ab-link {
+header.inverted .ab-link {
   color: #a5a3a4;
 }
-header.inverted .ab-link .btn,
-footer.inverted .ab-link .btn {
+header.inverted .ab-link .btn {
   border-color: #a5a3a4;
 }
-header.inverted .ab-link .btn .arrow:before, header.inverted .ab-link .btn .arrow:after,
-footer.inverted .ab-link .btn .arrow:before,
-footer.inverted .ab-link .btn .arrow:after {
+header.inverted .ab-link .btn .arrow:before, header.inverted .ab-link .btn .arrow:after {
   background-color: #a5a3a4;
 }
-header.inverted .ab-link:hover,
-footer.inverted .ab-link:hover {
+header.inverted .ab-link:hover {
   color: #1c1618;
 }
-header.inverted .ab-link:hover .btn,
-footer.inverted .ab-link:hover .btn {
+header.inverted .ab-link:hover .btn {
   background-color: #ef3125;
   border-color: #ef3125;
 }
-header.inverted .ab-link:hover .btn .arrow:before, header.inverted .ab-link:hover .btn .arrow:after,
-footer.inverted .ab-link:hover .btn .arrow:before,
-footer.inverted .ab-link:hover .btn .arrow:after {
+header.inverted .ab-link:hover .btn .arrow:before, header.inverted .ab-link:hover .btn .arrow:after {
   background-color: #fff;
+}
+header.inverted form {
+  float: right;
+  height: 100%;
+  padding: 25px 0;
 }
 
 header.header-main {
   background-color: #ef3125;
-}
-
-footer.inverted form {
-  float: right;
-  height: 100%;
-  padding: 25px 0;
 }
 
 .block1 {
@@ -476,16 +446,17 @@ footer.inverted form {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 65px;
+  bottom: 80px;
   margin: auto;
 }
 
 .block3 {
-  padding: 70px 15px 140px 15px;
+  padding: 70px 15px 0 15px;
   overflow: hidden;
 }
 .block3 .wrapper {
   max-width: 1170px;
+  height: 100%;
 }
 .block3 h2 {
   text-align: center;
@@ -546,6 +517,9 @@ footer.inverted form {
 .block3 .premium .item:nth-child(6) img {
   width: 30px;
 }
+.block3 form.form-more {
+  margin: 40px auto 80px auto;
+}
 
 .block4 {
   padding-top: 50px;
@@ -598,16 +572,16 @@ footer.inverted form {
     right: -100px;
   }
 
-  footer.inverted form {
+  header.inverted form {
     width: auto;
   }
-  footer.inverted form .form-group {
+  header.inverted form .form-group {
     margin-right: 30px;
   }
-  footer.inverted form .form-group input {
+  header.inverted form .form-group input {
     width: 230px;
   }
-  footer.inverted form .btn {
+  header.inverted form .btn {
     width: 190px;
   }
 }
@@ -626,9 +600,6 @@ footer.inverted form {
     line-height: 50px;
   }
 
-  .block1 {
-    padding-bottom: 40px;
-  }
   .block1 h1 sup {
     font-size: 27px;
   }
@@ -640,13 +611,13 @@ footer.inverted form {
     margin: 25px auto 0 auto;
   }
 
-  footer.inverted form .form-group {
+  header.inverted form .form-group {
     margin-right: 15px;
   }
-  footer.inverted form .form-group input {
+  header.inverted form .form-group input {
     width: 180px;
   }
-  footer.inverted form .btn {
+  header.inverted form .btn {
     width: 180px;
   }
 
@@ -658,7 +629,7 @@ footer.inverted form {
   }
 
   .block3 {
-    padding: 70px 15px 10px 15px;
+    padding: 70px 15px 0 15px;
   }
   .block3 h2 {
     margin-bottom: 10px;
@@ -678,6 +649,9 @@ footer.inverted form {
   }
   .block3 .premium .item div {
     font-size: 18px;
+  }
+  .block3 form.form-more {
+    margin: 0 auto 80px auto;
   }
 }
 @media screen and (max-width: 1150px) {
@@ -699,11 +673,19 @@ footer.inverted form {
     width: 480px;
     right: -20px;
   }
-  .block2 form {
-    bottom: 25px;
+  .block2 form.form-more {
+    bottom: 7vw;
+  }
+
+  .block3 form.form-more {
+    margin-bottom: 7vw;
   }
 }
 @media screen and (max-width: 1100px) {
+  .block1 {
+    padding-bottom: 40px;
+  }
+
   .block2 .advantages {
     width: 640px;
   }
@@ -739,44 +721,35 @@ footer.inverted form {
   }
 }
 @media screen and (max-width: 1050px) {
-  header, footer {
+  header {
     height: 90px;
   }
-  header .wrapper, footer .wrapper {
+  header .wrapper {
     padding: 0 15px;
   }
-  header .nav, footer .nav {
+  header .nav {
     line-height: 90px;
   }
-  header .nav li, footer .nav li {
+  header .nav li {
     margin: 0 15px;
   }
-  header .logo, footer .logo {
+  header .logo {
     line-height: 90px;
     margin-right: 30px;
   }
-  header .logo img, footer .logo img {
+  header .logo img {
     width: 96px;
   }
-  header .ab-link, footer .ab-link {
+  header .ab-link {
     line-height: 90px;
   }
-
-  footer.inverted form {
+  header.inverted form {
     padding: 15px 0;
   }
 }
 @media screen and (max-width: 1000px) {
-  .mobile-only-1000 {
-    display: block;
-  }
-
-  footer.inverted form {
+  header.inverted form {
     display: none;
-  }
-
-  .block3 form {
-    margin: 0 auto;
   }
 
   .block4 img {
@@ -788,10 +761,9 @@ footer.inverted form {
   }
 }
 @media screen and (max-width: 950px) {
-  header .ab-link .text-toggle, footer .ab-link .text-toggle {
+  header .ab-link .text-toggle {
     display: none;
   }
-
   header .logo img {
     width: 82px;
   }
@@ -801,29 +773,29 @@ footer.inverted form {
     display: block;
   }
 
-  header, footer {
+  header {
     height: 78px;
   }
-  header .btn-mobile-toggle, footer .btn-mobile-toggle {
+  header .btn-mobile-toggle {
     display: block;
     float: left;
     line-height: 78px;
     margin-right: 20px;
     margin-top: -2px;
   }
-  header .btn-mobile-toggle img, footer .btn-mobile-toggle img {
+  header .btn-mobile-toggle img {
     width: 20px;
   }
-  header .btn-close, footer .btn-close {
+  header .btn-close {
     display: block;
     line-height: 78px;
     float: left;
     margin-right: 20px;
   }
-  header .btn-close img, footer .btn-close img {
+  header .btn-close img {
     width: 17px;
   }
-  header .menu, footer .menu {
+  header .menu {
     display: none;
     background-color: #ef3125;
     left: 0;
@@ -834,7 +806,7 @@ footer.inverted form {
     z-index: 9;
     padding: 20px;
   }
-  header .menu:before, footer .menu:before {
+  header .menu:before {
     content: "";
     background-color: #fff;
     height: 20px;
@@ -843,23 +815,23 @@ footer.inverted form {
     right: 0;
     top: 0;
   }
-  header .menu .nav, footer .menu .nav {
+  header .menu .nav {
     clear: both;
     margin-left: 36px;
     margin-top: 38px;
   }
-  header .menu .nav li, footer .menu .nav li {
+  header .menu .nav li {
     float: none;
     margin-left: 0;
     line-height: 1;
   }
-  header .menu .nav li.active:before, footer .menu .nav li.active:before {
+  header .menu .nav li.active:before {
     display: none;
   }
-  header .menu .nav li a, footer .menu .nav li a {
+  header .menu .nav li a {
     line-height: 55px;
   }
-  header .menu .ab-link, footer .menu .ab-link {
+  header .menu .ab-link {
     line-height: 38px;
     width: 200px;
     position: absolute;
@@ -868,17 +840,17 @@ footer.inverted form {
     right: 0;
     margin: auto;
   }
-  header .logo, footer .logo {
+  header .logo {
     line-height: 78px;
     margin-top: -1px;
   }
-  header .logo img, footer .logo img {
+  header .logo img {
     width: 82px;
   }
-  header .ab-link, footer .ab-link {
+  header .ab-link {
     line-height: 78px;
   }
-  header.inverted .nav, footer.inverted .nav {
+  header.inverted .nav {
     line-height: 78px;
   }
 
@@ -908,7 +880,7 @@ footer.inverted form {
   }
 
   .block3 {
-    padding: 0 15px 10px 15px;
+    padding: 0 15px 0 15px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -928,10 +900,6 @@ footer.inverted form {
     display: none;
   }
   header.inverted .ab-link {
-    display: none;
-  }
-
-  footer {
     display: none;
   }
 
@@ -1067,6 +1035,7 @@ footer.inverted form {
   form.form-more .form-group .form-control {
     font-size: 16px;
     height: 46px;
+    line-height: 46px;
   }
   form.form-more .btn {
     font-size: 17px;
@@ -1103,9 +1072,6 @@ footer.inverted form {
     line-height: 21px;
   }
 
-  .block3 {
-    padding-bottom: 25px;
-  }
   .block3 .service-pic {
     width: 100%;
   }
@@ -1119,7 +1085,7 @@ footer.inverted form {
   }
   form.form-order .form-group .form-control {
     font-size: 16px;
-    line-height: 40;
+    line-height: 40px;
     height: 40px;
     margin-bottom: 5px;
   }

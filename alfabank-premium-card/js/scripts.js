@@ -8,10 +8,6 @@ $(function(){
   function scrollNav() {
     $nav_a.click(function(e){
       e.preventDefault();
-      //$li.removeClass("active");
-      //let targetClass = $(this).attr("class");
-      //$('.'+targetClass).parent('.side-nav li').addClass('active');
-
       $('html, body').stop().animate({
         scrollTop: $( $(this).attr('href') ).offset().top
       }, 400);
@@ -49,19 +45,19 @@ $(function(){
   $(window).scroll();
 
   // Mobile menu
-  let $menu_init = $('.btn-mobile-toggle'),
+  let $menu = $('.header-main .menu'),
+      $menu_init = $('.btn-mobile-toggle'),
       $menu_close = $('.menu .btn-close'),
-      $menu_mobile = $('header .menu'),
-      $menu_mobile_a = $('header .menu a');
+      $menu_mobile_a = $('.header-main .menu a');
 
   $menu_init.on('click', function () {
-    $menu_mobile.show()
+    $('header .menu-mobile').show();
   });
   $menu_close.on('click', function () {
-    $menu_mobile.hide()
+    $('header .menu-mobile').hide();
   });
   $menu_mobile_a.on('click', function () {
-    $menu_mobile.hide()
+    $('header .menu-mobile').hide();
   });
 
   // Sliders
@@ -95,5 +91,12 @@ $(function(){
   $(window).on('resize orientationchange', function() {
     $advant_slider.slick('resize');
     $premium_slider.slick('resize');
+
+    if ($(window).width() <= 900) { // menu mobile switch
+      $menu.addClass('menu-mobile');
+    } else {
+      $menu.removeClass('menu-mobile');
+    }
   });
+  $(window).trigger('resize');
 });

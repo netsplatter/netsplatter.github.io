@@ -81,7 +81,8 @@ form
     width: 540px
     .form-group
       float: left
-      input
+      margin-bottom: 0
+      .form-control
         background-color: rgba(165, 163, 164, 0.2)
         width: 290px
         padding-left: 20px
@@ -178,7 +179,6 @@ form
     -moz-transform: rotate(45deg)
     transform: rotate(45deg)
 
-.mobile-only-1000,
 .mobile-only-900,
 .mobile-only-768
   display: none
@@ -210,8 +210,7 @@ form
         background-color: $color-red
         border-color: $color-red
 
-header,
-footer
+header
   height: 110px
   color: #ffa29c
   font-weight: 400
@@ -319,15 +318,14 @@ footer
             &:before,
             &:after
               background-color: #fff
-
-header.header-main
-  background-color: $color-red
-footer
-  &.inverted
     form
       float: right
       height: 100%
       padding: 25px 0
+
+header.header-main
+  background-color: $color-red
+
 
 
 .block1
@@ -390,14 +388,15 @@ footer
     position: absolute
     left: 0
     right: 0
-    bottom: 65px
+    bottom: 80px
     margin: auto
 
 .block3
-  padding: 70px 15px 140px 15px
+  padding: 70px 15px 0 15px
   overflow: hidden
   .wrapper
     max-width: 1170px
+    height: 100%
   h2
     text-align: center
     margin-bottom: 15px
@@ -449,6 +448,8 @@ footer
       &:nth-child(6)
         img
           width: 30px
+  form.form-more
+    margin: 40px auto 80px auto
 
 .block4
   padding-top: 50px
@@ -494,7 +495,7 @@ footer
     .advantages-pic
       width: 620px
       right: -100px
-  footer.inverted form
+  header.inverted form
     width: auto
     .form-group
       margin-right: 30px
@@ -513,7 +514,6 @@ footer
     font-size: 35px
     line-height: 50px
   .block1
-    padding-bottom: 40px
     h1
       sup
         font-size: 27px
@@ -522,7 +522,7 @@ footer
       margin: 0 auto 50px auto
     form
       margin: 25px auto 0 auto
-  footer.inverted form
+  header.inverted form
     .form-group
       margin-right: 15px
       input
@@ -535,7 +535,7 @@ footer
     .advantages .item div
       font-size: 18px
   .block3
-    padding: 70px 15px 10px 15px
+    padding: 70px 15px 0 15px
     h2
       margin-bottom: 10px
     p
@@ -551,6 +551,8 @@ footer
       .item
         div
           font-size: 18px
+    form.form-more
+      margin: 0 auto 80px auto
 @media screen and (max-width: 1150px)
   .block2
     padding-top: 0
@@ -565,9 +567,13 @@ footer
       content: url("../img/advant-pic_tablet.jpg")
       width: 480px
       right: -20px
-    form
-      bottom: 25px
+    form.form-more
+      bottom: 7vw
+  .block3 form.form-more
+    margin-bottom: 7vw
 @media screen and (max-width: 1100px)
+  .block1
+    padding-bottom: 40px
   .block2
     .advantages
       width: 640px
@@ -594,7 +600,7 @@ footer
       margin: 15px 0
 
 @media screen and (max-width: 1050px)
-  header, footer
+  header
     height: 90px
     .wrapper
       padding: 0 15px
@@ -609,17 +615,12 @@ footer
         width: 96px
     .ab-link
       line-height: 90px
-  footer.inverted form
-    padding: 15px 0
+    &.inverted form
+      padding: 15px 0
 
 @media screen and (max-width: 1000px)
-  .mobile-only-1000
-    display: block
-  footer.inverted form
+  header.inverted form
     display: none
-  .block3
-    form
-      margin: 0 auto
   .block4
     img
       display: none
@@ -627,11 +628,10 @@ footer
     margin: 0 auto
 
 @media screen and (max-width: 950px)
-  header, footer
+  header
     .ab-link
       .text-toggle
         display: none
-  header
     .logo
       img
         width: 82px
@@ -639,7 +639,7 @@ footer
 @media screen and (max-width: 900px)
   .mobile-only-900
     display: block
-  header, footer
+  header
     height: 78px
     .btn-mobile-toggle
       display: block
@@ -724,7 +724,7 @@ footer
       position: relative
       display: block
   .block3
-    padding: 0 15px 10px 15px
+    padding: 0 15px 0 15px
 
 @media screen and (max-width: 768px)
   .mobile-only-768
@@ -739,8 +739,6 @@ footer
         display: none
       .ab-link
         display: none
-  footer
-    display: none
   .block1
     h1
       font-size: 5.8vw
@@ -837,6 +835,7 @@ footer
       .form-control
         font-size: 16px
         height: 46px
+        line-height: 46px
     .btn
       font-size: 17px
       width: 100%
@@ -863,7 +862,6 @@ footer
           font-size: 15px
           line-height: 21px
   .block3
-    padding-bottom: 25px
     .service-pic
       width: 100%
   .block4
@@ -875,7 +873,7 @@ footer
     .form-group
       .form-control
         font-size: 16px
-        line-height: 40
+        line-height: 40px
         height: 40px
         margin-bottom: 5px
       .hint
