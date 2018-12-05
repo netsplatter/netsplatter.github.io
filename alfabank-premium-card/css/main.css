@@ -61,22 +61,6 @@ form .form-group input {
   height: 60px;
   line-height: 60px;
 }
-form .btn {
-  background-color: #ef3125;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  color: #fff;
-  font-size: 20px;
-  width: 220px;
-  height: 60px;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  font-weight: 500;
-}
-form .btn:hover {
-  background-color: #de2014;
-}
 form.form-more {
   width: 540px;
 }
@@ -132,6 +116,23 @@ form.form-order .submit-hint a {
   color: #1c1618;
   border-bottom: 1px solid #a5a3a4;
   padding-bottom: 3px;
+}
+
+form .btn, .modal .btn {
+  background-color: #ef3125;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 20px;
+  width: 220px;
+  height: 60px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+form .btn:hover, .modal .btn:hover {
+  background-color: #de2014;
 }
 
 .side-nav {
@@ -235,6 +236,52 @@ form.form-order .submit-hint a {
 .slick-dots li.slick-active button {
   background-color: #ef3125;
   border-color: #ef3125;
+}
+
+.modal {
+  text-align: center;
+}
+.modal .modal-dialog {
+  top: 15%;
+  width: 540px;
+}
+.modal .modal-content {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.modal .modal-content .close {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  z-index: 1;
+  outline: none;
+}
+.modal .modal-content .close:before {
+  content: "+";
+  font-size: 44px;
+  line-height: 16px;
+  transform: rotate(45deg);
+  position: absolute;
+  left: -5px;
+  top: 0;
+  color: #a5a3a4;
+  font-weight: 400;
+  text-shadow: none;
+}
+.modal .modal-content .modal-body {
+  padding: 40px 20px;
+}
+.modal .modal-content .modal-body h3 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+.modal .modal-content .modal-body p {
+  font-size: 16px;
+  margin-bottom: 30px;
 }
 
 header {
@@ -451,7 +498,7 @@ header.header-main {
 }
 
 .block3 {
-  padding: 70px 15px 0 15px;
+  padding: 40px 15px 0 15px;
   overflow: hidden;
 }
 .block3 .wrapper {
@@ -481,8 +528,7 @@ header.header-main {
 .block3 .premium .item {
   float: left;
   width: 50%;
-  height: 70px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 .block3 .premium .item img {
   float: left;
@@ -499,8 +545,16 @@ header.header-main {
   display: block;
   margin-top: 5px;
 }
+.block3 .premium .item:nth-child(1) {
+  height: 120px;
+  margin-bottom: 20px;
+}
 .block3 .premium .item:nth-child(1) img {
   width: 44px;
+}
+.block3 .premium .item:nth-child(2) {
+  height: 120px;
+  margin-bottom: 20px;
 }
 .block3 .premium .item:nth-child(2) img {
   width: 39px;
@@ -558,7 +612,7 @@ header.header-main {
   float: right;
 }
 .footer .logo img {
-  width: 164px;
+  width: 120px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -628,9 +682,6 @@ header.header-main {
     font-size: 18px;
   }
 
-  .block3 {
-    padding: 70px 15px 0 15px;
-  }
   .block3 h2 {
     margin-bottom: 10px;
   }
@@ -953,6 +1004,10 @@ header.header-main {
     height: auto;
     margin: 0 0 15px 0;
   }
+  .block3 .premium .item:nth-child(1), .block3 .premium .item:nth-child(2) {
+    height: auto;
+    margin-bottom: 15px;
+  }
   .block3 .premium .item img {
     float: none;
     display: inline-block;
@@ -995,7 +1050,7 @@ header.header-main {
     line-height: 88px;
   }
   .footer .logo img {
-    width: 106px;
+    width: 76px;
   }
 }
 @media screen and (max-width: 640px) {
@@ -1024,6 +1079,15 @@ header.header-main {
   }
 
   form.form-order {
+    width: 100%;
+  }
+
+  .modal .modal-dialog {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
     width: 100%;
   }
 }
@@ -1105,6 +1169,25 @@ header.header-main {
   .footer .logo {
     display: none;
   }
+
+  .modal .modal-content .close {
+    top: 10px;
+    right: 5px;
+  }
+  .modal .modal-content .modal-body {
+    padding: 25px 20px;
+  }
+  .modal .modal-content .modal-body h3 {
+    font-size: 6.25vw;
+  }
+  .modal .modal-content .modal-body p {
+    font-size: 3.25vw;
+    margin-bottom: 20px;
+  }
+  .modal .modal-content .modal-body .btn {
+    font-size: 17px;
+    height: 46px;
+  }
 }
 @media screen and (max-width: 360px) {
   .block1 h1 {
@@ -1124,6 +1207,13 @@ header.header-main {
   }
   .block3 .premium {
     width: auto;
+  }
+
+  .modal .modal-content .modal-body h3 {
+    font-size: 7vw;
+  }
+  .modal .modal-content .modal-body p {
+    font-size: 4vw;
   }
 }
 

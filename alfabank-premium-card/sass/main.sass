@@ -63,20 +63,6 @@ form
       font-weight: 100
       height: 60px
       line-height: 60px
-  .btn
-    background-color: $color-red
-    -webkit-border-radius: 4px
-    -moz-border-radius: 4px
-    border-radius: 4px
-    color: #fff
-    font-size: 20px
-    width: 220px
-    height: 60px
-    -webkit-transition: all .2s ease
-    transition: all .2s ease
-    font-weight: 500
-    &:hover
-      background-color: #de2014
   &.form-more
     width: 540px
     .form-group
@@ -121,6 +107,23 @@ form
         color: $color-black
         border-bottom: 1px solid #a5a3a4
         padding-bottom: 3px
+
+
+form, .modal
+  .btn
+    background-color: $color-red
+    -webkit-border-radius: 4px
+    -moz-border-radius: 4px
+    border-radius: 4px
+    color: #fff
+    font-size: 20px
+    width: 220px
+    height: 60px
+    -webkit-transition: all .2s ease
+    transition: all .2s ease
+    font-weight: 500
+    &:hover
+      background-color: #de2014
 
 .side-nav
   height: 130px
@@ -182,6 +185,8 @@ form
 .mobile-only-900,
 .mobile-only-768
   display: none
+
+// Slider styles
 .slick-slide
   outline: none
 .slick-dots
@@ -209,6 +214,53 @@ form
       button
         background-color: $color-red
         border-color: $color-red
+
+
+// Modal Styles
+.modal
+  text-align: center
+  //&:before
+  //  content: ''
+  //  display: inline-block
+  //  vertical-align: middle
+  //  height: 100%
+  .modal-dialog
+    //display: inline-block
+    //vertical-align: middle
+    top: 15%
+    width: 540px
+  .modal-content
+    -webkit-border-radius: 0
+    -moz-border-radius: 0
+    border-radius: 0
+    .close
+      width: 16px
+      height: 16px
+      position: absolute
+      right: 20px
+      top: 20px
+      cursor: pointer
+      z-index: 1
+      outline: none
+      &:before
+        content: '+'
+        font-size: 44px
+        line-height: 16px
+        transform: rotate(45deg)
+        position: absolute
+        left: -5px
+        top: 0
+        color: #a5a3a4
+        font-weight: 400
+        text-shadow: none
+    .modal-body
+      padding: 40px 20px
+      h3
+        font-size: 30px
+        margin-bottom: 12px
+      p
+        font-size: 16px
+        margin-bottom: 30px
 
 header
   height: 110px
@@ -326,8 +378,6 @@ header
 header.header-main
   background-color: $color-red
 
-
-
 .block1
   text-align: center
   padding-top: 60px
@@ -392,7 +442,7 @@ header.header-main
     margin: auto
 
 .block3
-  padding: 70px 15px 0 15px
+  padding: 40px 15px 0 15px
   overflow: hidden
   .wrapper
     max-width: 1170px
@@ -416,8 +466,11 @@ header.header-main
     .item
       float: left
       width: 50%
-      height: 70px
-      margin-bottom: 60px
+      margin-bottom: 40px
+      //&:nth-child(odd)
+      //  float: left
+      //&:nth-child(even)
+        float: right
       img
         float: left
       div
@@ -431,9 +484,13 @@ header.header-main
           display: block
           margin-top: 5px
       &:nth-child(1)
+        height: 120px
+        margin-bottom: 20px
         img
           width: 44px
       &:nth-child(2)
+        height: 120px
+        margin-bottom: 20px
         img
           width: 39px
       &:nth-child(3)
@@ -482,7 +539,7 @@ header.header-main
     line-height: 150px
     float: right
     img
-      width: 164px
+      width: 120px
 
 
 @media screen and (max-width: 1400px)
@@ -535,7 +592,6 @@ header.header-main
     .advantages .item div
       font-size: 18px
   .block3
-    padding: 70px 15px 0 15px
     h2
       margin-bottom: 10px
     p
@@ -777,6 +833,10 @@ header.header-main
         text-align: center
         height: auto
         margin: 0 0 15px 0
+        &:nth-child(1),
+        &:nth-child(2)
+          height: auto
+          margin-bottom: 15px
         img
           float: none
           display: inline-block
@@ -806,7 +866,7 @@ header.header-main
     .logo
       line-height: 88px
       img
-        width: 106px
+        width: 76px
 
 @media screen and (max-width: 640px)
   form.form-more
@@ -826,6 +886,14 @@ header.header-main
       width: 90%
   form.form-order
     width: 100%
+  .modal
+    .modal-dialog
+      position: absolute
+      top: 25%
+      left: 0
+      right: 0
+      margin: auto
+      width: 100%
 
 @media screen and (max-width: 480px)
   form.form-more
@@ -888,7 +956,20 @@ header.header-main
   .footer 
     .logo
       display: none
-
+  .modal .modal-content
+    .close
+      top: 10px
+      right: 5px
+    .modal-body
+      padding: 25px 20px
+      h3
+        font-size: 6.25vw
+      p
+        font-size: 3.25vw
+        margin-bottom: 20px
+      .btn
+        font-size: 17px
+        height: 46px
 @media screen and (max-width: 360px)
   .block1
     h1
@@ -903,7 +984,11 @@ header.header-main
       margin-bottom: 10vw
     .premium
       width: auto
-
+  .modal .modal-content .modal-body
+    h3
+      font-size: 7vw
+    p
+      font-size: 4vw
 
 
 
