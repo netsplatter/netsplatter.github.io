@@ -1,0 +1,23 @@
+.block-faq {
+  background: url(../img/grey-tiles-bg.jpg) 0 0 no-repeat;
+  background-size: cover;
+  padding-top: 240px;
+  padding-bottom: 130px;
+
+  .wrapper {
+    width: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    @media #{$desktop} {
+      width: 900px;
+    }
+  }
+
+  h2 {
+    color: #fff;
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,23 @@
+body:not(.safari) {
+  .block-start,
+  .block-partners,
+  .block-prizes,
+  .block-chair,
+  .block-tanks,
+  .block-mechanics,
+  .block-all-series,
+  .block-video,
+  .block-winners,
+  .block-lk,
+  .lk__entry,
+  .block-video,
+  .block-faq {
+    background-attachment: fixed;
+  }
+}
+body.safari {
+  .block-faq {
+    background-repeat: repeat;
+    background-size: contain;
+  }
+}

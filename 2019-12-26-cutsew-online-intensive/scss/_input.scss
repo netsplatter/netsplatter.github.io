@@ -1,0 +1,109 @@
+.input {
+  position: relative;
+  input {
+    height: 50px;
+    width: 430px;
+    padding: 0 20px;
+    border: 1px solid #D0DCEA;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    outline: none;
+    box-shadow: none;
+    &:focus {
+      border-color: $color-pink-middle;
+    }
+    &::-webkit-input-placeholder { /* WebKit browsers */
+      color: $color-blue-gray2;
+      font-size: $font-size-lg;
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color: $color-blue-gray2;
+      font-size: $font-size-lg;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color: $color-blue-gray2;
+      font-size: $font-size-lg;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10+ */
+      color: $color-blue-gray2;
+      font-size: $font-size-lg;
+    }
+  }
+  &__placeholder {
+    font-size: $font-size-sm;
+    color: $color-blue-gray2;
+    line-height: 6px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    display: none;
+  }
+  &_active {
+    input {
+      padding: 12px 20px 0 20px;
+      border-color: $color-pink-middle;
+    }
+    .input__placeholder {
+      display: block;
+    }
+  }
+  &_error,
+  &.has-error {
+    input {
+      border: 2px solid #F76F93;
+      padding-right: 75px;
+    }
+    &:after {
+      content: "Данные некоректны";
+      color: $color-pink;
+      font-size: 10px;
+      line-height: 6px;
+      position: absolute;
+      left: 20px;
+      top: 7px;
+    }
+    .help-block {
+      color: #F76F93!important;
+      font-size: 14px;
+      text-align: center;
+      //position: absolute;
+      //left: 0;
+      //right: 0;
+      //bottom: -25px;
+    }
+    .input__placeholder,
+    .input_active .input__placeholder {
+      display: none;
+    }
+  }
+  &_form {
+    margin: 0 30px;
+    @media screen and (max-width: 1140px){
+      width: 330px;
+      margin: 10px auto;
+      input {
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 420px){
+      width: 95%;
+      margin: 0 auto;
+      input {
+        //padding-bottom: 4px;
+        &::-webkit-input-placeholder {
+          font-size: 11px;
+        }
+        &:-ms-input-placeholder {
+          font-size: 11px;
+        }
+        &::-ms-input-placeholder {
+          font-size: 11px;
+        }
+        &::placeholder {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+.sequence {
+  display: flex;
+  justify-content: center;
+  &__item {
+    font-family: KelsonSans;
+    text-align: center;
+    width: 290px;
+    &:focus {
+      outline: none;
+    }
+    &_start {
+      width: 280px;
+    }
+    &_tanks {
+      color: $color-white;
+      &:nth-child(1) {
+        .sequence__txt2 {
+          width: 195px;
+        }
+      }
+      &:nth-child(2) {
+        .sequence__txt2 {
+          width: 180px;
+        }
+      }
+    }
+    &_mechanics {
+      width: 250px;
+    }
+    &_mobile {
+      .sequence__txt1,
+      .sequence__txt2 {
+        width: 280px;
+        margin: 0 auto;
+      }
+    }
+  }
+  &__circle {
+    background-color: $color-red;
+    font-family: Pringles;
+    font-size: 75px;
+    color: $color-white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    line-height: 1;
+    padding: 8px 0;
+    box-sizing: border-box;
+    margin: 0 auto 13px auto;
+    transition: all 0.25s ease-in-out;
+
+    &_tanks {
+      font-size: 50px;
+      width: 56px;
+      height: 56px;
+      line-height: 46px;
+      margin-bottom: 10px;
+    }
+
+    &_mobile {
+      font-size: 37.5px;
+      line-height: 46px;
+      width: 42px;
+      height: 42px;
+      margin: 0 14px;
+      padding: 0;
+    }
+
+    &_active {
+      background-color: $color-yellow;
+    }
+  }
+
+  &__txt1 {
+    color: $color-red;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  &__txt2 {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 auto;
+    &_mechanics {
+      color: $color-white;
+    }
+  }
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+  &_start {
+    margin-top: 38px;
+  }
+  &_mobile {
+    display: none;
+    flex-wrap: wrap;
+  }
+  &_tanks {
+    margin-top: 62px;
+  }
+  &_mechanics {
+    justify-content: space-between;
+  }
+  @media screen and (max-width: 900px) {
+    &:not(.sequence_mechanics) {
+      display: none;
+    }
+    &_mobile {
+      display: flex!important;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    &_mechanics {
+      display: block;
+      .sequence__item {
+        margin: 0 auto 30px auto;
+      }
+      .sequence__circle {
+        margin-bottom: 28px;
+      }
+    }
+    &__item_mechanics:nth-child(1) {
+      width: 300px;
+    }
+    &__item_mechanics:nth-child(3) {
+      width: 300px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    &_tanks {
+      margin-top: 30px;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    &_mechanics {
+      .sequence__circle {
+        font-size: 60px;
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+}

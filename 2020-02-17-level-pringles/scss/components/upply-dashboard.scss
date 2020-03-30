@@ -1,0 +1,97 @@
+.uppy-loader__box .uppy-Dashboard {
+  &-inner {
+    background-color: rgba(196, 196, 196, 0.16);
+    border: 1px dashed $gray;
+    border-radius: 18px;
+  }
+
+  &-browse {
+    color: $color-blue;
+
+    &:hover,
+    &:active,
+    &:focus {
+      border: none;
+    }
+
+    @media #{$fine-hover} {
+      &:hover,
+      &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &-dropFilesTitle {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 370px;
+    font-family: 'KelsonSans';
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-main;
+
+    &::before {
+      content: svg-load('../src/svg/plus.svg');
+      display: block;
+      width: 48px;
+      height: 48px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &Item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $gray;
+    padding: 10px 0 10px 10px;
+  }
+
+  &Content-title,
+  &Content-back,
+  &Item-name,
+  &Item-status {
+    font-family: 'KelsonSans';
+  }
+}
+
+.uppy-loader__box .uppy-size--md .uppy-Dashboard,
+.uppy-loader__box .uppy-size--lg .uppy-Dashboard {
+  &-dropFilesTitle {
+    font-size: 16px;
+  }
+
+  &Item {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    border-bottom: none;
+    margin: 0;
+    padding: 10px 0 10px 10px;
+
+    &-preview {
+      flex-shrink: 0;
+      flex-grow: 0;
+      width: 50px;
+      height: 50px;
+    }
+
+    &-action {
+      position: static;
+      width: 22px;
+      height: 22px;
+      padding: 3px;
+      margin-left: 3px;
+    }
+
+    &-fileInfoAndButtons {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 8px;
+      padding-left: 12px;
+    }
+  }
+}

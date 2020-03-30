@@ -1,0 +1,83 @@
+.header {
+  background-color: $color-white;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 83px;
+  z-index: 3;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  &__logo {
+    width: 140px;
+    margin-top: -8px;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+  }
+  &_inactive {
+    background-color: transparent;
+    height: auto;
+    .icon_menu {
+     // top: 43px;
+    }
+    .header__logo {
+      width: 268px;
+      margin-top: auto;
+    }
+    .user_header {
+     // top: 39px;
+    }
+    &.header_extra {
+      .header__logo {
+        width: 145px;
+      }
+    }
+    .icon_menu-inverted {
+      path {
+        fill: $color-white;
+      }
+      @media (hover: hover) and (min-width: 1024px) {
+        &:hover {
+          path {
+            fill: $color-red;
+          }
+        }
+        &:active {
+          path {
+            fill: $color-orange;
+          }
+        }
+      }
+    }
+  }
+  &_extra {
+    .header__logo {
+      width: 90px;
+      margin-top: 10px;
+    }
+  }
+  @media screen and (max-width: 600px){
+    &_inactive {
+      .header__logo {
+        width: 134px;
+      }
+      .user_header {
+        top: 20px;
+      }
+      .icon_menu {
+        top: 33px;
+      }
+    }
+    &__logo {
+      width: 120px;
+    }
+  }
+  @media screen and (min-width: 1180px){
+    .wrapper {
+      max-width: none;
+    }
+  }
+}

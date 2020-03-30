@@ -1,0 +1,29 @@
+.block-winners {
+  background: url(../img/grey-tiles-bg.jpg) 0 0 no-repeat;
+  background-size: cover;
+  padding-top: 120px;
+  padding-bottom: 160px;
+  height: 100%;
+  .wrapper {
+    width: 900px;
+  }
+  h3 {
+    color: $color-white;
+    margin-top: 0;
+    margin-bottom: 55px;
+  }
+  @media screen and (max-width: 900px){
+    .wrapper {
+      width: auto;
+    }
+  }
+  @media screen and (max-width: 420px){
+    background-attachment: initial;
+    padding-top: 18vw;
+    padding-bottom: 20vw;
+    h3 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+}

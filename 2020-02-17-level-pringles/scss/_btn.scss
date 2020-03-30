@@ -1,0 +1,121 @@
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  font-family: Impact;
+  font-size: 18px;
+  font-weight: 400;
+  box-shadow: 0 4px 46px rgba(0, 0, 0, 0.15);
+  border-radius: 60px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+
+  @media (hover: hover) and (min-width: 1024px) {
+    &:hover {
+      background-color: $color-yellow;
+      text-decoration: none;
+    }
+
+    &:active {
+      background-color: $color-orange;
+      text-decoration: none;
+    }
+  }
+
+  &:focus {
+    box-shadow: none;
+    text-decoration: none;
+  }
+
+  &_default {
+    background-color: $color-red;
+    color: $color-white;
+    width: 344px;
+    height: 67px;
+    line-height: 68px;
+    padding: 0;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &_empty {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $gray;
+    cursor: default;
+
+    @media (hover: hover) {
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $gray;
+      }
+    }
+  }
+
+  &_extra {
+    background-color: $color-white;
+    color: $color-main;
+    width: 159px;
+    height: 47px;
+    line-height: 48px;
+    font-size: 12.72px;
+  }
+
+  &_start {
+    margin-top: 25px;
+  }
+
+  &_burgermenu {
+    //position: absolute;
+    //right: 0;
+    //top: 49px;
+    text-align: center;
+    @media screen and (max-width: 880px){
+      right: auto;
+      top: auto;
+      position: relative;
+    }
+  }
+
+  &_tanks {
+    width: 294px;
+    margin-top: 20px;
+  }
+
+  &_feeder {
+    width: 300px !important;
+    text-align: center;
+  }
+
+  &_promocode {
+    background-color: $color-red;
+    color: $color-white;
+    padding: 0;
+    font-size: 18px;
+    line-height: 48px;
+    width: 136px;
+    height: 49px;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+  @media screen and (max-width: 600px){
+    &_default {
+      width: 238px;
+    }
+  }
+  @media screen and (max-width: 375px){
+    &_feeder {
+      width: 100%!important;
+      padding-left: 30px;
+      box-sizing: border-box;
+    }
+  }
+}

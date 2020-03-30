@@ -1,0 +1,156 @@
+.block-mechanics {
+  background: url(../img/grey-tiles-bg.jpg) 0 0 no-repeat;
+  background-size: cover;
+  padding: 0;
+  min-height: 1050px;
+
+  &_padding-menu {
+    padding-top: 200px !important;
+    padding-bottom: 50px !important;
+  }
+
+  > .wrapper {
+    width: 840px;
+  }
+  h3 {
+    color: $color-yellow;
+    margin-top: 0;
+    margin-bottom: 85px;
+  }
+  &__logos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 35px;
+  }
+  &__logo {
+    font-family: Impact;
+    color: $color-yellow;
+    font-size: 19.883px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    width: 262px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    &:hover {
+      color: $color-orange;
+      text-decoration: none;
+    }
+    &_wot {
+      img {
+        width: 229px;
+      }
+    }
+    &_wow {
+      img {
+        width: 214px;
+      }
+    }
+    &_lol {
+      img {
+        width: 192px;
+      }
+    }
+    &_minecraft {
+      img {
+        width: 180px;
+      }
+    }
+    &_cs {
+      img {
+        width: 262px;
+      }
+    }
+    &_gta {
+      img {
+        width: 138px;
+      }
+    }
+    &_dota {
+      img {
+        width: 94px;
+      }
+    }
+    &_overwatch {
+      img {
+        width: 173px;
+      }
+    }
+  }
+  @media screen and (min-height: 900px){
+    min-height: 1400px;
+  }
+  @media screen and (max-width: 800px){
+    padding-top: 60px;
+    padding-bottom: 40px;
+    height: auto!important;
+    &__logos {
+      justify-content: center;
+    }
+    &__logo {
+      width: 45%;
+      &_link {
+        width: 100%;
+      }
+    }
+  }
+  @media screen and (max-width: 600px){
+    &__logo {
+      height: 120px;
+      &_wot {
+        img {
+          width: 128px;
+        }
+      }
+      &_wow {
+        img {
+          width: 120px;
+        }
+      }
+      &_lol {
+        img {
+          width: 108px;
+        }
+      }
+      &_minecraft {
+        img {
+          width: 107px;
+        }
+      }
+      &_cs {
+        img {
+          width: 125px;
+        }
+      }
+      &_gta {
+        img {
+          width: 100px;
+        }
+      }
+      &_dota {
+        img {
+          width: 65px;
+        }
+      }
+      &_overwatch {
+        img {
+          width: 121px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 420px){
+    padding-bottom: 20px;
+    background-attachment: initial;
+    h3 {
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 30px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 20px;
+  color: $color-main;
+  cursor: pointer;
+
+  &__input {
+    display: none;
+  }
+
+  &__input-indicator {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 13px;
+    border-radius: 5px;
+    border: 1px solid $color-red;
+    transition: background-color 0.15s linear;
+    flex: none;
+  }
+
+  &__input:checked + &__input-indicator {
+    background-color: $color-red;
+    background-image: svg-load('../src/svg/check.svg', stroke=$color-white);
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  @media screen and (max-width: 420px){
+    font-size: 10px;
+  }
+}

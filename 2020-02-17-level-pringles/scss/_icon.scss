@@ -1,0 +1,172 @@
+.icon {
+  cursor: pointer;
+  transition: fill 0.5s;
+  &_fb,
+  &_ins,
+  &_vk {
+    rect {
+      transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+    }
+    @media (hover: hover) and (min-width: 1024px) {
+      &:hover {
+        rect {
+          fill: $color-yellow;
+        }
+      }
+      &:active {
+        rect {
+          fill: $color-orange;
+        }
+      }
+    }
+  }
+  &_menu {
+    position: absolute;
+    left: 15px;
+    top: 34px;
+    padding: 5px;
+    path {
+      transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+    }
+    @media (hover: hover) and (min-width: 1024px) {
+      &:hover {
+        path {
+          fill: $color-red;
+        }
+      }
+      &:active {
+        path {
+          fill: $color-orange;
+        }
+      }
+    }
+  }
+  &_btn-play {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 26px;
+    margin: auto;
+  }
+
+  &_mouse {
+    background-color: $color-white;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    margin: 47px auto 0 auto;
+    padding: 11px 0;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+    cursor: default;
+
+    svg {
+      width: 14px;
+    }
+  }
+
+  &_burgermenu-close {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 1;
+    path {
+      transition: all 0.5s ease-in-out;
+    }
+    @media (hover: hover) and (min-width: 1024px) {
+      &:hover {
+        path {
+          fill: $color-yellow;
+        }
+      }
+      &:active {
+        path {
+          fill: $color-orange;
+        }
+      }
+    }
+  }
+  &_feeder {
+    width: 83px;
+    position: absolute;
+    top: -22px;
+    left: -10px;
+  }
+  &_user-empty {
+    rect, path {
+      transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+    }
+    @media (hover: hover) and (min-width: 1024px) {
+      &:hover {
+        rect {
+          fill: $color-red;
+        }
+        path {
+          fill: $color-white;
+        }
+      }
+    }
+  }
+  &_arrow {
+    margin-left: auto;
+  }
+
+  @media screen and (max-width: 1200px){
+    &_menu {
+      left: 15px;
+    }
+    &_burgermenu-close {
+      left: 20px;
+    }
+  }
+  @media screen and (min-width: 1180px){
+    &_burgermenu-close {
+      left: 40px;
+    }
+    &_menu {
+      left: 40px;
+    }
+  }
+  @media screen and (min-height: 900px){
+    &_menu {
+      transform: scale(1.5);
+    }
+  }
+  @media screen and (max-width: 880px){
+    &_burgermenu-close {
+      top: 30px;
+    }
+  }
+  @media screen and (max-width: 600px){
+    &_user-empty {
+      width: 42px;
+      height: 42px;
+    }
+    &_menu {
+      top: 33px;
+    }
+    &_burgermenu-close {
+      top: 32px;
+    }
+  }
+}
+
+.UppyIcon {
+  width: 100%;
+  height: 100%;
+}
+
+.uppy-Dashboard:not(.uppy-size--md) .uppy-DashboardItem-action {
+  width: 30px!important;
+  height: 30px!important;
+}
+
+.uppy-DashboardContent-addMore {
+  padding: 5px 5px!important;
+}

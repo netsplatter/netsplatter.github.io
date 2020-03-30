@@ -1,0 +1,141 @@
+.block-tanks {
+  background: url(../img/block-tanks-bg.jpg) 0 0 no-repeat;
+  background-size: cover;
+  text-align: center;
+  //padding-top: 110px;
+  //padding-bottom: 98px;
+  min-height: 700px;
+  .wrapper {
+    width: 810px;
+  }
+  h2 {
+    color: $color-yellow;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-size: 30px;
+    color: $color-white;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  &__p1 {
+    font-family: KelsonSans;
+    font-size: 20px;
+    line-height: 28px;
+    color: $color-white;
+    margin-bottom: 14px;
+  }
+  &_wot {
+    background-image: url(../img/wot-bg.jpg);
+    background-position: center 0;
+    padding-top: 250px;
+    min-height: 600px;
+    h2 {
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      padding-right: 280px;
+      margin-bottom: 30px;
+      img {
+        width: 280px;
+        //margin-top: -78px;
+        position: absolute;
+        top: -77px;
+        right: 125px;
+      }
+    }
+    .sequence_tanks {
+      margin-top: 20px;
+    }
+    .sequence__item_tanks {
+      &:nth-of-type(3) {
+        width: 280px;
+      }
+    }
+    .btn_extra {
+      display: block;
+      margin: 17px auto 0 auto;
+    }
+    @media screen and (min-height: 720px){
+      padding-top: 150px;
+      padding-bottom: 0;
+    }
+    @media screen and (min-height: 900px){
+      padding-top: 120px;
+      min-height: 740px!important;
+    }
+  }
+  .sequence__txt2 {
+    color: $color-white;
+  }
+  @media screen and (max-width: 1024px){
+    padding-top: 160px;
+    padding-bottom: 0;
+    min-height: 608px;
+  }
+  @media screen and (max-width: 900px){
+    .wrapper {
+      width: 100%;
+      padding: 0;
+    }
+    h2, h3, .block-tanks__p1 {
+      padding: 0 15px;
+    }
+    h2 {
+      font-size: 36px;
+      line-height: 36px!important;
+    }
+    h3 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+    &__p1 {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    &.block-tanks_wot {
+      padding-top: 220px;
+      padding-bottom: 50px;
+      h2 {
+        display: block;
+        img {
+          position: relative;
+          top: auto;
+          right: auto;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+      .sequence_tanks {
+        margin-top: 30px;
+      }
+    }
+  }
+  @media screen and (max-width: 600px){
+    background-position: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (max-width: 420px){
+    background-attachment: initial;
+    background-image: url(../img/block-tanks-bg-mobile.jpg);
+    &_wot {
+      background-image: url(../img/wot-bg-mobile.jpg);
+    }
+    min-height: 0;
+    h2 {
+      font-size: 8.5vw;
+      line-height: 10vw;
+    }
+    h3 {
+      font-size: 5.6vw;
+      line-height: 7vw;
+    }
+    &__p1 {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}

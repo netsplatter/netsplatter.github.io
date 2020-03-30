@@ -1,0 +1,95 @@
+.uppy-loader {
+  &__box {
+    margin-bottom: 30px;
+  }
+
+  &__link-rules {
+    display: block;
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-blue;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+    }
+
+    @media #{$fine-hover} {
+      &:hover,
+      &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__button-load {
+    position: relative;
+
+    &::after {
+      content: "Загрузка...";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 15;
+      visibility: hidden;
+      opacity: 0;
+      transform: translate(-50%, -50%);
+      transition: 0.15s opacity 0.15s linear, 0.15s visibility 0.15s linear
+    }
+
+    &_loading {
+      &::after {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__button-load_text {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.15s linear, visibility 0.15s linear;
+  }
+
+  &__button-load_loading &__button-load-text {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &__button-load-bar {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 60px;
+    background-color: rgba(187, 190, 201, 0.8);
+    overflow: hidden;
+  }
+
+  &__button-load_loading &__button-load-bar {
+    display: block;
+  }
+
+  &__button-load-progress {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    z-index: 5;
+    display: block;
+    width: 100%;
+    background-color: $color-red;
+    border-radius: 60px;
+    transition: left 0.5s linear;
+  }
+
+  &__button-cabinet {
+    margin-bottom: 20px;
+  }
+}

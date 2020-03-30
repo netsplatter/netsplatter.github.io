@@ -1,0 +1,106 @@
+.mainpage {
+  background: url(../img/bg.jpg) center 0 no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 150px;
+  min-height: 100%;
+  &__logo {
+    display: inline-block;
+  }
+  &__success {
+    font-size: 24px;
+    width: 1000px;
+    margin: 80px auto 125px auto;
+    display: none;
+    h2 {
+      font-size: 50px;
+    }
+    h4 {
+      margin-top: 45px;
+      margin-bottom: 30px;
+    }
+    > span {
+      font-size: 14px;
+    }
+  }
+  .wrapper > h2 {
+    margin: 15px auto 20px auto;
+    letter-spacing: 1px;
+  }
+  .wrapper > h4 {
+    letter-spacing: 1px;
+  }
+  &__event {
+    font-size: 20px;
+    background-color: $color-light-blue;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    width: 350px;
+    height: 50px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      color: $color-pink;
+      font-weight: 500;
+      margin-left: 5px;
+    }
+  }
+  &_success {
+    .wrapper>h2,
+    .wrapper>h4,
+    .form,
+    .content {
+      display: none;
+    }
+    .mainpage__success {
+      display: block;
+    }
+    .mainpage__success,
+    .mainpage__event {
+      margin-top: 40px;
+    }
+  }
+  @media screen and (max-width: 1140px){
+    padding-bottom: 60px;
+    &__success {
+      width: auto;
+    }
+    .wrapper>h4,
+    .wrapper>h2 {
+      padding: 0 10px;
+    }
+  }
+  @media screen and (max-width: 640px){
+    padding-bottom: 20px;
+    padding-top: 40px;
+    &__success {
+      font-size: 4vw;
+      width: 100%;
+      h2 {
+        font-size: 9vw;
+        line-height: 13vw;
+      }
+      h4 {
+        font-size: 6vw;
+        line-height: 9vw;
+      }
+      .mainpage__event {
+        width: 100%;
+        height: 10vw;
+        font-size: 4vw;
+      }
+    }
+  }
+  @media screen and (max-width: 420px){
+    .wrapper>h2 {
+      font-size: 8vw!important;
+    }
+    .wrapper>h4 {
+      font-size: 3.8vw!important;
+    }
+  }
+}

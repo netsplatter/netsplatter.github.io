@@ -1,0 +1,31 @@
+.controls {
+  &_heading {
+    margin-left: auto;
+    .icon_link {
+      margin-right: 25px;
+    }
+    .dropdown {
+      .dropdown-menu {
+        margin-left: -190px!important;
+        top: 5px!important;
+      }
+    }
+  }
+  &_commentary {
+    margin-top: 25px;
+    margin-left: 90px;
+    span {
+      cursor: pointer;
+      font-size: 14px;
+      margin: 0 10px;
+      .icon-heart {
+        margin-right: 5px;
+        margin-top: -2px;
+      }
+      &.disabled {
+        color: $color-aluminium;
+        pointer-events: none;
+      }
+    }
+  }
+}

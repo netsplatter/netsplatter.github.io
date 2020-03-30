@@ -1,0 +1,31 @@
+.auth-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    width: 270px;
+    padding: 25px;
+    color: $color-white;
+    background-color: #5181B8;
+    text-decoration: none;
+  }
+
+  &__icon {
+    width: 31px;
+    height: 18px;
+    margin-right: 40px;
+    fill: $color-white;
+  }
+}

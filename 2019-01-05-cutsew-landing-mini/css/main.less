@@ -1,0 +1,325 @@
+// #Fonts
+@font-face {
+  font-family: BadScript;
+  src: url(../fonts/BadScript-Regular.eot);
+  src: url(../fonts/BadScript-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: KobzarKS;
+  src: url(../fonts/KobzarKS.eot);
+  src: url(../fonts/KobzarKS.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Bold.eot);
+  src: url(../fonts/OpenSans-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-BoldItalic.eot);
+  src: url(../fonts/OpenSans-BoldItalic.ttf);
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Italic.eot);
+  src: url(../fonts/OpenSans-Italic.ttf);
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Light.eot);
+  src: url(../fonts/OpenSans-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-LightItalic.eot);
+  src: url(../fonts/OpenSans-LightItalic.ttf);
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Regular.eot);
+  src: url(../fonts/OpenSans-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Semibold.eot);
+  src: url(../fonts/OpenSans-Semibold.ttf);
+  font-weight: 500;
+}
+
+@color-black: #2b2a29;
+
+html, body {
+  font-family: OpenSans;
+  font-weight: 400;
+  color: @color-black;
+  background-color: #fff;
+  text-align: center;
+}
+div, ul, li, p {
+  position: relative;
+}
+p {
+  margin: 0;
+}
+.container-fluid {
+  padding: 0;
+}
+.wrapper {
+  width: 100%;
+  max-width: 480px!important;
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative;
+}
+h2 {
+  margin: 0;
+  font-weight: 300;
+  color: @color-black;
+  font-size: 28px!important;
+}
+.btn {
+  height: 44px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: block;
+  margin: auto;
+  color: #fff;
+  font-size: 14.5px;
+  line-height: 30px;
+  font-weight: 600;
+  &.btn-green {
+    background-color: #4ed8c2;
+    border-color: #4ed8c2;
+    &:hover {
+      background-color: #4ed8c2!important;
+      border-color: #4ed8c2!important;
+      color: #fff!important;
+    }
+  }
+  &.btn-blue {
+    background-color: #65c4e0;
+    border-color: #65c4e0;
+    &:hover {
+      background-color: #65c4e0!important;
+      border-color: #65c4e0!important;
+      color: #fff!important;
+    }
+  }
+  &.btn-pink {
+    background-color: #f77093;
+    &:hover {
+      background-color: #f77093!important;
+      border-color: #f77093!important;
+      color: #fff!important;
+    }
+  }
+  &:hover,
+  &:after {
+    color: #fff;
+    outline: none;
+  }
+}
+header {
+  height: 92px;
+  box-shadow: 0 3px 7px 0 rgba(63, 142, 150, 0.2);
+  border-bottom: 1px solid #64bac3;
+  padding: 18px 0;
+  margin-bottom: 25px;
+  .logo {
+    width: 126px;
+    float: left;
+    img {
+      display: inline-block;
+      margin-bottom: -12px;
+      width: 100%;
+    }
+    span {
+      color: #2b2a29;
+      font-weight: 700;
+      font-size: 5px;
+      letter-spacing: 1px;
+      display: inline-block;
+    }
+  }
+  .phone {
+    float: right;
+    line-height: 54px;
+  }
+}
+.block1 {
+  &.container-fluid {
+    padding-bottom: 35px;
+  }
+  h2 {
+    color: #64bac3;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 44px;
+    margin-bottom: 20px;
+  }
+  p {
+    color: #436363;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+.page-block {
+  padding: 35px 0;
+  border-bottom: 1px solid #f0f0f0;
+  img {
+    width: 100%;
+    border: 1px solid;
+    &.green {
+      border-color: #4ed8c2;
+    }
+    &.blue {
+      border-color: #65c4e0;
+    }
+    &.pink {
+      border-color: #f77093;
+    }
+  }
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 18px;
+  }
+  .btn {
+    width: 138px;
+  }
+}
+.event-block {
+  padding: 35px 0!important;
+  border-bottom: 1px solid #f0f0f0;
+  h2 {
+    position: relative;
+    line-height: 34.6px;
+    margin-bottom: 10px;
+    span {
+      display: block;
+      margin: 0 auto 10px auto;
+      color: #f77093;
+      border: 1px solid #f77093;
+      width: 103px;
+      height: 35px;
+      line-height: 30px;
+      -webkit-border-radius: 35px;
+      -moz-border-radius: 35px;
+      border-radius: 35px;
+    }
+  }
+  p {
+    color: #436363;
+    font-size: 13.3px;
+    font-weight: 400;
+    line-height: 18.6px;
+    margin-bottom: 25px;
+  }
+  img {
+    width: 100%;
+    border: 1px solid #f77093;
+    margin-top: 10px;
+  }
+  .btn {
+    width: 212px;
+    margin-top: 20px;
+  }
+}
+.block4 {
+  //border-top: 1px solid #f0f0f0;
+  &.container-fluid {
+    padding: 30px 0 20px 0;
+  }
+  .wrapper {
+    padding: 0;
+  }
+  h2 {
+    margin-bottom: 25px;
+  }
+  img {
+    width: 100%;
+  }
+}
+footer {
+  border-top: 1px solid #f0f0f0;
+  padding: 30px 0 20px 0;
+  .wrapper {
+    padding: 0;
+  }
+  h2 {
+    margin-bottom: 25px;
+  }
+  ul {
+    padding: 0;
+    list-style: none;
+    max-width: 340px;
+    margin: 0 auto 20px auto;
+    li {
+      display: inline-block;
+      margin: 6px 8px;
+      a {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: inline-block;
+        width: 56px;
+        height: 56px;
+        &.vk {
+          background-image: url(../img/vk.png);
+        }
+        &.ins {
+          background-image: url(../img/ins.png);
+        }
+        &.fb {
+          background-image: url(../img/fb.png);
+        }
+        &.ok {
+          background-image: url(../img/ok.png);
+        }
+        &.tg {
+          background-image: url(../img/tg.png);
+        }
+        &.ytb {
+          background-image: url(../img/ytb.png);
+        }
+        &.zen {
+          background-image: url(../img/zen.png);
+        }
+      }
+    }
+  }
+  .text {
+    font-size: 21.3px;
+    color: #64bac3;
+    line-height: 40px;
+    font-style: italic;
+    position: relative;
+    &:before,
+    &:after {
+      content: '';
+      background-color: #64bac3;
+      height: 1px;
+      width: 17.5%;
+      top: 21px;
+      position: absolute;
+    }
+    &:before {
+      left: 0;
+    }
+    &:after {
+      right: 0;
+    }
+
+  }
+}

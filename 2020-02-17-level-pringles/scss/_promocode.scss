@@ -1,0 +1,65 @@
+.promocode {
+  background-color: rgba(196, 196, 196, 0.16);
+  border: 1px dashed $gray;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &_state_copy {
+    &::after {
+      content: 'Промокод скопирован';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      line-height: 22px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 5px;
+    }
+  }
+
+  &__code {
+    font-family: KelsonSans;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  &_lk {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 305px;
+    height: 67px;
+    padding: 8px 5px 8px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+
+    .promocode__code {
+      font-size: 16px;
+    }
+
+    @media #{$phone-only} {
+      width: 100%;
+      max-width: none;
+    }
+
+    @media #{$tablet} {
+      padding: 10px 10px 10px 20px;
+    }
+
+    @media #{$desktop} {
+      width: 305px;
+      padding: 0 10px;
+    }
+  }
+
+  &_lk &__code {
+    margin-right: 5px;
+  }
+}

@@ -1,0 +1,25 @@
+phantom:
+  address: agent-whiskeycavalier.ru:443 # [Target's address]:[target's port]
+  ssl: true
+  writelog: all
+  uris:
+    - /
+    - /favicon.ico
+    - /main.406a3e2959f04e27b803.css
+    - /bundle.406a3e2959f04e27b803.js
+    - /155774494ec499b20935f671afa81048.png
+    - /54b17fe7b1cc0062d05df24e8969aab0.png
+#    - /57c3c747d562f97c146bbde5fbe61096.mp4
+    - /363c763618808869720c6ca7b4059566.otf
+    - /95c15f5d87574481740b9b79fe9f1d6e.otf
+  load_profile:
+    load_type: rps # schedule load by defining requests per second
+    schedule: line(15, 40, 5m) # starting from 1rps growing linearly to 10rps during 10 minutes
+  headers:
+    - "[Host: agent-whiskeycavalier.ru]"
+    - "[Connection: close]"
+    - "[User-Agent: Yandex.Tank]"
+console:
+  enabled: true # enable console output
+telegraf:
+  enabled: false # let's disable telegraf monitoring for the first time

@@ -1,0 +1,211 @@
+.content {
+  background-color: #fff;
+  border: 1px solid $color-athens-gray;
+  box-sizing: border-box;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.02);
+  border-radius: 3px;
+  padding: 30px;
+  &__heading {
+    display: flex;
+  }
+  &__date {
+    font-size: 14px;
+    color: $color-silver-chalice;
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  &__paragraph {
+    color: $color-shuttle-gray;
+    line-height: 24px;
+    font-size: 16px;
+    margin: 15px 0 0 0;
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
+  }
+  &__footer {
+    padding-top: 30px;
+    border-top: 1px solid $color-athens-gray;
+    display: flex;
+  }
+  &__social {
+    margin-left: auto;
+    .icon-chat {
+      margin-right: 45px;
+    }
+    span {
+      color: $color-shuttle-gray;
+      font-size: 14px;
+      line-height: 21px;
+      padding-right: 5px;
+    }
+  }
+  &__item {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    &_table {
+      padding: 18px 0 20px 0;
+      border-bottom: none;
+      border-bottom: 1px solid $color-athens-gray;
+      .checkbox .icon {
+        display: none;
+      }
+      &_active {
+        background-color: $color-blackhaze;
+        .checkbox .icon {
+          display: block;
+        }
+      }
+    }
+    .inner {
+      padding-left: 80px;
+      padding-right: 125px;
+      h2 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100%;
+      }
+      .tags {
+        float: left;
+        .tag:not(:last-child) {
+          margin-right: 5px;
+        }
+        .tag:last-child {
+          margin-right: 20px;
+        }
+      }
+      p {
+        color: $color-aluminium;
+        font-size: 14px;
+        line-height: 30px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin-bottom: 0;
+      }
+    }
+    &:first-child {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+    &:last-child {
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+    .form-group.checkbox {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto 0 auto 30px;
+    }
+    .dropdown {
+      width: 22px;
+      height: 30px;
+      right: 30px;
+    }
+  }
+  &_table {
+    font-size: 18px;
+    padding: 0;
+    .icon.icon_star,
+    .dropdown {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      .dropdown-menu {
+        margin-left: -186px;
+      }
+    }
+    .icon.icon_star {
+      right: 80px;
+    }
+  }
+  &_feed {
+    .dropdown {
+      right: 0!important;
+    }
+  }
+  &_article {
+    padding-bottom: 0;
+  }
+  &_article-creation {
+    padding: 20px 30px;
+    .form-group {
+      margin-bottom: 25px;
+      border-bottom: 1px solid $color-athens-gray;
+      .form-control {
+        font-size: 22px;
+        font-weight: 600;
+        border: none;
+        padding: 0 0 25px 0;
+        @include placeholder {
+          color: $color-aluminium;
+        }
+      }
+      &.textfield {
+        margin-bottom: 0;
+      }
+      textarea.form-control {
+        font-size: 16px;
+        font-weight: 400;
+        padding: 0 0 10px 0;
+        height: 130px;
+      }
+      .icon {
+        &_attach {
+          left: 40px;
+        }
+        &_link {
+          left: 80px;
+        }
+        &_quote {
+          left: 120px;
+        }
+        &_font {
+          right: 0;
+        }
+      }
+    }
+    .tag-creation {
+      display: flex;
+      .tag {
+        .icon-down {
+          margin-left: 5px;
+        }
+      }
+      .form-group {
+        flex-grow: 1;
+      }
+    }
+    .tag-creation {
+      margin: 30px 0;
+      .tag {
+        &:not(last-child) {
+          margin-right: 20px;
+        }
+      }
+      .form-group {
+        margin-bottom: 0;
+        .form-control {
+          font-size: 16px;
+          font-weight: 400;
+          padding: 0 0 10px 0;
+          height: 32px;
+          @include placeholder {
+            font-size: 16px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}

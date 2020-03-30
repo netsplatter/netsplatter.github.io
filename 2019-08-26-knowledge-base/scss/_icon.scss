@@ -1,0 +1,35 @@
+.icon {
+  fill: $color-aluminium;
+  cursor: pointer;
+  transition: fill 0.5s;
+  &:hover {
+    fill: $color-main;
+  }
+  &_list {
+    margin-right: 5px;
+  }
+  &_close {
+    margin: 0px -5px 0 0;
+  }
+  &_star {
+    margin: -5px 5px 0 5px;
+    &_heading {
+      margin: -5px 0 0 10px;
+    }
+  }
+  &_attach {
+    left: 20px;
+  }
+  &_link {
+    left: 60px;
+  }
+  &_quote {
+    left: 100px;
+  }
+  &_font {
+    right: 20px;
+  }
+  &_picture {
+    left: 0;
+  }
+}

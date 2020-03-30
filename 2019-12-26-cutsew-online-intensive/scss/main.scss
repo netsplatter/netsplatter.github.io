@@ -1,0 +1,119 @@
+@import "fonts";
+@import "variables";
+@import "wrapper";
+@import "icon";
+@import "btn";
+@import "input";
+@import "modal";
+@import "mainpage";
+@import "form";
+@import "socials";
+@import "content";
+// Universal
+body, html {
+  height: 100%;
+}
+body {
+  font-family: OpenSans, sans-serif;
+  color: $color-main;
+  font-weight: 400;
+}
+.main-wrapper {
+  flex: 1 0 auto;
+}
+h2 {
+  font-family: BadScript;
+  color: $color-pink;
+  font-size: 44px;
+  line-height: 75px;
+}
+h4 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+}
+a {
+ // color: $color-blue;
+  text-decoration: none;
+  outline: none;
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+  &.disabled {
+    &:hover {
+      color: $color-main;
+    }
+    &:active {
+    }
+  }
+}
+div {
+  position: relative;
+}
+p {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  li {
+    position: relative;
+  }
+}
+input,
+textarea {
+  filter: none;
+  &:focus {
+    box-shadow: none!important;
+  }
+  resize: none;
+}
+input[type=checkbox]:checked + label {
+  .icon {
+    display: block;
+  }
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  border:none !important;
+  -webkit-text-fill-color: inherit !important;
+  -webkit-box-shadow: 0 0 0 1000px #fff inset!important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.intl-tel-input.allow-dropdown {
+  width: 100%;
+  .selected-flag {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    padding: 0 0 0 18px;
+    .iti-arrow {
+      right: -2px;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+@media screen and (max-width: 600px){
+  .mainpage .wrapper {
+    > h2 {
+      font-size: 6vw;
+      line-height: 8vw;
+      margin-top: 40px;
+    }
+    > h4 {
+      font-size: 3vw;
+      line-height: 5vw;
+    }
+  }
+}

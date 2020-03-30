@@ -1,0 +1,22 @@
+.footer {
+  background-color: $color-red;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 60px;
+  &__logo {
+    width: 109px;
+    height: 144px;
+    margin-top: -46px;
+  }
+  &__text {
+    font-family: KelsonSans;
+    color: $color-white;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  @media screen and (max-width: 700px){
+    padding-bottom: 50px;
+  }
+}

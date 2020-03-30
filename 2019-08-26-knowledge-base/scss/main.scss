@@ -1,0 +1,104 @@
+@import "variables";
+@import "bars";
+@import "btn";
+@import "content";
+@import "controls";
+@import "dropdown";
+@import "form-group";
+@import "icon";
+@import "sidebar";
+@import "tag";
+@import "commentary";
+@import "attachments-block";
+@import "checkbox";
+@import "nav-actions";
+@import "nav-list";
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700&display=swap');
+
+// Universal
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: $color-main;
+  font-weight: 400;
+}
+h1 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+}
+h2 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+}
+a {
+  color: $color-blue;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+    .icon {
+      fill: $color-main;
+    }
+  }
+  &:active {
+    text-decoration: underline;
+  }
+  &.disabled {
+    color: $color-aluminium;
+    &:hover {
+      color: $color-main;
+    }
+    &:active {
+      color: $color-oslo-gray;
+    }
+  }
+}
+div {
+  position: relative;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  li {
+    position: relative;
+  }
+}
+input,
+textarea {
+  &:focus {
+    box-shadow: none!important;
+  }
+  resize: none;
+}
+input[type=checkbox]:checked + label {
+  .icon {
+    display: block;
+  }
+}
+p {
+  font-size: 16px;
+  line-height: 24px;
+  a {
+    color: $color-blue;
+  }
+}
+
+.wrapper {
+  background-color: $color-mercury;
+  padding: 30px;
+  display: flex;
+  font-family: "Open Sans";
+  color: $color-main;
+  font-weight: 400;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-left: 30px;
+  //overflow: hidden;
+  //width: calc(100% - 165px);
+  width: calc(100% - 390px);
+}

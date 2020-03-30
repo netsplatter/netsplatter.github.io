@@ -1,0 +1,47 @@
+.menu {
+  display: flex;
+  &__item {
+    font-family: Impact;
+    font-size: 17.6093px;
+    line-height: 21px;
+    color: $color-white;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 27px;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    @media (hover: hover) and (min-width: 1024px) {
+      &:hover {
+        color: $color-yellow;
+        text-decoration: none;
+      }
+    }
+  }
+  &_burgermenu {
+    width: 100%;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  &_footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  @media screen and (max-width: 880px){
+    display: block;
+    &__item {
+      display: block;
+      margin-bottom: 28px;
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 600px){
+    &_burgermenu {
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/awesome-bootstrap-checkbox/0.3.7/awesome-bootstrap-checkbox.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body class="test3">
+    <div class="container-fluid block2">
+        <div class="wrapper clearfix">
+            <div class="wrapper-inner">
+                <h2>Для статистических целей ответьте, пожалуйста, на социально-демографические вопросы</h2>
+                <form action="">
+                    <div class="form-block">
+                        <h3>Сколько вам полных лет?</h3>
+                        <div class="radio-panel age form-group">
+                            <div class="radio">
+                                <input type="radio" name="radio1" id="radio1">
+                                <label for="radio1"></label>
+                                <span class="heading">До 18 лет</span>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="radio1" id="radio2">
+                                <label for="radio2"></label>
+                                <span class="heading">18 – 24</span>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="radio1" id="radio3">
+                                <label for="radio3"></label>
+                                <span class="heading">25 - 34</span>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="radio1" id="radio4">
+                                <label for="radio4"></label>
+                                <span class="heading">35 – 44</span>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="radio1" id="radio5">
+                                <label for="radio5"></label>
+                                <span class="heading">45 – 54</span>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="radio1" id="radio6">
+                                <label for="radio6"></label>
+                                <span class="heading">55 лет и старше</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-block">
+                        <h3>Семейное положение</h3>
+                        <div class="radio-panel martial form-group">
+                            <div class="radio">
+                                <input type="radio" name="radio2" id="radio7">
+                                <label for="radio7"></label>
+                                <span class="heading">Не замужем / не женат</span>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="radio2" id="radio8">
+                                <label for="radio8"></label>
+                                <span class="heading">В браке / живем вместе</span>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="radio2" id="radio9">
+                                <label for="radio9"></label>
+                                <span class="heading">Разведен / разведена</span>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="radio2" id="radio10">
+                                <label for="radio10"></label>
+                                <span class="heading">Вдовец / вдова</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-block">
+                        <h3>Есть ли у Вас дети в возрасте до 14 лет?</h3>
+                        <div class="radio-panel kids form-group">
+                            <div class="radio">
+                                <input type="radio" name="radio3" id="radio11">
+                                <label for="radio11"></label>
+                                <span class="heading">1</span>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="radio3" id="radio12">
+                                <label for="radio12"></label>
+                                <span class="heading">2</span>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="radio3" id="radio13">
+                                <label for="radio13"></label>
+                                <span class="heading">3</span>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="radio3" id="radio14">
+                                <label for="radio14"></label>
+                                <span class="heading">4</span>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="radio3" id="radio15">
+                                <label for="radio15"></label>
+                                <span class="heading">5 и более</span>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="radio3" id="radio16">
+                                <label for="radio16"></label>
+                                <span class="heading">Нет младше 14 лет</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-block">
+                        <h3 class="mb0">Город проживания</h3>
+                        <div class="form-group">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-block">
+                        <h3 class="mb0">Основной вид деятельности</h3>
+                        <div class="form-group">
+                            <select class="selectpicker">
+                                <option>Другое</option>
+                            </select>
+                            <textarea class="form-control" placeholder="Введите текст"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-block">
+                        <h3 class="mb0">Средний доход в вашей семье?</h3>
+                        <div class="form-group">
+                            <select class="selectpicker income-select">
+                                <option value="">Менее 20 тыс. рублей</option>
+                                <option value="">21 тыс. – 31 тыс. рублей</option>
+                                <option value="">31 тыс. – 40 тыс. рублей</option>
+                                <option value="">41 тыс. – 50 тыс. рублей</option>
+                                <option value="">51 тыс. – 60 тыс. рублей</option>
+                                <option value="">61 тыс. – 70 тыс. рублей</option>
+                                <option value="">71 тыс. – 80 тыс. рублей</option>
+                                <option value="">81 тыс. – 90 тыс. рублей</option>
+                                <option value="">91 тыс. – 100 тыс. рублей</option>
+                                <option value="">102 тыс. – 150 тыс. рублей</option>
+                                <option value="">151 тыс. -  200 тыс. рублей</option>
+                                <option value="">201 тыс. – 250 тыс. рублей</option>
+                                <option value="">251 тыс. – 300 тыс. рублей</option>
+                                <option value="">301 тыс. – 350 тыс. рублей</option>
+                                <option value="">351 тыс. – 400 тыс. рублей</option>
+                                <option value="">Более 400 тыс. рублей</option>
+                                <option value="">Затрудняюсь ответить</option>
+                            </select>
+                            <textarea class="form-control" placeholder="Введите текст"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-block agreement-block">
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox1">
+                                <label for="checkbox1">
+                                    Анкетируемое лицо дает свое согласие на обработку его персональных данных, а именно совершение действий, предусмотренных п. 3 ч. 1 ст. 3 Федерального закона от 27.07.2006 N 152-ФЗ "О персональных данных", и подтверждает, что, давая такое согласие, он действует свободно, своей волей и в своем интересе.
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn" data-toggle="modal" data-target="#modalMissedQuestion">
+                        <a href="#">ДАЛЬШЕ</a>
+                    </div>
+                </form>
+                <div class="promocode-block clearfix">
+                    <div class="inner">
+                        <h3>Дорогой гость, благодарим за участие!</h3>
+                        <p class="text-block">За прохождение опроса получите <span>промокод на 10% скидку<sup>*</sup></span></p>
+                        <form class="clearfix" action="">
+                            <div class="code">sdfs323as</div>
+                            <div class="btn copy"><a href="#">Скопировать</a></div>
+                            <span>или</span>
+                            <div class="btn send"><a href="#">Отправить на почту</a></div>
+                            <div class="form-group clearfix">
+                                <input class="form-control" placeholder="Введите ваш e-mail">
+                            </div>
+                        </form>
+                        <p class="info">
+                            <sup>*</sup>Скидка суммируется с клубными картами Park&Fly
+                            Промокод можно использовать только один раз.<br>
+                            <b>Срок действия промокода до 01.08.2017 года</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Agreement Modal -->
+    <div class="modal fade" id="modalAgreement" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-agreement" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <div class="content-block">
+                        <p>ДЛЯ ПРОДОЛЖЕНИЯ</p>
+                        <p>необходимо согласиться на обработку персональных данных</p>
+                    </div>
+                    <div class="btn cancel pull-left">
+                        <a href="#">Нет</a>
+                    </div>
+                    <div class="btn yes pull-right">
+                        <a href="#" data-dismiss="modal">Согласен</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Missed Question Modal -->
+    <div class="modal fade" id="modalMissedQuestion" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-missed-question" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <div class="content-block">
+                        <div class="warning-container">
+                            <p>ВАМИ БЫЛ ПРОПУЩЕН ВОПРОС</p>
+                        </div>
+                        <p>чтобы перейти дальше, нужно ответить на все вопросы</p>
+                    </div>
+                    <div class="btn to-question">
+                        <a href="#">перейти к вопросу</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

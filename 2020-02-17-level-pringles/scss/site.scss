@@ -1,0 +1,132 @@
+@import "fonts";
+@import "variables";
+@import "mixins";
+@import "animation";
+@import "main/block-start";
+@import "main/block-tanks";
+@import "main/block-chair";
+@import "main/block-prizes";
+@import "main/block-partners";
+@import "show/block-all-series";
+@import "show/block-mechanics";
+@import "show-video/block-video";
+@import "wot/block-winners";
+@import "faq/block-faq";
+@import "lk/block-lk";
+@import "wrapper";
+@import "block";
+@import "icon";
+@import "heading";
+@import "header";
+@import "btn";
+@import "sequence";
+@import "socials";
+@import "nav";
+@import "menu";
+@import "burgermenu";
+@import "highlight";
+@import "footer";
+@import "slider";
+@import "user";
+@import "series";
+@import "desktop-upscale";
+@import "chips";
+@import "winners";
+@import "faq";
+@import "lk";
+@import "promocode";
+@import "parallax-wrapper";
+@import "modal";
+@import "components/*.scss";
+@import "sections/*.scss";
+@import "safari";
+
+// Universal
+body, html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: OpenSans, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+ // background-color: $color-alto;
+  color: $color-main;
+  font-weight: 400;
+}
+a {
+  color: $color-blue;
+  text-decoration: none;
+  outline: none;
+  @media (hover: hover) and (min-width: 1024px) {
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}
+h2 {
+  font-family: Impact;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+}
+h3 {
+  font-family: Impact;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+}
+div {
+  position: relative;
+}
+p {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  li {
+    position: relative;
+  }
+}
+input,
+textarea {
+  filter: none;
+  &:focus {
+    box-shadow: none!important;
+  }
+  resize: none;
+}
+input[type=checkbox]:checked + label {
+  .icon {
+    display: block;
+  }
+}
+@media (hover: hover) and (min-width: 1024px) {
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus {
+    border:none !important;
+    -webkit-text-fill-color: inherit !important;
+    -webkit-box-shadow: 0 0 0 1000px $color-white inset!important;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.hidden {
+  display: none;
+}

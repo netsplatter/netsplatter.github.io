@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Subject-Translate</title>
+</head>
+<body ng-controller="MainCtrl">
+    <div class="wrapper">
+        <h1 class="text-center">Subject-Translate</h1>
+        <div class="container">
+            <div class="input-group center-block col-md-6 col-sm-10 clearfix searchbar-block">
+                <input type="search" ng-model="query" id="searchBar" class="form-control" placeholder="Search...">
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading text-center">Search results</div>
+                <div class="panel-body">
+                    <div class="heading">
+                        <div class="col-md-6 col-xs-6">Subject name</div>
+                        <div class="col-md-6 col-xs-6">Translation</div>
+                    </div>
+                    <div class="item" ng-if="!isEmpty(query)" ng-repeat="item in Data | filter:query">
+                        <div class="col-md-6 col-xs-6">{{item.subject}}</div>
+                        <div class="col-md-6 col-xs-6">{{item.translation}}</div>
+                    </div>
+                    <div class="item" ng-if="isEmpty(query)">
+                        <div class="col-md-12 col-xs-12 text-center">No results</div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="input-group center-block col-md-6 col-sm-10">-->
+                <!--<h3>Add new translation:</h3>-->
+                <!--<div class="form-group clearfix">-->
+                    <!--<input class="form-control" ng-model="input_original" placeholder="original">-->
+                <!--</div>-->
+                <!--<div class="form-group clearfix">-->
+                    <!--<input class="form-control" ng-model="input_translation" placeholder="translation">-->
+                <!--</div>-->
+                <!--<div class="form-group text-center">-->
+                    <!--<div class="btn btn-default" ng-click="SendTranslation()">Submit</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+
+            <!--<pagination-->
+                    <!--ng-model="currentPage"-->
+                    <!--total-items="todos.length"-->
+                    <!--max-size="maxSize"-->
+                    <!--boundary-links="true">-->
+            <!--</pagination>-->
+        </div>
+    </div>
+    <footer>
+       <div class="wrapper">
+           <p>
+               Subject-Translate - бесплатный сервис для быстрого поиска перевода названия предмета, научной дисциплины, курса и т. д.
+               на английский язык.
+               Если вы не нашли нужный вам перевод, добавьте нужное вам название, используя
+               <a href="#">эту форму</a>.
+               База регулярно дополняется новыми переводами.
+           </p>
+       </div>
+    </footer>
+</body>
+</html>

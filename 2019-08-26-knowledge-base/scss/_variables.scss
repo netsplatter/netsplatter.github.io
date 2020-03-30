@@ -1,0 +1,27 @@
+$color-main: #333;
+$color-shuttle-gray: #535C69;
+$color-gray: #757A82;
+$color-oslo-gray: #818790;
+$color-silver-chalice: #A9A9A9;
+$color-aluminium: #ABB0B7;
+$color-gray-lighter: #D4D8E0;
+$color-mercury: #E5E5E5;
+$color-blackhaze: #F6F7F7;
+$color-athens-gray: #E8EAEE;
+$color-zircon: #F0F6FF;
+$color-blue: #1055C8;
+$color-picton-blue: #39C0EB;
+$color-picton-blue2: #48CDF8;
+$color-green: #2DB976;
+$color-emerald: #59D298;
+$color-red: #D72D2D;
+$color-sunset-orange: #FB4F4F;
+$color-bittersweet: #FF6161;
+$color-yellow: #FFC36A;
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}

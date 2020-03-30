@@ -1,0 +1,324 @@
+.block-prizes {
+  background: url(../img/grey-tiles-bg.jpg) 0 0 no-repeat;
+  background-size: cover;
+  text-align: center;
+  //min-height: 700px;
+  padding: 0;
+  h2 {
+    color: $color-yellow;
+    margin-top: 0;
+    margin-bottom: 45px;
+  }
+  h3 {
+    color: $color-white;
+    margin-top: 0;
+  }
+  &__prizes {
+    display: flex;
+    width: 890px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 284px;
+    height: 395px;
+    border-radius: 17px;
+    box-shadow: 23px 27px 94px rgba(23, 23, 23, 0.9);
+    position: relative;
+
+    &:not(&_no-hover):hover {
+      @media (hover: hover) and (min-width: 1024px) {
+        .block-prizes__item-pic {
+          filter: brightness(1.2);
+          transform: scale(1.1);
+        }
+        //transform: scale(1.025);
+      }
+    }
+
+    &-bg {
+      width: 100%;
+      height: 100%;
+      -webkit-border-radius: 17px;
+      -moz-border-radius: 17px;
+      border-radius: 17px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+    &-pic {
+      height: 50%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      position: absolute;
+      z-index: 2;
+      top: 15%;
+      transition: all 0.5s ease-in-out;
+    }
+    &-text {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 2;
+      bottom: 60px;
+    }
+    &-p1 {
+      font-family: Impact;
+      font-size: 24px;
+      line-height: 28px;
+      color: $color-white;
+      text-transform: uppercase;
+    }
+    &-p2 {
+      font-family: Impact;
+      font-size: 24px;
+      line-height: 28px;
+      color: $color-yellow;
+      text-transform: uppercase;
+    }
+  }
+  &__link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+  }
+  &__user-avatar {
+    width: 73px;
+    height: 73px;
+    border-radius: 50%;
+    margin-right: 18px;
+    margin-top: -12px;
+    float: left;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+  &__name {
+    font-family: Impact;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  &_main {
+    overflow: hidden;
+  }
+  &_show,
+  &_wot {
+    background: url(../img/white-pattern-bg.jpg) 0 0 no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    h3 {
+      color: $color-main;
+      margin-bottom: 10px;
+    }
+    .block-prizes__item {
+      box-shadow: none;
+      &-p1 {
+        color: $color-main;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      &-p2 {
+        color: $color-red;
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+  }
+  &_wot {
+    overflow: hidden;
+    .block-prizes__item-text {
+      font-family: KelsonSans;
+      font-size: 16px;
+      line-height: 24px;
+      bottom: 0;
+      height: 100px;
+    }
+    @media screen and (min-height: 720px){
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+  &_show-video {
+    background-image: url(../img/white-pattern-bg.jpg);
+    padding-top: 260px;
+    padding-bottom: 0;
+    min-height: 500px;
+    .wrapper {
+      width: 980px;
+    }
+    h3 {
+      color: $color-main;
+    }
+    .block-prizes__item {
+      box-shadow: none;
+    }
+    .block-prizes__item-text {
+      bottom: 50px;
+    }
+    @media screen and (min-height: 900px){
+      //padding-top: 630px;
+      //padding-bottom: 120px;
+      min-height: 520px!important;
+    }
+  }
+  @media screen and (min-height: 900px){
+    min-height: 980px;
+  }
+  @media screen and (max-width: 1024px){
+    h3 {
+      margin-bottom: 50px;
+    }
+    &__prizes {
+      //width: 940px;
+      width: auto;
+      padding: 0 10px;
+    }
+    &__item {
+      //width: 300px;
+      flex: 1;
+      margin: 0 10px;
+    }
+    &_show-video {
+      .wrapper {
+        width: auto;
+      }
+    }
+  }
+  @media screen and (max-width: 800px){
+    &__item {
+      &-p1,
+      &-p2 {
+        font-size: 3.6vw;
+        line-height: 4.2vw;
+        width: 100%;
+      }
+      &-text {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+    &__prizes {
+      display: block;
+    }
+    &__item {
+      height: 340px;
+      margin: 0 auto;
+      &-pic {
+        height: 62%;
+        top: 0;
+      }
+    }
+    &_main {
+      min-height: 1400px;
+      .block-prizes__item {
+        margin: 0 auto 40px auto;
+      }
+    }
+    &_show {
+      min-height: 1260px;
+    }
+    &_wot {
+      padding-top: 60px;
+    }
+  }
+  @media screen and (max-width: 600px){
+    &_main {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      min-height: 640px;
+      h2 {
+        font-size: 6vw;
+        line-height: 6vw;
+        margin-bottom: 7vw;
+      }
+      .block-prizes__prizes {
+        flex-wrap: wrap;
+      }
+      .block-prizes__item {
+        width: 100%;
+        height: 40vw;
+        flex: auto;
+        margin-bottom: 2vw;
+        overflow: hidden;
+        align-items: center;
+        display: flex;
+        &-bg {
+          height: auto;
+          top: -100%;
+        }
+        &-pic {
+          height: 60%;
+          left: 8%;
+          right: auto;
+          top: 0;
+          bottom: 0;
+        }
+        &-text {
+          bottom: auto;
+          width: 23vw;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 420px){
+    background-attachment: initial;
+    &_main {
+      min-height: auto;
+      &__item {
+        &-p1,
+        &-p2 {
+          font-size: 4.6vw!important;
+          line-height: 5.5vw!important;
+        }
+      }
+    }
+    &_show {
+      min-height: 1230px;
+      h3 {
+        font-size: 24px;
+        line-height: 28px;
+        padding: 0 20px;
+      }
+    }
+
+    &_show-video {
+      h3 {
+        font-size: 24px;
+        line-height: 28px;
+      }
+
+      .block-prizes__user-avatar {
+        width: 55.4px;
+        height: 55.4px;
+      }
+
+      .block-prizes__name {
+        font-size: 15px;
+        line-height: 32px;
+      }
+    }
+  }
+
+  &_show-video &__item-text {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  &_show-video &__user-avatar {
+    margin-top: 0;
+    flex-shrink: 0;
+  }
+}

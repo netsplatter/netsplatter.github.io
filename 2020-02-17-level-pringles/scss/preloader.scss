@@ -1,0 +1,62 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: $color-white;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/white-pattern-bg.jpg");
+
+  &__loader {
+    margin-bottom: 50px;
+    animation-name: heart;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+    animation-duration: 1.5s;
+
+    @media #{$tablet} {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__icon {
+    width: 107px;
+    height: 127px;
+    fill: none;
+    stroke: $color-red;
+    stroke-dasharray: 320;
+    stroke-dashoffset: 0;
+    animation: dash 1s linear;
+  }
+
+  &__icon-fill {
+    transform: translateY(100%);
+    fill: $color-red;
+    transition: transform 0.7s ease-in-out;
+  }
+
+  &__icon_state_fill &__icon-fill {
+    transform: translateY(0);
+  }
+
+  &__title {
+    font-family: KelsonSans;
+    font-size: 20px;
+    line-height: 28px;
+    color: $color-oslo-gray;
+  }
+
+  &__title-icon {
+    width: 92px;
+    height: 21px;
+    fill: $color-oslo-gray;
+  }
+}

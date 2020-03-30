@@ -1,0 +1,189 @@
+// Fonts
+@font-face {
+  font-family: SegoeUI;
+  src: url(../fonts/SegoeUIRegular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: SegoeUI;
+  src: url(../fonts/SegoeUISemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: SegoeUI;
+  src: url(../fonts/SegoeUIBold.ttf);
+  font-weight: 700;
+}
+
+@color-main: #222222;
+@color-yellow: #fdd835;
+@color-orange: #f98643;
+@color-green: #7cc724;
+
+html, body {
+	font-family: SegoeUI;
+	font-weight: 400;
+	color: @color-main;
+  margin: 0;
+  padding: 0;
+}
+div, ul, li {
+  position: relative;
+}
+.parking-order-form {
+  background-color: #f8fcff;
+  max-width: 430px;
+  text-align: center;
+  .inner-container {
+    padding: 20px;
+    .section1 {
+      padding: 20px 20px 70px 20px;
+      background-color: #dfeff5;
+    }
+    .section2 {
+      padding: 75px 20px 25px 20px;
+      background-color: #cceaf4;
+    }
+    h4 {
+      font-size: 18.67px;
+      margin: 0;
+      font-weight: 400;
+      line-height: 1;
+    }
+    .order-code {
+      background-color: @color-yellow;
+      padding: 4px 3px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      margin: 20px 0 25px 0;
+      .inner {
+        border: 1px dashed #fff;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        font-size: 18.67px;
+        font-weight: 600;
+        padding: 7px 0;
+      }
+    }
+    .lbl {
+      background-color: #acc9d4;
+      height: 1px;
+      width: 100%;
+      position: relative;
+      &:before {
+        content: 'К ОПЛАТЕ';
+        position: absolute;
+        background-color: #dfeff5;
+        font-size: 16px;
+        font-weight: 400;
+        left: 50%;
+        width: 100px;
+        margin-left: -50px;
+        top: -11px;
+      }
+    }
+    .price {
+      font-size: 53.33px;
+      font-weight: 700;
+      padding-left: 40px;
+      line-height: 1.5;
+      span {
+        font-size: 18.67px;
+        font-weight: 400;
+        margin-left: -10px;
+      }
+    }
+    .info-promo {
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .info-block {
+      height: 100px;
+      width: calc(~"100% - 50px");
+      background-color: #fff;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      box-shadow: 0 4px 6px 0 rgba(8, 125, 177, 0.16);
+      position: absolute;
+      left: 20px;
+      bottom: -55px;
+      z-index: 9;
+      padding: 6px 5px;
+      .inner {
+        border: 1px dashed #bad8e2;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        padding: 18px 0;
+        max-height: 89px;
+        .content {
+          width: 265px;
+          margin: 0 auto;
+          text-align: left;
+          img {
+            float: left;
+            margin: 8px 20px 0 0;
+          }
+          p {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 21.333px;
+          }
+        }
+      }
+    }
+    .btn {
+      width: 100%;
+      height: 48px;
+      border: none;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      a {
+        color:  #fcfffd;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 48px;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+      }
+      &:active,
+      &:focus {
+        outline: none;
+      }
+      &.submit {
+        background-color: @color-green;
+        -webkit-box-shadow: 0px 4px 0px 0px rgba(102,162,32,1);
+        -moz-box-shadow: 0px 4px 0px 0px rgba(102,162,32,1);
+        box-shadow: 0px 4px 0px 0px rgba(102,162,32,1);
+        margin-bottom: 10px;
+      }
+      &.forward {
+        background-color: @color-orange;
+        -webkit-box-shadow: 0px 4px 0px 0px rgba(222,117,57,1);
+        -moz-box-shadow: 0px 4px 0px 0px rgba(222,117,57,1);
+        box-shadow: 0px 4px 0px 0px rgba(222,117,57,1);
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 380px) {
+  .parking-order-form .inner-container .info-block .inner .content {
+    width: auto;
+    img {
+      display: none;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}

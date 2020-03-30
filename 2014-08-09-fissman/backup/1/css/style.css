@@ -1,0 +1,599 @@
+@import "reset.css";
+@font-face {
+  font-family: Helios;
+  src: url(fonts/heliosc.otf);
+}
+@font-face {
+  font-family: HeliosThin;
+  src: url(fonts/heliosthinc.otf);
+}
+@font-face {
+  font-family: HeliosLight;
+  src: url(fonts/helioslightc.otf);
+}
+@font-face {
+  font-family: HeliosBlack;
+  src: url(fonts/heliosblackc.otf);
+}
+html, body {
+		margin: 0 auto;
+		padding: 0;
+		height: 100%;
+		min-width: 1280px;
+		font-family: Helios;
+		color: #414042;
+		background: #fff;
+}
+.wrapper {
+	margin: 0 auto;
+	width: 1000px;
+	min-height: 100%;
+	position: relative;
+}
+header {
+	height: 230px;
+	position: relative;
+}
+header .logo {
+	float: left;
+	margin-top: 25px;
+}
+header .call-icon {
+	float: right;
+	margin-top: 50px;
+	width: 59px;
+	height: 59px;
+}
+header .phone {
+	float: right;
+	font-family: HeliosBlack;
+	color: #000;
+	font-size: 27px;
+	font-weight: 400;
+	text-align: center;
+	line-height: 20px;
+	margin-top: 60px;
+	margin-right: 10px;
+}
+header .phone span {
+	font-family: HeliosThin;
+	font-size: 17px;
+	font-weight: 400;
+}
+header .features-block {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+header .features-block .features {
+	display: inline-block;
+}
+header .features-block .features .number {
+	font-family: HeliosBlack;
+	float: left;
+	font-size: 52px;
+	color: #EC008C;
+	font-weight: 400;
+	margin-left: 10px;
+}
+header .features-block .features span {
+	display: inline-block;
+	font-family: HeliosLight;
+	margin-left: 10px;
+	margin-top: 8px;
+	font-size: 20px;
+	color: #414042;
+	text-align: left;
+}
+.block1 {
+	background: url(../images/block1-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center 145px;
+	height: 600px;
+}
+.block1 h1 {
+	font-family: HeliosThin;
+	color: #404042;
+	font-size: 100px;
+	font-weight: 400;
+	line-height: 110px;
+	text-transform: uppercase;
+	text-align: right;
+	padding-top: 30px;
+	padding-bottom: 12px;
+}
+.block1 .offer {
+	font-family: HeliosThin;
+	color: #404042;
+	font-size: 38px;
+	font-weight: 400;
+	line-height: 30px;
+}
+.block1 .offer span {
+	font-family: Helios;
+	color: #ec008c;
+	font-size: 66px;
+	font-weight: 700;
+	line-height: 60px;
+}
+.block2 {
+	margin-top: 10px;
+	height: 930px;
+	background: url(../images/block2-bg.png);
+	background-repeat: no-repeat;
+	background-position: center 145px;
+	position: relative;
+}
+.block2 .feature-block1 {
+	height: 80px;
+	width: 500px;
+	background: #BEEC3F;
+	margin: 0 auto;
+	position: relative;
+}
+.block2 .feature-block1:after {
+	content: '';
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 40px solid #BEEC3F;
+    position: absolute;
+    right: -40px;
+    top: 0px;
+}
+.block2 .feature-block1 span {
+	display: inline-block;
+	margin: 17px 0 0 60px;
+	font-family: HeliosThin;
+	color: #404042;
+	font-size: 22px;
+	font-weight: 400;
+}
+.block2 .bottom-container {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+.block2 .bottom-container .feature-block2 {
+font-family: HeliosThin;
+color: #404042;
+font-size: 67px;
+font-weight: 400;
+float: left;
+}
+.block2 .feature-block2 span {
+	font-family: HeliosBlack;
+	color: #f755a0;
+	font-size: 90px;
+	font-weight: 400;
+}
+.block2 .bottom-container .feature-block3 {
+	float: right;
+	width: 370px;
+	color: #404042;
+	font-size: 25px;
+	font-weight: 400;
+	font-family: HeliosThin;
+	border-left: 4px solid #EC008C;
+	padding-left: 10px;
+	margin-top: 40px;
+}
+.block2 .bottom-container .feature-block3 span {
+	font-family: Helios;
+}
+.block3 {
+	margin-top: 130px;
+	background: url(../images/block3-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center -130px;
+	position: relative;
+	height: 800px;
+	text-align: center;
+}
+.block3 .features1 {
+	font-family: HeliosThin;
+	text-transform: uppercase;
+	color: #404042;
+	font-size: 32px;
+	font-weight: 400;
+	text-align: right;
+	float: left;
+}
+.block3 .features1 span {
+	color: #f755a0;
+	font-size: 100px;
+	text-align: left;
+}
+.block3 .slide {
+	margin-top: 10px;
+}
+.block3 .download-block {
+	margin-top: 10px;
+	float: right;
+	text-transform: uppercase;
+	font-family: HeliosLight;
+	color: #f755a0;
+	font-size: 25px;
+	line-height: 48.669px;
+	font-family: HeliosLight;
+	text-align: right;
+}
+.block3 .download-block span {
+	font-family: HeliosBlack;
+}
+
+.block3 .download-block button {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 41.72px;
+	font-weight: 400;
+	line-height: 50px;
+	text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.44);
+	background-color: #f655a0;
+	width: 426px;
+	height: 65px;
+	cursor: pointer;
+	border: none;
+}
+.block4 {
+	margin-top: 200px;
+}
+.block4 h1 {
+	font-family: HeliosThin;
+	color: #f755a0;
+	font-size: 125px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.block4 p {
+	font-family: HeliosThin;
+	color: #000;
+	font-size: 41px;
+	font-weight: 400;
+	border-left: 4px solid #F655A0;
+	margin-left: 73px;
+	padding-left: 20px;
+	line-height: 40px;
+}
+.block4 ol {
+	counter-reset: li;
+    margin-left: 85px;
+    padding-left: 0;
+    margin-top: 40px;
+}
+.block4 ol li {
+	position: relative;
+    padding: 0 0 20px 10px;
+    margin-bottom: 40px;
+    list-style:none;
+    font-size: 25px;
+    font-family: HeliosThin;
+    border-left: 6px solid #F655A0;
+    width: 590px;
+}
+.block4 ol li:before {
+    content:counter(li);
+    counter-increment: li;
+    position:absolute;
+    top: -2px;
+    left: -2em;
+    margin-right: 8px;
+    padding-left: 5px;
+    color: #EC008C;
+    font-family: HeliosBlack;
+	font-size: 48px;
+    text-align:center;
+}
+.block4 img {
+	position: absolute;
+	right: -160px;
+	top: 215px;
+}
+.block5 {
+	margin-top: 200px;
+	background-image: url(../images/block5-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center 210px;
+	height: 2115px;
+}
+.block5 h1 {
+	font-size: 69px;
+	color: #414042;
+	font-family: HeliosThin;
+	font-weight: 400;
+}
+.block5 h1 span {
+	font-family: HeliosBlack;
+	color: #f655a0;
+	text-transform: uppercase;
+}
+.block5 ol {
+	counter-reset: li;
+    margin-left: 85px;
+    padding-left: 0;
+    margin-top: 125px;
+}
+.block5 ol li {
+	position: relative;
+    padding: 0 0 20px 10px;
+    margin-bottom: 115px;
+    list-style:none;
+    font-size: 25px;
+    font-family: HeliosThin;
+    width: 690px;
+}
+.block5 ol li:nth-child(3) {
+	margin-top: -30px;
+}
+.block5 ol li:nth-child(3) .parallelogram {
+	top: 122px;
+}
+.block5 ol li:nth-child(4) {
+	margin-top: -80px;
+}
+.block5 ol li:nth-child(4) .parallelogram {
+	top: 122px;
+}
+.block5 ol li:nth-child(5) {
+	margin-top: -25px;
+}
+.block5 ol li:nth-child(5) .parallelogram {
+	top: 91px;
+}
+.block5 ol li:before {
+    content:counter(li);
+    counter-increment: li;
+    position:absolute;
+    z-index: 999;
+    top: 30%;
+    left: -2em;
+    margin-right: 8px;
+    padding-left: 5px;
+    color: #fff;
+    padding: 20px;
+    height: 0;
+    font-family: HeliosBlack;
+	font-size: 80px;
+    text-align:center;
+}
+.block5 ol li .parallelogram {
+	width: 90px;
+    height: 90px;
+    -webkit-transform: skew(-12deg);
+    -moz-transform: skew(-12deg);
+    -o-transform: skew(-12deg);
+    background: #ED008C;
+	position: absolute;
+	z-index: 99;
+	left: -157px;
+	top: 100px;
+}
+.block5 ol li h2 {
+	background: #000;
+	color: #fff;
+	font-family: Helios;
+	font-size: 37.5px;
+	text-transform: uppercase;
+	padding: 20px;
+	line-height: 45px;
+	display: inline-block;
+}
+.block5 ol li p {
+	background: #000;
+	color: #fff;
+	font-family: HeliosLight;
+	font-size: 25px;
+	padding: 25px;
+	margin-top: 10px;
+}
+.block6 {
+	background-image: url(../images/block6-bg.png);
+	background-repeat: no-repeat;
+	background-position: center -85px;
+	height: 700px;
+	position: relative;
+}
+.block6 img {
+	position: absolute;
+	bottom: 94px;
+	left: 0;
+}
+.block6 form {
+	float: right;
+	margin: 150px -80px 0 0;
+}
+.block6 form h2 {
+	font-family: HeliosThin;
+	font-size: 48px;
+	color: #414042;
+	font-weight: 400;
+	margin-bottom: 25px;
+}
+.block6 form input {
+	width: 620px;
+	height: 56px;
+	-webkit-box-shadow: inset -1px 4px 6px 0px rgba(0,0,0,0.7);
+	-moz-box-shadow: inset -1px 4px 6px 0px rgba(0,0,0,0.7);
+	box-shadow: inset -1px 4px 6px 0px rgba(0,0,0,0.7);
+	margin-bottom: 25px;
+	border: none;
+	padding-left: 20px;
+	font-family: HeliosThin;
+	font-size: 28px;	
+}
+.block6 form button {
+	background: #EC008C;
+	width: 208px;
+	height: 60px;
+	text-transform: uppercase;
+	font-family: HeliosLight;
+	font-size: 33px;
+	color: #fff;
+	cursor: pointer;
+	border: none;
+}
+.block7 {
+	position: relative;
+}
+.block7 .first {
+	font-family: HeliosThin;
+	color: #ec008c;
+	font-size: 48px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.block7 .first span {
+	font-family: HeliosBlack;
+	color: #000;
+	font-size: 52px;
+	padding-left: 95px;
+}
+.block7 ul {
+	list-style-type: none;
+	margin: 35px 0 0 100px;
+}
+.block7 ul li {
+	font-family: HeliosThin;
+	font-size: 37px;
+	line-height: 60px;
+}
+.block7 ul li .list {
+	color: #bbbbbb;
+	padding-right: 25px;
+}
+.block7 ul li span {
+	font-family: HeliosBlack;
+}
+.block7 .line1, 
+.block7 .line2 {
+	background-image: url(../images/line.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 1865px;
+	height: 111px;
+	position: absolute;
+	z-index: 999;
+	left: 50%;
+	margin-left: -940px;
+}
+.block7 .line1 {
+	top: 330px;
+}
+.block7 .line2 {
+	top: 1530px;
+}
+.block7 .second {
+	font-family: HeliosThin;
+	color: #000;
+	font-size: 48px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-top: 140px;
+}
+.block7 .second span {
+	font-family: HeliosBlack;
+	font-size: 50px;
+	text-transform: uppercase;
+}
+.block7 .second .pink {
+	color: #EC008C;
+}
+.block7 .marker-list {
+	list-style: none;
+	width: 760px;
+}
+.block7 .marker-list li { 
+    text-indent: -.9em;
+  	font-family: HeliosLight; 
+  	font-size: 29px;
+  	color: #000; 
+  	line-height: 35px;
+  	margin-bottom: 15px;
+}
+.block7 .marker-list li:before {
+    content: "▪ ";
+    color: #EC008C;
+    font-size: 30px;
+}
+.block7 .marker-list li span {
+  	color: #ec008c; 
+  	font-family: HeliosLight; 
+  	font-weight: 400;
+}
+.block7 .text-block {
+	margin-top: 150px;
+}
+.block7 .text-block p {
+	font-family: HeliosThin;
+	color: #000;
+	font-size: 29px;
+	font-weight: 400;
+	line-height: 35px;
+	margin-bottom: 15px;
+}
+.block8 {
+	margin-top: 110px;
+}
+.block8 h2 {
+	font-family: HeliosThin;
+	font-size: 75px;
+	font-weight: 400;
+	text-transform: uppercase;
+	position: absolute;
+}
+.block8 h2 span {
+	font-family: HeliosBlack;
+	font-size: 50px;
+}
+.block8 h2 .pink {
+	color: #ec008c;
+}
+.block8 img {
+	margin-top: 40px;
+}
+footer {
+	margin-top: 200px;
+	height: 160px;
+	position: relative;
+	text-align: center;
+}
+footer .logo {
+	float: left;
+	width: 276px;
+	height: 85px;
+}
+footer .order-block {
+	display: inline-block;
+	font-family: HeliosLight;
+	font-size: 25px;
+	font-weight: 400;
+	color: #000;
+	line-height: 20px;
+}
+footer .order-block span {
+	font-size: 17px;
+}
+footer .order-block button {
+	width: 335px;
+	height: 40px;
+	background: rgb(120,128,134);
+	background: -moz-linear-gradient(top,  rgba(120,128,134,1) 0%, rgba(92,98,105,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(120,128,134,1)), color-stop(100%,rgba(92,98,105,1)));
+	background: -webkit-linear-gradient(top,  rgba(120,128,134,1) 0%,rgba(92,98,105,1) 100%);
+	background: -o-linear-gradient(top,  rgba(120,128,134,1) 0%,rgba(92,98,105,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(120,128,134,1) 0%,rgba(92,98,105,1) 100%);
+	background: linear-gradient(to bottom,  rgba(120,128,134,1) 0%,rgba(92,98,105,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#788086', endColorstr='#5c6269',GradientType=0 );
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 40px;
+	text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.44);
+	cursor: pointer;
+}
+footer .sign {
+	float: right;
+	margin-top: 30px;
+}

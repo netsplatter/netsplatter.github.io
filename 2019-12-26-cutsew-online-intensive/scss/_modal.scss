@@ -1,0 +1,60 @@
+.modal {
+  background-color: rgba(49,60,74, 0.5);
+  .modal-dialog {
+    width: 394px;
+    margin: auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    .modal-content {
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      border: none;
+    }
+  }
+  .modal-body {
+    background-color: $color-light-blue;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 30px;
+    h4 {
+      margin-bottom: 18px;
+    }
+    p {
+      margin-bottom: 25px;
+    }
+  }
+  &.show {
+    display: flex!important;
+  }
+  &.in {
+    display: flex!important;
+  }
+  &__inner {
+    overflow-y: scroll;
+    height: 55vh;
+    margin-bottom: 30px;
+    padding-right: 15px;
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: rgba(126,150,180, 0.1);
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      border-radius: 30px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $color-gray;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      border-radius: 30px;
+    }
+  }
+}
+.modal-backdrop {
+  background-color: $color-main;
+}

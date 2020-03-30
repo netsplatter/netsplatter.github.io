@@ -1,0 +1,40 @@
+$color-main: #414141;
+$color-alto: #D6D6D6;
+$color-red: #CC0824;
+$color-black: #000;
+$color-white: #fff;
+$color-shuttle-gray: #5E646B;
+$color-oslo-gray: #818E91;
+$color-yellow: #F6D400;
+$color-orange: #F5B100;
+$color-digestive-platinum: #C4C4C4;
+$color-tricky-porcelain: #F0F0F0;
+$color-success: #27AE60;
+$color-blue: #2D9CDB;
+
+$gray: #BBBEC9;
+
+/** Variable media queries **/
+$phone-size: 320px;
+$tablet-size: 600px;
+$to-tablet-size: 599px;
+$tablet-landscape-size: 900px;
+$to-tablet-landscape-size: 899px;
+$desktop-size: 1024px;
+
+/** Media variables **/
+$tablet: "only screen and (min-width: #{$tablet-size})";
+$tablet-landscape: "only screen and (min-width: #{$tablet-landscape-size})";
+$desktop: "only screen and (min-width: #{$desktop-size})";
+
+$phone-only: "only screen and (max-width: #{$to-tablet-size})";
+$tablet-only: "only screen and (max-width: #{$to-tablet-landscape-size})";
+$fine-hover: "(hover: hover) and (pointer: fine)";
+
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}

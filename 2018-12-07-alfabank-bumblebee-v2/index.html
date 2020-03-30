@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</head>
+<body>
+   <header class="clearfix">
+       <div class="wrapper">
+           <a href="https://alfabank.ru/" class="ab-logo" target="_blank">
+               <img src="img/logo.png" alt="">
+           </a>
+           <a href="https://www.mastercard.ru/" class="mc-logo" target="_blank">
+               <img src="img/mastercard.png" alt="">
+           </a>
+           <button class="btn">
+               <span>СМОТРЕТЬ ВИДЕО</span>
+           </button>
+           <ul class="nav">
+               <li><a href="javascript:;">ПРАВИЛА</a></li>
+               <li><a href="javascript:;">О КАРТЕ</a></li>
+               <li><a href="javascript:;">ПРИЗЫ</a></li>
+           </ul>
+       </div>
+   </header>
+
+   <div class="wrapper">
+       <form action="">
+           <div class="form-wrapper clearfix">
+               <img class="cards" src="img/cards.png" alt="">
+               <h3>
+                   <span>ОСТАВЬ ЗАЯВКУ НА ОФОРМЛЕНИЕ КАРТЫ</span>
+                   <span>И УЧАСТВУЙ В КОНКУРСЕ</span>
+               </h3>
+               <p class="info">
+                   Первые 10 человек, подавших заявку на карту, получат в подарок билеты на «Бамблби» в кино!
+               </p>
+               <div class="form-container">
+                   <div class="form-group">
+                       <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                   </div>
+                   <div class="form-group">
+                       <input type="text" name="tel" class="form-control" placeholder="Телефон">
+                   </div>
+                   <div class="form-group">
+                       <a href="Согласие на обработку данных.pdf" download>Согласие на обработку данных.pdf</a>
+                       <input type="checkbox" id="rules" name="tel" class="form-control">
+                       <label for="rules">Согласен(а) на обработку персональных данных</label>
+                   </div>
+                   <div class="form-group">
+                       <span>Клиент Альфа-Банка?</span>
+                       <input id="switch" type="checkbox" class="form-control">
+                       <label for="switch" class="switch">
+                           <span class="slider">Да</span>
+                           <span class="slider">Нет</span>
+                       </label>
+                   </div>
+               </div>
+               <div class="sequence clearfix">
+                  <div class="item client">
+                      <div class="img-container">
+                          <img src="img/sheet.png" class="sheet" alt="">
+                      </div>
+                      <span>Оставь заявку на карту</span>
+                      <i></i>
+                  </div>
+                  <div class="item non-client">
+                      <div class="img-container">
+                          <img src="img/sheet.png" class="sheet" alt="">
+                      </div>
+                      <span>Оставь свои данные</span>
+                      <i></i>
+                  </div>
+                  <div class="item">
+                      <div class="img-container">
+                          <img src="img/phone.png" class="phone" alt="">
+                      </div>
+                      <span>Жди звонка от сотрудника Альфа-Банка</span>
+                      <i></i>
+                  </div>
+                  <div class="item">
+                      <div class="img-container">
+                          <img src="img/desk.png" class="desk" alt="">
+                      </div>
+                      <span>Иди в ближайшее отделение Альфа-Банка</span>
+                      <i></i>
+                  </div>
+                  <div class="item non-client">
+                      <div class="img-container">
+                          <img src="img/sheet.png" class="sheet" alt="">
+                      </div>
+                      <span>Заполни заявление на Детскую карту</span>
+                      <i></i>
+                  </div>
+                  <div class="item">
+                      <div class="img-container">
+                          <img src="img/mail.png" class="mail" alt="">
+                      </div>
+                      <span>Дождись SMS о готовности карты</span>
+                      <i></i>
+                  </div>
+                  <div class="item">
+                      <div class="img-container">
+                          <img src="img/card.png" class="card" alt="">
+                      </div>
+                      <span>Забери карту в ближайшем отделении</span>
+                  </div>
+              </div>
+           </div>
+           <button class="btn" type="button" data-toggle="modal" data-target="#modalSucсess">ОТПРАВИТЬ</button>
+       </form>
+   </div>
+
+   <ul class="nav nav-bottom">
+       <li><a href="javascript:;">ПРАВИЛА УЧАСТИЯ</a></li>
+       <li><a href="javascript:;">О КАРТЕ</a></li>
+       <li><a href="javascript:;">ПРИЗЫ</a></li>
+       <li><a href="javascript:;">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></li>
+   </ul>
+
+    <footer>
+        <div class="bottom-logos clearfix">
+            <a href="https://alfabank.ru/" class="ab-logo" target="_blank">
+                <img src="img/logo.png" alt="">
+            </a>
+            <a href="https://www.mastercard.ru/" class="mc-logo" target="_blank">
+                <img src="img/mastercard.png" alt="">
+            </a>
+        </div>
+        <div class="socials">
+            <a href="https://www.facebook.com/alfabank/" class="fb" target="_blank">
+                <img src="img/fb.png" alt="">
+            </a>
+            <a href="https://vk.com/alfabank" class="vk" target="_blank">
+                <img src="img/vk.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/alfabankru/?hl=ru" class="in" target="_blank">
+                <img src="img/in.png" alt="">
+            </a>
+        </div>
+        <p>© 2018 Par. Pics. TM Hasbro.</p>
+    </footer>
+
+   <!--Modal Success-->
+   <div class="modal modal-success" id="modalSucсess" role="dialog">
+       <div class="modal-dialog" role="document">
+           <div class="modal-content">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+               <div class="modal-body">
+                   <h3>Спасибо за обращение!</h3>
+                   <p>
+                       В ближайшее время с вами свяжется сотрудник банка.
+                   </p>
+                   <!--<a class="btn" href="https://alfabank.ru/" data-dismiss="modal" aria-label="Close" target="_blank">Узнать больше</a>-->
+               </div>
+           </div>
+       </div>
+   </div>
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

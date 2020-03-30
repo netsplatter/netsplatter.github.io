@@ -1,0 +1,59 @@
+.block-all-series {
+  background: url(../img/white-pattern-bg.jpg) 0 0 no-repeat;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 50px;
+  > .wrapper {
+    width: 900px;
+  }
+  h2 {
+    margin-top: 100px;
+    margin-bottom: 55px;
+  }
+  &_other {
+    background-image: url(../img/grey-tiles-bg.jpg);
+    padding: 120px 0 80px 0;
+    h2 {
+      color: $color-white;
+      margin-top: 0;
+      margin-bottom: 65px;
+    }
+    .series__name {
+      color: $color-white;
+    }
+  }
+  @media screen and (max-width: 1000px){
+    > .wrapper {
+      width: auto;
+      padding: 0 20px;
+    }
+  }
+  @media screen and (max-width: 600px){
+    > .wrapper {
+      padding: 0;
+    }
+    h2 {
+      font-size: 36px;
+      line-height: 36px;
+      margin-top: 10vw;
+      margin-bottom: 10vw;
+    }
+    &_other {
+      display: block!important;
+      min-height: 500px;
+      padding-top: 10vw;
+      padding-bottom: 12vw;
+      h2 {
+        font-size: 24px;
+        line-height: 28px;
+        margin-top: 0;
+      }
+    }
+  }
+  @media screen and (max-width: 420px){
+    background-attachment: initial;
+    &_other {
+      padding-bottom: 18vw;
+    }
+  }
+}

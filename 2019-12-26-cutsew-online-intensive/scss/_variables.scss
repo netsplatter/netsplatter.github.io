@@ -1,0 +1,32 @@
+$color-main: #313C4A;
+$color-light-blue: #E1F4FB;
+$color-gray: #7E96B4;
+$color-gray2: #A2A8BE;
+$color-blue-gray2: #AFC1D8;
+$color-gray-blue: #D0DCEA;
+$color-pink: #F76F93;
+$color-pink-dark: #cf6584;
+$color-pink-middle: #FDA3BA;
+$color-pink-light: #FFC1D2;
+$color-so-dark-blue: #1E7FAF;
+$color-dark-blue: #65AED1;
+$color-blue-dark: #94CBE6;
+$color-blue-light: #D4EEFB;
+$color-blue-light2: #F1F5F9;
+$color-tifany-dark: #2EC3C3;
+$color-tifany: #A0DDE0;
+$color-tifany-light: #C3F4F4;
+$color-tifany-superlight: #EAF9F7;
+$color-dop: #283939;
+$color-brown: #C8A28B;
+
+$font-size-base: 14px;
+$font-size-lg: $font-size-base + 2px;
+$font-size-sm: 12px;
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}

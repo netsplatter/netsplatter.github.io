@@ -1,0 +1,66 @@
+<div class="container-fluid" ng-controller="HomeCtrl">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="btn menu-btn"><a href="#/feedback">Feedback</a></div>
+        </div>
+        <div class="top-container clearfix col-md-9">
+            <div class="btn-container clearfix">
+                <div class="btn-vote btn-chris" ng-click="Vote('ChristVote')">
+                    <span>{{labels[0]}}</span>
+                </div>
+            </div>
+            <div class="btn-container clearfix">
+                <div class="btn-vote btn-chris pull-left" ng-click="Vote('PastaVote')">
+                    <span>{{labels[1]}}</span>
+                </div>
+            </div>
+            <div class="btn-container clearfix">
+                <div class="btn-vote btn-chris pull-left" ng-click="Vote('MuslimVote')">
+                    <span>{{labels[2]}}</span>
+                </div>
+            </div>
+            <div class="btn-container clearfix">
+                <div class="btn-vote btn-chris" ng-click="Vote('ChristVote')">
+                    <span>{{labels[0]}}</span>
+                </div>
+            </div>
+            <div class="btn-container clearfix">
+                <div class="btn-vote btn-chris pull-left" ng-click="Vote('PastaVote')">
+                    <span>{{labels[1]}}</span>
+                </div>
+            </div>
+            <div class="btn-container clearfix">
+                <div class="btn-vote btn-chris pull-left" ng-click="Vote('MuslimVote')">
+                    <span>{{labels[2]}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 hidden">
+            <div class="btn-container clearfix">
+                <div class="btn-vote btn-chris" ng-click="Vote('ChristVote')">
+                    <span>{{labels[0]}}</span>
+                </div>
+                <div class="count pull-left">{{ChristCount}}</div>
+            </div>
+            <div class="btn-container clearfix">
+                <div class="btn-vote btn-chris pull-left" ng-click="Vote('PastaVote')">
+                    <span>{{labels[1]}}</span>
+                </div>
+                <div class="count pull-left">{{PastaCount}}</div>
+            </div>
+            <div class="btn-container clearfix">
+                <div class="btn-vote btn-chris pull-left" ng-click="Vote('MuslimVote')">
+                    <span>{{labels[2]}}</span>
+                </div>
+                <div class="count pull-left">{{MuslimCount}}</div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <canvas id="pie" class="chart chart-pie"
+                    chart-data="data" chart-labels="labels" chart-options="options">
+            </canvas>
+        </div>
+    </div>
+</div>

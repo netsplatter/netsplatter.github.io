@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+    <title>maslochat</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <link rel="stylesheet" type="text/css" href="public/css/style.css"/>
+
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-storage.js"></script>
+
+
+    <script>
+        var config = {
+            apiKey: "AIzaSyAdMHP0K72AY5bzyKiqmMcm2eMjKcHS8DA",
+            authDomain: "maslochat-c65d4.firebaseapp.com",
+            databaseURL: "https://maslochat-c65d4.firebaseio.com"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script type="text/javascript" src="public/js/scripts.js"></script>
+</head>
+<body>
+<div class="main">
+  <span id="status-container">
+    Online: <span class="status"></span>
+  </span>
+    <div id="messages-container">
+        <ul id="messages"></ul>
+    </div>
+    <form id="message-form" action="">
+        <textarea id="message-input" autocomplete="off"></textarea>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+.nav-list {
+  &__item {
+    font-size: 16px;
+    min-height: 43px;
+    padding: 8px 0 8px 22px;
+    cursor: pointer;
+    ul {
+      margin-left: 18px;
+      padding: 12px 0 0 0;
+    }
+    &_lvl2 {
+      padding-left: 0;
+    }
+    &:hover {
+      background-color: $color-blackhaze;
+      .icon-edit,
+      .icon-dots-v {
+        display: inline-block;
+      }
+    }
+    &_active {
+      color: $color-blue;
+      &:after {
+        content: '';
+        background-color: $color-blue;
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        right: 28px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+    &_new {
+      color: $color-aluminium;
+    }
+    .icon-edit,
+    .icon-dots-v {
+      display: none;
+      float: right;
+      margin: 3px 2px;
+      padding: 2px 0;
+    }
+    .icon-menu-arrow-right,
+    .icon-menu-arrow-down {
+      margin: auto;
+      position: absolute;
+      top: 16px;
+      left: 8px;
+    }
+    .icon-menu-arrow-down {
+      left: 6px;
+    }
+    .icon-add {
+      fill: $color-aluminium;
+      float: right;
+      margin: 4px 20px 4px 0;
+    }
+    .dropdown-menu {
+      left: auto!important;
+      right: -36px;
+      top: 10px!important;
+      .dropdown-item {
+        .icon-edit {
+          display: inline-block;
+          float: none;
+          margin: 0 7px 0 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+}

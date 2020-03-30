@@ -1,0 +1,73 @@
+.bars {
+  margin-bottom: 30px;
+  .tags {
+    display: flex;
+    float: left;
+  }
+  .layouts {
+    display: flex;
+    float: right;
+    .item {
+      font-size: 12px;
+      border: 1px solid $color-gray-lighter;
+      padding: 6px 14px;
+      cursor: pointer;
+      &:before {
+        display: none;
+        content: '';
+        background-color: $color-picton-blue;
+        width: 1px;
+        height: calc(100% + 2px);
+        position: absolute;
+        top: -1px;
+        z-index: 1;
+      }
+      &.active {
+        background-color: $color-picton-blue;
+        border-color: $color-picton-blue;
+        color: #fff;
+        &:nth-child(1) {
+          &:before {
+            display: block;
+            right: -2px;
+          }
+        }
+        &:nth-child(2) {
+          &:before {
+            display: block;
+            left: -2px;
+          }
+        }
+      }
+      &:nth-child(1) {
+        -webkit-border-top-left-radius: 3px;
+        -webkit-border-bottom-left-radius: 3px;
+        -moz-border-radius-topleft: 3px;
+        -moz-border-radius-bottomleft: 3px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        &:not(.active) {
+
+        }
+      }
+      &:nth-child(2) {
+        -webkit-border-top-right-radius: 3px;
+        -webkit-border-bottom-right-radius: 3px;
+        -moz-border-radius-topright: 3px;
+        -moz-border-radius-bottomright: 3px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+      }
+    }
+  }
+  .table-controls {
+    display: flex;
+    font-size: 14px;
+    color: $color-gray;
+    padding: 5px 0;
+    float: left;
+    > .icon {
+      margin: 0 10px 0 30px;
+    }
+  }
+}

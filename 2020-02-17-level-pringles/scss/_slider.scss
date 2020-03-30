@@ -1,0 +1,35 @@
+.slider {
+  width: 100%;
+  &_sequence {
+    margin-top: 15px;
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    li {
+      display: flex;
+      align-items: center;
+      button {
+        background-color: $color-red;
+        border: none;
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+        padding: 0;
+        margin: 0 8px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        transition: all 0.25s ease-in-out 0s;
+      //  transition-delay: 0.5s;
+        outline: none;
+      }
+      &.slick-active {
+        button {
+          background-color: $color-yellow;
+          transition: all 0.25s ease-in-out;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.socials {
+  margin-top: 30px;
+  &__label {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 10px;
+  }
+  &__item {
+    display: inline-block;
+    margin: 0 5px;
+  }
+}

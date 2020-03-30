@@ -1,0 +1,78 @@
+.winners {
+  background-color: $color-tricky-porcelain;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  padding: 25px 70px 55px 70px;
+  &__item {
+    display: flex;
+    border-bottom: 1px solid $color-digestive-platinum;
+    padding: 15px 0;
+    align-items: center;
+    height: 80px;
+  }
+  &__userpic {
+    width: 51px;
+    height: 51px;
+    float: left;
+    margin-right: 12px;
+    margin-top: -5px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+  &__name {
+    font-family: Impact;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  &__date {
+    font-family: KelsonSans;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  &__prize {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+  &__prize-pic {
+    width: 110px;
+    margin-right: 20px;
+    img {
+      width: 100%;
+    }
+  }
+  &__prize-text {
+    font-family: KelsonSans;
+    font-size: 14px;
+    line-height: 20px;
+    width: 130px;
+  }
+  &_mobile {
+    display: none;
+  }
+  @media screen and (max-width: 900px) {
+    display: none;
+    &_mobile {
+      display: block;
+      padding: 10px 20px;
+      .winners__item {
+        align-items: start;
+        height: auto;
+      }
+      .winners__prize {
+        position: absolute;
+        right: 0;
+        bottom: 15px;
+      }
+      .winners__prize-pic {
+        margin: 0;
+      }
+      .winners__item-name {
+        display: block;
+        color: $color-red;
+      }
+    }
+  }
+}

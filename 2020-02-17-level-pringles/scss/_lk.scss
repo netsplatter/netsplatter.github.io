@@ -1,0 +1,132 @@
+.lk {
+  &__entry {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+    padding: 20px;
+    background: url(../img/lk-entry-bg.jpg) 0 0 no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+
+    @media #{$tablet-landscape} {
+      padding: 40px 70px;
+    }
+  }
+
+  &__promocode-container {
+    width: 305px;
+    @media #{$phone-only} {
+      width: auto;
+    }
+  }
+
+  &__id,
+  &__date {
+    font-family: KelsonSans;
+    color: $color-oslo-gray;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__date {
+    margin-left: auto;
+  }
+
+  &__status {
+    width: 100%;
+    font-family: KelsonSans;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 5px;
+
+    @media #{$desktop} {
+      margin-top: 10px;
+    }
+  }
+
+  &__denied {
+    color: $color-red;
+  }
+
+  &__link {
+    font-family: KelsonSans;
+    font-size: 16px;
+    float: right;
+    line-height: 47px;
+
+    @media #{$phone-only} {
+      font-size: 13px;
+    }
+
+    &_tech {
+      font-size: 20px;
+      line-height: 28px;
+      float: none;
+
+      @media #{$desktop} {
+        display: block;
+      }
+    }
+  }
+
+  &__prize {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: KelsonSans;
+    font-size: 25.3571px;
+    line-height: 35px;
+    margin-top: 10px;
+
+    @media #{$tablet-landscape} {
+      flex-direction: row;
+      align-items: center;
+    }
+    b {
+      display: block;
+    }
+  }
+
+  &_page {
+    margin-top: 43px;
+  }
+
+  &__prize-content {
+    @media #{$tablet-landscape} {
+      margin-right: 30px;
+    }
+  }
+
+  &__prize-content &__status {
+    margin-top: 0;
+  }
+
+  &__prize-image-container {
+    order: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+
+    @media #{$tablet-landscape} {
+      width: 280px;
+      order: 0;
+      margin-bottom: 0;
+      margin-left: auto;
+    }
+  }
+
+  &__prize-image {
+    display: block;
+    width: 100%;
+    max-width: 325px;
+    height: auto;
+
+    @media #{$tablet-landscape} {
+      position: relative;
+      max-width: 100%;
+    }
+  }
+}

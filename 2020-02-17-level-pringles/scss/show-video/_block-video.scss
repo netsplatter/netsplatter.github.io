@@ -1,0 +1,20 @@
+.block-video {
+  background: url(../img/grey-tiles-bg.jpg) 0 0 no-repeat;
+  background-size: cover;
+  padding-top: 240px;
+  //min-height: 700px;
+  .wrapper {
+    width: 980px;
+  }
+  @media screen and (max-width: 1000px){
+    .wrapper {
+      width: auto;
+    }
+  }
+  @media screen and (min-height: 900px){
+    //min-height: 750px;
+  }
+  @media screen and (max-width: 420px){
+    background-attachment: initial;
+  }
+}

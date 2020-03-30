@@ -1,0 +1,114 @@
+@default-line-height: 20px;
+@default-font: ~"14px/@{default-line-height} 'PT Sans', Arial, sans-serif";
+@default-text-color: #e8e3dd;
+
+.border-box() {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  position: relative;
+}
+body {
+  background-color: #615E5C;
+  font: @default-font;
+}
+
+.main {
+  @form-input-height: 150px;
+  @chat-border-color: #3c3c3c;
+  width: 800px;
+  height: 100%;
+  min-height: 300px;
+  position: relative;
+  background-color: #28292d;
+  margin: 0 auto;
+  
+  #messages-container {
+    .border-box();
+    overflow-y: auto;
+    height: 100%;
+    border-top: solid 40px @chat-border-color;
+    border-bottom: solid transparent @form-input-height;
+    #messages {
+      list-style-type: none;
+      padding: 15px 30px 0 30px;
+      li {
+        white-space:pre-wrap;
+        display: inline;
+        padding-right: 5px;
+        &.sys {
+          display: block;
+          font-size: 14px;
+          padding: 4px 0px 5px;
+          color: #c56131;
+          font-style: oblique;
+        }
+        &.user {
+          color: @default-text-color;
+        }
+      }
+      .history {
+        padding-bottom: 10px;
+        display: none;
+        li {
+          color: #7b7471;
+        }
+      }
+    }
+  }
+
+  #message-form {
+    position: relative;
+    bottom: @form-input-height;
+    display: block;
+    #message-input {
+      .border-box();
+      display: block;
+      border: none;
+      border-top: solid 10px @chat-border-color;
+      border-bottom: solid 10px @chat-border-color;
+      height: @form-input-height;
+      resize: none;
+      font: @default-font;
+      color: @default-text-color;
+      background-color: transparent;
+      width: 100%;
+      padding: 15px 20px 10px 20px;
+      font-size: 16px;
+      outline: none;
+    }
+  }
+
+  #status-container {
+    position: absolute;
+    left: 14px;
+    top: 11px;
+    font-size: 18px;
+    color: #ff874c;
+    text-shadow: 0px 0px 10px #944a27;
+    .status {
+      font-weight: bold;
+    }
+  }
+}
+
+.right-panel {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 300px;
+  border-left: 2px solid #333;
+  overflow-y: scroll;
+  height: 100%;
+  .history {
+    white-space:pre-wrap;
+  }
+}

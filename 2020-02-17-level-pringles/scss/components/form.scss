@@ -1,0 +1,45 @@
+.form {
+  &__group {
+    &_submit {
+      margin-top: 5px;
+    }
+  }
+
+  &__field {
+    position: relative;
+    padding-bottom: 20px;
+
+    input {
+      width: 100%;
+      padding: 14px 20px;
+      box-sizing: border-box;
+      font-family: 'KelsonSans';
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: $color-main;
+      border: 1px solid $gray;
+      border-radius: 5px;
+      background-color: rgba(196, 196, 196, 0.15);
+      box-shadow: none;
+
+      @include color-placeholder;
+    }
+  }
+
+  &__notification {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    margin-top: 3px;
+    font-size: 12px;
+    line-height: 16px;
+    color: $color-red;
+    text-align: left;
+  }
+
+  &__button {
+    width: 100%;
+  }
+}

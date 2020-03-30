@@ -1,0 +1,111 @@
+.block-lk {
+  flex-grow: 1;
+  padding-top: 90px;
+  padding-bottom: 180px;
+  background: url(../img/grey-tiles-bg.jpg) 0 0 no-repeat;
+  background-size: cover;
+
+  &_view_empty {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    min-height: 700px;
+  }
+
+  .wrapper {
+    width: auto;
+    padding-right: 25px;
+    padding-left: 25px;
+
+    @media #{$desktop} {
+      width: 900px;
+    }
+  }
+
+  &_view_empty .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  h2 {
+    color: #fff;
+    font-size: 42px;
+    line-height: 50px;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
+  &__user {
+    text-align: center;
+  }
+
+  &__user-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_view_empty &__user-content {
+    margin-bottom: 35px;
+  }
+
+  &__logout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon-logout {
+    margin-left: 13px;
+  }
+
+  &__button.btn.btn_default {
+    @media #{$phone-only} {
+      width: 255px;
+    }
+  }
+
+  &_view_empty &__button.btn.btn_default {
+    margin-top: 35px;
+  }
+
+  &__userpic {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -154px;
+  }
+
+  &__text {
+    font-family: KelsonSans;
+    color: $color-white;
+    font-size: 16px;
+    line-height: 24px;
+
+    &_view_letter-spacing {
+      font-family: Impact;
+      font-size: 42px;
+      line-height: 50px;
+      letter-spacing: .02em;
+    }
+  }
+
+  &_empty {
+    background-image: url(../img/white-pattern-bg.jpg);
+    height: 320px;
+  }
+
+  .btn_default {
+    width: 294px;
+    margin-top: 25px;
+  }
+}

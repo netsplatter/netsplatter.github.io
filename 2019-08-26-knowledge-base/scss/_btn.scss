@@ -1,0 +1,48 @@
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  &.default {
+    background-color: $color-picton-blue;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid $color-picton-blue;
+    padding: 10px 27px;
+    &.cancel {
+      background-color: transparent;
+      border-color: $color-shuttle-gray;
+      color: $color-shuttle-gray;
+      margin-left: 15px;
+    }
+  }
+  &_btn-back {
+    border: 1px solid $color-green;
+    font-size: 12px;
+    padding: 6px 10px;
+    .icon {
+      margin-right: 5px;
+    }
+  }
+  &_btn-back-extra {
+    background-color: $color-athens-gray;
+    width: 15px;
+    height: 83px;
+    border-radius: 3px 0 0 3px;
+    position: absolute;
+    left: -16px;
+    top: 0;
+    padding: 0;
+    .icon {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+}
