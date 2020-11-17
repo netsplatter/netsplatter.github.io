@@ -1,6 +1,6 @@
 Code archive for 2014-2020
 
-Front-end projects online:
+Frontend projects online:
 
 http://bidfox.ru
 
