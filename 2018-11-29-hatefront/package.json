@@ -33,7 +33,7 @@
     "react-select": "^2.1.0",
     "react-toastify": "^4.4.0",
     "react-ultimate-pagination": "^1.2.0",
-    "underscore": "^1.9.1",
+    "underscore": "^1.12.1",
     "universal-cookie": "^3.0.4",
     "uuid": "^3.3.2",
     "whatwg-fetch": "^3.0.0",
