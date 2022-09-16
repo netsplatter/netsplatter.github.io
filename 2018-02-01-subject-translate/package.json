@@ -23,6 +23,6 @@
     "preprotractor": "npm run update-webdriver"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.4.1"
   }
 }
